@@ -1,0 +1,22 @@
+
+#conte{
+width: 900px;
+height: auto;
+background-color: #9C1B2D;
+padding: 5px;	
+}
+
+#izki{
+width: 250px;
+height: 100px;
+background-color: #103C56;	
+float: left;	
+}
+
+#derec{
+width: 645px;
+height: 100px;
+background-color: #595819;	
+float: right;
+	
+}

@@ -1,0 +1,96 @@
+*{
+    /* A universal CSS reset */
+    margin:0;
+    padding:0;
+}
+
+#menunaviga li{
+    list-style:none;
+    height:165px;
+    padding:2px;
+    width:40px;
+    background: #c0ba81;
+    border-radius: 5px;
+    border: 1px solid #585919;
+    z-index: 9999999999999999999999999999999;
+}
+
+#menunaviga span{
+    /* Container properties */
+    width:0;
+    right:38px;
+    padding:0;
+    position:absolute;
+    overflow:hidden;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+#menunaviga a{
+    height:160px;
+    width:30px;
+    display:block;
+    position:relative;
+
+}
+
+/* General hover styles */
+/*#menunaviga .contact:hover span { width: 800px; height: 650px; padding:0 10px; overflow:visible; border-radius: 2px; top: -50px; border: 5px solid #585919; }*/
+/*#menunaviga .quote:hover span { width: 1030px; height: 730px; padding:0 10px; overflow:visible; border-radius: 2px; top: -250px; border: 5px solid #585919; }*/
+
+
+#menunaviga a:hover{
+    text-decoration:none;
+}
+
+/* Green Button */
+
+#menunaviga .contact {	background: url(../images/social/contact.png) no-repeat;}
+#menunaviga .contact:hover {background: url(../images/social/contact_hover.png) no-repeat;}
+#menunaviga .contact:focus {background: url(../images/social/contact_checked.png) no-repeat;}
+#menunaviga .contact span{
+    background-color: #c0ba81;
+    color: #FFFFFF;
+    text-shadow:1px 1px 0 #585919;
+    height: 200px;
+
+}
+
+/* Blue Button */
+
+#menunaviga .quote { background: url(../images/social/requesta.png) no-repeat;}
+#menunaviga .quote:hover { background: url(../images/social/requesta_hover.png) no-repeat}
+#menunaviga .quote:focus { background: url(../images/social/requesta_checked.png) no-repeat}
+#menunaviga .quote span{
+    background-color:#c0ba81;
+    color:#FFFFFF;
+    text-shadow:1px 1px 0 #585919;
+    height: 200px;
+}
+
+
+/* The styles below are only needed for the demo page */
+
+#prince{
+    float: right;
+    width: 45px;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a img{
+    border:none;
+}
+
+#titu {
+    font: normal 28px Candara;
+    color: #9c1b2d;
+    line-height: 60px;
+}

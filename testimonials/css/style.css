@@ -1,0 +1,30 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 10px;
+  width: 980px;
+  height: 600px;
+  background: url(../../images/notas.jpg) no-repeat center;
+}
+
+.box {
+	margin: 100px;
+	padding: 10px;
+	width: 800px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.scroll {
+	position: absolute;
+}
+
+.scroll li{
+	list-style:  none;
+    margin-bottom: 30px;
+    text-align: justify;
+    font: 20px Candara;
+    padding-right: 20px !important;
+
+}

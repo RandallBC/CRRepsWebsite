@@ -1,0 +1,27 @@
+.wrapper {
+  margin: 0 auto;
+  width: 410px;
+  height: 510px;
+}
+
+.box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+	width: 380px;
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+}
+
+.scroll {
+	position: absolute;
+}
+
+.scroll li{
+	list-style:  none;
+    margin-bottom: 30px;
+    text-align: justify;
+    font: 14px Candara;
+    padding-right: 20px !important;
+
+}

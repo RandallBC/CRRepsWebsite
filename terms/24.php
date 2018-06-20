@@ -1,0 +1,3 @@
+<h3 style="margin-top: 0px">II.PAYMENT POLICIES</h3>
+<h3>4. Consolidating Payments</h3>
+<p class="generalText">For partners we work on a regular basis with multiple tours (FIT's or regular set departures) being sold and operated each Costa Rica Reps strongly suggest to consolidate payments on a monthly basis. This will allow us to mutually avoid unnecesary bank charges and stress. Our financial department will work out an overall deposit which will requested for the 15th of every month to cover all the bookings for the next month. Then, we will send all updated invoices and a balance, whether this is a credit in your favour or balance due to be paid on the following month's billing.</p>

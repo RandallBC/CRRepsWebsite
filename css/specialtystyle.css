@@ -1,0 +1,209 @@
+
+#taba{
+    width:210px;
+    height:400px;
+    vertical-align: top;
+    padding-top: 75px;
+    margin-left: 40px;
+    background: #d7d4b0;
+    border-radius: 10px;
+    border: 1px solid #585919;
+}
+
+
+
+.css3-tabstrip ul,
+.css3-tabstrip li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.css3-tabstrip,
+.css3-tabstrip input[type="radio"]:checked + label
+{
+    position: relative;
+}
+
+.css3-tabstrip li,
+.css3-tabstrip input[type="radio"] + label
+{
+    'display: inline-block;
+}
+
+.css3-tabstrip li > div,
+.css3-tabstrip input[type="radio"]
+{
+    position: absolute;
+}
+
+.css3-tabstrip li > div,
+.css3-tabstrip input[type="radio"] + label
+{
+    border: solid 1px #595819;
+}
+
+.css3-tabstrip
+{
+    font: normal 14px Candara;
+    color: #000000;
+ }
+
+.css3-tabstrip li
+{
+    vertical-align: top;
+    color: #FFFFFF;
+    }
+
+.css3-tabstrip p
+{
+    vertical-align: top;
+    color: #000000;
+}
+
+.css3-tabstrip li:first-child
+{
+
+}
+
+.css3-tabstrip li > div
+{
+    top: 33px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    overflow: auto;
+    background: #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.css3-tabstrip input[type="radio"] + label
+{
+    margin: 0%;
+    padding: 0 10px;
+    line-height: 32px;
+    background: #eee;
+    float: left;
+    border-radius: 5px 5px 0 0;
+}
+
+.css3-tabstrip input[type="radio"]:hover + label /*, .css3-tabstrip input[type="radio"]:after + label*/
+{
+    z-index: 1;
+    background: #FFFFFF ;
+    color: #595819;
+    font-weight: bold;
+    border-bottom-color: #fff;
+    cursor: hand !important;
+}
+
+.css3-tabstrip input[type="radio"]:checked + label
+{
+    z-index: 1;
+    background: #FFFFFF;
+    color: #9c1b2d;
+    font-weight: bold;
+    border-bottom-color: #fff;
+    cursor: hand;
+}
+
+.css3-tabstrip input[type="radio"]
+{
+    opacity: 0;
+}
+
+.css3-tabstrip input[type="radio"] ~ div
+{
+    display: none;
+}
+
+.css3-tabstrip input[type="radio"]:checked:not(:disabled) ~ div
+{
+    display: block;
+}
+
+.css3-tabstrip input[type="radio"]:disabled + label
+{
+    opacity: .5;
+    cursor: no-drop;
+}
+
+/*iconos de las tabs*/
+label.actadventures { background: #c0ba81 no-repeat 5px center !important; text-align:right; width: 135px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.educational { background: #c0ba81 no-repeat 5px center !important; text-align:right; width: 135px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.experiential { background: #c0ba81 no-repeat 5px center !important; text-align:right; width: 135px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.wildlife { background: #c0ba81 no-repeat 5px center !important; text-align:right; width: 165px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.specneeds { background: #c0ba81 no-repeat 5px center !important; text-align:right; width: 105px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.corporate { background: #c0ba81 no-repeat 5px center !important; text-align:right; width: 125px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+
+label.actadventures:hover { background: url(../images/spectravel/remos_hover.png) no-repeat 5px center !important;text-align:right; width: 135px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.educational:hover { background: url(../images/spectravel/educational_hover.png) no-repeat 5px center !important;text-align:right; width: 135px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.experiential:hover { background: url(../images/spectravel/experimental_hover.png) no-repeat 5px center !important;text-align:right; width: 135px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.wildlife:hover { background: url(../images/spectravel/wildlife_hover.png) no-repeat 5px center !important;text-align:right; width: 165px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.specneeds:hover { background: url(../images/spectravel/experimental_hover.png) no-repeat 5px center !important;text-align:right; width: 105px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+label.corporate:hover { background: url(../images/spectravel/corporate_hover.png) no-repeat 5px center !important;text-align:right; width: 125px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;}
+
+.css3-tabstrip input[type="radio"]:checked + label.actadventures { background: url(../images/spectravel/remos_hover_red.png) no-repeat 5px center !important;text-align:right; width: 135px; height: auto;}
+.css3-tabstrip input[type="radio"]:checked + label.educational { background: url(../images/spectravel/educational_hover_red.png) no-repeat 5px center !important;text-align:right; width: 135px; height: auto;}
+.css3-tabstrip input[type="radio"]:checked + label.experiential { background: url(../images/spectravel/experimental_hover_red.png) no-repeat 5px center !important;text-align:right; width: 135px; height: auto;}
+.css3-tabstrip input[type="radio"]:checked + label.wildlife { background: url(../images/spectravel/wildlife_hover_red.png) no-repeat 5px center !important;text-align:right; width: 165px; height: auto;}
+.css3-tabstrip input[type="radio"]:checked + label.specneeds { background: url(../images/spectravel/experimental_hover_red.png) no-repeat 5px center !important;text-align:right; width: 105px; height: auto;}
+.css3-tabstrip input[type="radio"]:checked + label.corporate { background: url(../images/spectravel/corporate_hover_red.png) no-repeat 5px center !important;text-align:right; width: 125px; height: auto;}
+
+
+/*iconos de cada una*/
+
+
+
+/*iconos de active adventures*/
+a.multisport { width: 150px; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.cxc {  width: 150px; margin-left:10px;  padding: 15px 12px 12px 30px;  text-decoration: none; color: #48484B;}
+a.equestrian {  width: 150px; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.walking { width: 150px; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+
+a.multisport:hover { background: url(../images/spectravel/multisport_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; font-weight: bold; text-decoration: none; color: #595819;}
+a.cxc:hover { background: url(../images/spectravel/cxc_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.equestrian:hover { background: url(../images/spectravel/equestrian_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.walking:hover { background: url(../images/spectravel/walking_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+
+
+/*iconos de nature & wildlife*/
+a.birdwatch { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.nathistory { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  text-decoration: none; color: #48484B;}
+a.phototour { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.whalphins { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.birdwatch:hover { background: url(../images/spectravel/bird_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.nathistory:hover { background: url(../images/spectravel/experimental_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.phototour:hover { background: url(../images/spectravel/photo_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.whalphins:hover { background: url(../images/spectravel/whale_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+
+/*iconos de experiential*/
+a.experiential { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.culinary { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.yoga { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.experiential:hover { background: url(../images/spectravel/experimental_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.culinary:hover { background: url(../images/spectravel/culinary_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.yoga:hover { background: url(../images/spectravel/yoga_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+
+/*iconos de educational*/
+a.educational { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.educational:hover { background: url(../images/spectravel/educational_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+
+/*iconos de special needs*/
+a.kosher { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.vegan { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.disability { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.kosher:hover { background: url(../images/spectravel/kosher_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.vegan:hover { background: url(../images/spectravel/vegan_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+a.disability:hover { background: url(../images/spectravel/disability_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+
+/*iconos de corporate*/
+a.corporate { width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px; text-decoration: none; color: #48484B;}
+a.corporate:hover { background: url(../images/spectravel/corporate_hover.png) no-repeat 0px center; width: 150px; height: auto; margin-left:10px;  padding: 15px 12px 12px 30px;  font-weight: bold; text-decoration: none; color: #595819;}
+
+
+

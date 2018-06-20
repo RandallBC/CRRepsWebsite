@@ -1,0 +1,106 @@
+.menu{
+        padding-right:5px;
+        border-right: 1px solid #660000;
+        list-style:none;
+        width:165px;
+        font: normal 12px Candara;
+        background:#FFFFFF;
+        /*border: 1px solid rgba(0,0,0,0.8);*/
+    }
+
+    .menu li a{
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0, 0.2);
+        border-top: 1px solid rgba(255,255,255, 0.2);
+        background:#fff;
+        border-radius: 5px;
+        font-weight: normal;
+        text-decoration:none;
+        color:#585919;
+        text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+        filter: dropshadow(color=#000, offx=1, offy=0);
+        padding:5px;
+        padding-left:10px;
+    }
+
+.menu li:hover > a {  /*atencion a esto para el menu arriba*/
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0, 0.2);
+    border-top: 1px solid rgba(255,255,255, 0.2);
+    background:#c0c0c0;
+    text-decoration:none;
+    color:#9c1b2d;
+    text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+    filter: dropshadow(color=#000, offx=1, offy=0);
+    padding:5px;
+    padding-left:20px;
+}
+
+
+    .menu li ul li a{
+        font-size:12px;
+        color:#365895;
+        text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+
+    }
+
+    .menu li a:hover{
+        background:#c0c0c0;
+        -moz-transition: background 0.3s ease-in;
+        -webkit-transition: background 0.3s ease-in;
+        -o-transition: background 0.3s ease-in;
+    }
+
+.menu li a:focus{
+    background:#9C1B2D;
+    font: normal 12px Candara;
+    color: #fff;
+    }
+
+    .menu ul{
+        margin:0;
+        padding:0;
+        list-style:none;
+        height:0;
+        overflow: hidden;
+        transition:1s;
+        -moz-transition:1s;
+        -webkit-transition:1s;
+    }
+
+    /*.............................................................................................*/
+
+    .menu li:hover ul.tguide1{
+        height:320px;
+        overflow-y:auto;
+        overflow-x:hidden;
+    }
+
+    .menu li:hover ul.tguide2{
+        height:147px;
+        overflow-y:auto;
+        overflow-x:hidden;
+    }
+
+    .menu li:hover ul.tguide3{
+       height:187px;
+       overflow-y:auto;
+       overflow-x:hidden;
+    }
+
+   /*.............................................................................................*/
+
+
+    .menu ul li a{
+        background:#fafafa;
+    }
+
+    .menu ul li a:hover {
+        background: none repeat scroll 0 0 #ccc;
+        color: #fff;
+        -moz-transition: color 0.4s ease;
+        -webkit-transition: color 0.4s ease;
+        -o-transition: color 0.4s ease;
+    }
+
+

@@ -1,0 +1,246 @@
+            /*css menu header*/
+            #navhead {
+                background: #c0ba81;
+                border: 2px solid #595819;
+                border-radius: 2px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+                line-height: 90%;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin: 0 auto;     
+                padding: 2px;
+               width: 650px;
+               height:35px;
+               font-size: 15px !important;
+               display: block;
+               -webkit-transition: color .2s ease-in-out;
+               -moz-transition: color .2s ease-in-out;
+               -o-transition: color .2s ease-in-out;
+               -ms-transition: color .2s ease-in-out;
+               transition: color .2s ease-in-out;
+               }
+               
+               #destina:hover ul {
+               background: #c0ba81;
+               border: 2px solid #595819;
+               border-radius: 2px;
+               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+               line-height: 90%;
+               margin-top: 0px;
+               padding: 2px;
+               left:-350px;
+               width: 1000px;
+               height:465px;
+               font-size: 15px !important;
+               -webkit-transition: color .2s ease-in-out;
+               -moz-transition: color .2s ease-in-out;
+               -o-transition: color .2s ease-in-out;
+               -ms-transition: color .2s ease-in-out;
+               transition: color .2s ease-in-out;}
+               
+               #spetravel:hover ul {
+               background: #c0ba81;
+               border: 2px solid #595819;
+               border-radius: 2px;
+               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+               line-height: 90%;
+               margin-top: 0px;
+               padding: 2px;
+               left:-497px;
+               width: 1020px;
+               height:465px;
+               font-size: 15px !important;
+               -webkit-transition: color .2s ease-in-out;
+               -moz-transition: color .2s ease-in-out;
+               -o-transition: color .2s ease-in-out;
+               -ms-transition: color .2s ease-in-out;
+               transition: color .2s ease-in-out;
+               }
+               
+               #traguide{
+                background: #c0ba81;
+               border: 2px solid #595819;
+               border-radius: 2px;
+               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+               line-height: 90%;
+               margin-top: 0px;
+               padding: 2px;
+               left:-100px!important;
+               width: 385px!important;
+               height:251px;
+               font-size: 15px !important;
+               -webkit-transition: color .2s ease-in-out;
+               -moz-transition: color .2s ease-in-out;
+               -o-transition: color .2s ease-in-out;
+               -ms-transition: color .2s ease-in-out;
+               transition: color .2s ease-in-out;
+               }
+               
+               #aboutcrreps{
+                background: #c0ba81;
+               border: 2px solid #595819;
+               border-radius: 2px;
+               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+               line-height: 90%;
+               margin-top: 0px;
+               padding: 2px;
+               left:-100px!important;
+               width: 382px!important;
+               height:250px;
+               font-size: 15px !important;
+               -webkit-transition: color .2s ease-in-out;
+               -moz-transition: color .2s ease-in-out;
+               -o-transition: color .2s ease-in-out;
+               -ms-transition: color .2s ease-in-out;
+               transition: color .2s ease-in-out;
+               }
+               
+               #izki{ float: left !important;}
+               #dere{ float: right !important; cursor: pointer;}
+               
+               li.chikis {
+                transform: scale(0.75);
+                line-height: 25% !important;
+                text-align: right;
+                cursor: pointer !important;
+                }
+                
+                #navhead li {    float: left;    list-style: none outside none;    position: relative;}
+               
+               #navhead a {
+                font: normal 16px candara;
+                border-radius: 2px;
+                margin: 2px;
+                color: #FFFFFF; /* fuente del menu principal*/
+                display: block;
+                padding: 5px 13px 13px 35px;
+                text-decoration: none;
+                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                }
+                
+                #navhead li:hover > a, #navhead li ul li:hover > a {
+                    /* efecto arriba del menu normal*/
+                    color: #9c1b2d;
+                    border-top:2px solid #595819;
+                    border-left:2px solid #595819;
+           border-right:2px solid #595819;
+           border-bottom:2px solid #595819;
+           background: #c0ba81;
+           font-weight: bold;
+           -webkit-transition: color .2s ease-in-out;
+           -moz-transition: color .2s ease-in-out;
+           -o-transition: color .2s ease-in-out;
+           -ms-transition: color .2s ease-in-out;
+           transition: color .2s ease-in-out;
+           }
+           
+           #navhead #destina:hover > a,#navhead #spetravel:hover > a,#navhead #tguide:hover > a,#navhead #aboutcr:hover > a,#navhead #destina:active > a#navhead #spetravel:active > a#navhead #tguide:active > a#navhead #aboutcr:active > a {
+                /* efecto arriba del menu normal para padres*/
+           margin-top: -5px;
+           height: 26px;
+           border-top:2px solid #595819;
+           border-left:2px solid #595819;
+           border-right:2px solid #595819;
+           border-bottom:2px solid #595819;
+           background: #c0ba81;
+           -webkit-transition: color .2s ease-in-out;
+           -moz-transition: color .2s ease-in-out;
+           -o-transition: color .2s ease-in-out;
+           -ms-transition: color .2s ease-in-out;
+           transition: color .2s ease-in-out;}
+           
+           a.leermas { color: #fff !important; text-align: center;}
+           a.leermas:hover { text-align: center;color: #9C1B2D !important;}
+           
+           #navhead ul li:hover a, #navhead li:hover li a {
+            color: #FFFFFF;/*color de fuente del submenu*/
+            -webkit-transition: color .2s ease-in-out;
+            -moz-transition: color .2s ease-in-out;
+            -o-transition: color .2s ease-in-out;
+            -ms-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
+            }
+            
+            #navhead ul a:hover {
+             background: #c0ba81 !important; /*color del fondo del submenu en hover*/
+             color: #595819 !important;
+             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            }
+            
+            #navhead li:hover > ul { display: block; }
+                
+            #navhead ul {
+             background: #c0ba81;
+             border-left: 2px solid #595819;
+             border-bottom: 2px solid #595819;
+             border-right: 2px solid #595819;
+             border-top: 2px solid #595819;
+             border-radius: 2px;
+             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+             display: none;
+             left: 0;
+             margin: 0;
+             padding: 0;
+             position: absolute;
+             top: 35px;
+             width: 185px;
+            }
+           
+           #navhead ul li {
+            float: none;
+            margin: 0;
+            padding: 0;
+            }
+            
+            #navhead ul a {
+            font-weight: normal;
+            -webkit-transition: color .2s ease-in-out;
+            -moz-transition: color .2s ease-in-out;
+            -o-transition: color .2s ease-in-out;
+            -ms-transition: color .2s ease-in-out;
+            transition: color .2s ease-in-out;
+            }
+            
+            #navhead ul a:hover { font-weight: bold;}
+            #navhead ul ul {
+             left: 181px;
+             top: -3px;
+             z-index: 700;
+            }
+                
+        #navhead li a.home {
+            background: url(../images/iconos_topmenu/home.png) no-repeat 14px center;
+            width: 15px;
+            height: 10px;
+        }
+        
+        #navhead li a.home:hover {
+            background: url(../images/iconos_topmenu/home.png) no-repeat 14px center;
+            color:#595819;
+            width: 10px;
+            height: 10px;
+         }
+         
+         #navhead #destina a.destinations:hover { background: url(../images/iconos_topmenu/destinations.png) no-repeat 4px center #c0ba81; color:#595819;}
+         #navhead #spetravel a.stravel:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center #c0ba81; color:#595819;}
+         #navhead #tguide a.tguide:hover { background: url(../images/iconos_topmenu/tguide.png) no-repeat 4px center #c0ba81; color:#595819;}
+         #navhead #aboutcr a.about:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center #c0ba81; color:#595819;}
+         #navhead ul a.abouta:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center !important; color:#595819;}
+         #navhead ul a.destin:hover { background: url(../images/iconos_topmenu/destin.png) no-repeat 4px center !important; color:#595819;}
+         #navhead ul a.tguides:hover { background: url(../images/iconos_topmenu/tguide.png) no-repeat 4px center !important; color:#595819;}
+         #navhead ul a.pgallery:hover { background: url(../images/iconos_topmenu/pgallery.png) no-repeat 4px center !important; color:#595819;}
+         #navhead ul a.roads:hover { background: url(../images/iconos_topmenu/roads.png) no-repeat 4px center !important; color:#595819;}
+         #navhead ul a.w2pack:hover { background: url(../images/iconos_topmenu/w2pack.png) no-repeat 4px center !important; color:#595819;}
+         #navhead ul a.terms:hover { background: url(../images/iconos_topmenu/terms.png) no-repeat 4px center !important; color:#595819; }
+         label.abouta { color:#9c1b2d; font-size: 20px; width: 65% !important; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);}
+               
+                
+               /*Iconos en Rojo*//*a.destinations:hover { background: url(../images/iconos_topmenu/destinations_red.png) no-repeat 4px center #c0ba81 !important;
+        color: #9C1B2D;}a.stravel {background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
+        color: #9C1B2D;}a.tguide {background: url(../images/iconos_topmenu/tguide_red.png) no-repeat 4px center #c0ba81  !important;
+        color: #9C1B2D;}a.about {background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
+        color: #9C1B2D;}#navhead #destina a.destinations:visited { background: url(../images/iconos_topmenu/destinations_red.png) no-repeat 4px center #c0ba81 !important;
+        color: #9C1B2D;}#navhead #spetravel a.stravel:visited { background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
+        color: #9C1B2D;}#navhead #tguide a.tguide:visited { background: url(../images/iconos_topmenu/tguide_red.png) no-repeat 4px center #c0ba81  !important;
+        color: #9C1B2D}#navhead #aboutcr a.about:visited { background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
+        color: #9C1B2D}*/
