@@ -10,7 +10,7 @@
         }
 
         #izkierdo {
-            width: 600px;
+            width: 700px;
             margin: 5px;
             height: 680px;
             background: #f6f8ed;
@@ -20,7 +20,7 @@
         }
 
         #derecho {
-            width: 400px;
+            width: 300px;
             margin-top: 5px;
             margin-right: 5px;
             margin-bottom: 5px;
@@ -31,7 +31,7 @@
         }
 
         #dereuno {
-            width: 400px;
+            width: 300px;
             height: 590px;
             background: #fff;
             border: 1px solid #585919;
@@ -41,17 +41,13 @@
          }
 
         #derenewsletter {
-            width: 400px;
+            width: 300px;
             height: 82px;
             background: #fff;
             margin-bottom: 5px;
             border: 1px solid #585919;
             border-radius: 10px;
             float: left;
-        }
-
-        #abajo {
-
         }
 
     </style>
@@ -70,29 +66,24 @@
 
             <div id="derenewsletter" >
                 <img src="images/timbre.png" style="margin-left: -8px; margin-top: -10px; float: left;">
-                <table border="0px" style="float: right; width: 275px">
-                    <tr>
-                        <td><input type="submit" value="Sign up for Our Newsletter" id="submite"/></td>
-                    </tr>
-                </table>
+                <input type="submit" value="Sign up for our Newsletter" id="submite"/>
             </div>
 
-            <div id="dereuno">
-        <h2 style="line-height: 50px;">Testimonials</h2>
-        <iframe src="testimonials/testim2.php" width="400px" height="520px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" >Content not supported</iframe>
-
-            </div>
+        <div id="dereuno">
+          <h2 style="line-height: 50px;">Testimonials</h2>
+            <iframe src="testimonials/testim2.php" width="300px" height="520px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" >Content not supported</iframe>
+        </div>
 
             <style>
 
             #submite {
-                width: 260px;
+                width: 195px;
                 height: 40px;
-                margin: 20px;
+                margin: 20px 5px 20px 5px ;
                 border-radius: 3px;
                 color: #585919;
                 background: #c0ba81;
-                font: bold 16px Candara;
+                font: bold 14px Candara;
                 border: 1px solid #585919;
             }
 
@@ -150,8 +141,6 @@
                 box-shadow: 0 2px 5px #666666;
                 border: 2px solid #000000;
             }
-
-
 
             .content-popuppregu h2, .content-popupnews h2 {
                 color:#48484B;
@@ -521,10 +510,9 @@
 
 
 </div>
-<?php 
+<?php
      $paginacontenido = ob_get_contents();
     ob_end_clean();
-    
+
     require_once 'plantilla.php';
 ?>
-

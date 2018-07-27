@@ -23,7 +23,6 @@
 </div>
 
 <div class="container">
-        <center><?php include("menusistema.php")?></center>
 
 <div id="datos">
 

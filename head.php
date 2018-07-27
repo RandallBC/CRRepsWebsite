@@ -183,7 +183,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
         padding: 8px 11px;
         text-decoration: none;
     }
-    
+
     .regi
     {
         text-decoration: none;
@@ -220,7 +220,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
             $('.popup-overlay').slideUp('slow');
            return false;
         });
-        
+
         $('#open4').click(function(){
             $('#popup').slideUp('slow');
             $('.popup-overlay').slideUp('slow');
@@ -251,7 +251,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
             $('.popup-overlay5').slideUp('slow');
             return false;
         });
-        
+
     });
 </script>
 
@@ -287,12 +287,12 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
             <h2>Register With Us</h2>
             <form method="post" action="register.php">
                 <p style="float: left; margin: 2px; padding: 2px;">Please complete the fields.</p><br><br>
-                <input type="text" id="firstname" name="firstname" style="float: left; width: 125px; border-radius: 5px;" value="" placeholder="First Name*" required="required" />
-                <input type="text" id="lastname" name="lastname" style="float: left; width: 125px; border-radius: 5px;" value="" placeholder="Last Name*" required="required" /><br>
+                <input type="text" id="firstname_reg" name="firstname" style="float: left; width: 125px; border-radius: 5px;" value="" placeholder="First Name*" required="required" />
+                <input type="text" id="lastname_reg" name="lastname" style="float: left; width: 125px; border-radius: 5px;" value="" placeholder="Last Name*" required="required" /><br>
 
-                <input type="text" id="email" name="email" style="float: left; width: 250px; border-radius: 5px;" value="" placeholder="E-mail*" required="required" /><br>
+                <input type="text" id="email_reg" name="email" style="float: left; width: 250px; border-radius: 5px;" value="" placeholder="E-mail*" required="required" /><br>
 
-                <input type="password" id="password" maxlength="16" minlength="4" name="password" style="float: left;  width: 250px; border-radius: 5px;" value="" placeholder="Password*" required="required"  /><br>
+                <input type="password" id="password_reg" maxlength="16" minlength="4" name="password" style="float: left;  width: 250px; border-radius: 5px;" value="" placeholder="Password*" required="required"  /><br>
 
                 <select name="country" required="required" style="float: left; width: 250px; border-radius: 5px;">
                 <option value="" selected="selected">Please select your country*&nbsp;&gt;&gt;</option>
@@ -534,11 +534,11 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
                 <option value="Zimbabwe">Zimbabwe</option>
                 </select><br>
 
-                <input type="text" id="address" name="address" style="float: left; width: 250px; border-radius: 5px;" value="" placeholder="Address" /><br>
+                <input type="text" id="address_reg" name="address" style="float: left; width: 250px; border-radius: 5px;" value="" placeholder="Address" /><br>
 
-                <input type="text" id="phone" name="phone" style="float: left; width: 250px; border-radius: 5px;" value="" placeholder="Telephone" /><br>
+                <input type="text" id="phone_reg" name="phone" style="float: left; width: 250px; border-radius: 5px;" value="" placeholder="Telephone" /><br>
 
-                <select id="hearabout" name="hearabout[]" required="required" style="float: left; width: 250px; height: 105px; border-radius: 5px;" multiple>
+                <select id="hearabout_reg" name="hearabout[]" required="required" style="float: left; width: 250px; height: 105px; border-radius: 5px;" multiple>
                     <option style="font: bold 14px Candara; Color:#DB5A0A;">Where did you hear about us?</option>
                     <option selected="selected" value="1">Internet</option>
                     <option value="2">Magazine</option>
@@ -549,7 +549,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
                 <p style="padding: 0px; font: normal 11px Candara; color: #9c1b2d" >Choose all that applies, Hold Ctrl key (Win) / Command Key (Mac)</p>
                 <table>
                     <tr>
-                        <td><input type="checkbox" id="newsletter" name="newsletter" checked="yes" style="float: left;"></td>
+                        <td><input type="checkbox" id="newsletter_reg" name="newsletter" checked="yes" style="float: left;"></td>
                         <td><label for="newsletter" style="float: left;">Sign Up for Our Newsletter</label></td>
                     </tr>
                 </table>
@@ -563,7 +563,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
 
                <?php echo recaptcha_get_html($publickey); ?>
                 <br>
-                <input class="botonlog" type="submit" value="Register" id="submit" />
+                <input class="botonlog" type="submit" value="Register" id="submit_reg" />
             </form>
         </div>
     </div>
@@ -576,8 +576,8 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
             <h2>Forgot your Password?</h2>
             <h3 style="text-align:left;">Please enter your E-mail address.</h3>
             <form method="post" action="forgotpass.php">
-                <input type="text" id="email" name="email" style="float: left; width: 300px; border-radius: 5px;" value="" placeholder="E-mail" required="required" /><br><br>
-                <input class="botonlog" type="submit" value="Recover" id="submit" />
+                <input type="text" id="email_fp" name="email" style="float: left; width: 300px; border-radius: 5px;" value="" placeholder="E-mail" required="required" /><br><br>
+                <input class="botonlog" type="submit" value="Recover" id="submit_fp" />
             </form>
         </div>
     </div>
@@ -587,7 +587,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
 
 <div id="lenguage_icons">
 <div id="pageHeader">
-	
+
  <!-- dropdown menu starts-->
  <table class="tabhead" border="0px" height="auto" width="auto" >
 	<tr>
@@ -638,7 +638,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
         </td>
 	</tr>
 	<tr>
-			
+
 			<td colspan="3" id="techo" align="center">
 			    <div id="flags" align="right">
 
@@ -669,7 +669,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
     <a href="http://www.costaricareps.com/es"><img src="images/icon_Spain.png" height="25px" width="33px"></a>
     <a href="http://www.costaricareps.com/de"><img src="images/icon_Germany.png" height="25px" width="33px"></a>
     <a href="http://www.costaricareps.com/fr"><img src="images/icon_France.png" height="25px" width="33px"></a-->
-        
+
 </div>
 			<center><?php include("menuhead.php")?></center>
 
@@ -677,7 +677,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
 	</tr>
 
 </table>
- 
+
  <!-- dropdown menu ends-->
 </div>
 </div>

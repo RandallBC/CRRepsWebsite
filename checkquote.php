@@ -57,12 +57,7 @@ if(isset($_SESSION['email'])) {
         ?>
         <div id="marco2">
            <br><h2 id="alerta">Hello, to request a quote please <a id="linki" href="quotelogueo.php" target="_parent" >LogIn</a> or <a id="linki" href="quoteregister.php" target="_parent" >Register</a> first.</h2>
-        <img style="display:block;margin:0 auto 0 auto;" src="images/lock.png">
+        <br/><img style="display:block;margin:0 auto 0 auto;" src="images/lock.png">
 
 </div>
 <?php } ?>
-
-
-
-
-

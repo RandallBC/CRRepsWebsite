@@ -1,10 +1,6 @@
 <html>
 <link rel="stylesheet" type="text/css" href="css/menulateralstyle.css" />
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/general.js"></script>
-<script type="text/javascript" src="js/jquery-1.js"></script>
-
 <head>
 
 <body>
