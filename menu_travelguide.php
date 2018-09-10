@@ -249,7 +249,7 @@
         </li>
 
         <li><a id="byg" href="#">Books &amp; Guides</a></li>
-        <li><a href="http://www.costaricareps.com/blog" target="_blank">Blog</a></li>
+        <!--li><a href="http://www.costaricareps.com/blog" target="_blank">Blog</a></li-->
         <li><a id="clima" href="#">Climate</a></li>
         <li><a id="er" href="#">Entry Requirements</a></li>
         <li><a id="hys" href="#">Health &amp; Safety</a></li>

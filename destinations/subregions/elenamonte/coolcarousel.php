@@ -76,7 +76,7 @@
 				width: 100%;
 				height: 100%;
 			}
-			
+
 			#pager {
 				width: 700px;
 				margin: -76px auto 5px auto;
@@ -105,7 +105,7 @@
 				background-color: #F4F0EE;
 				color: #333;
 			}
-			
+
 
 		</style>
 	</head>
@@ -115,7 +115,7 @@
 			<div id="tabs">
 
 				<div id="blue">
-					<img src="../../../images/map_cval.gif" alt="blue_muffin" />
+					<img src="../../../images/maps/monteverde.png" alt="blue_muffin" />
 					<h3 style="visibility: hidden;">Map</h3>
 				</div>
 

@@ -1,14 +1,10 @@
 
-<?php ob_start();
-ini_set ('error_reporting', E_PARSE);
+<?php
+  echo ("
+<h2>Time Zones in Costa Rica</h2>
+<p class='justif'>
 
-include("travelguide_content/timezones.php");
+Costa Rica is on Central Standard Time (-6 GMT) and Daylight Savings Time is not observed.
 
-    $paginacontenido = ob_get_contents();
-    ob_end_clean();
-
- require_once 'p_travelguide.php';
-
- ?>
-     
-    
+</p>");
+?>

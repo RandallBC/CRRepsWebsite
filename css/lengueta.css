@@ -9,12 +9,13 @@ ul#navigation {
 }
 
 ul#navigation li {
-  width: 135px;
+  width: 125px;
 }
 
 ul#navigation li a {
+  margin-right: 2px !important;
   display: block;
-  width: 135px;
+  width: 125px;
   height: 42px;
   background-color: #c0ba81;
   background-repeat: no-repeat;

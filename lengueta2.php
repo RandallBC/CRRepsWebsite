@@ -2,7 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/lengueta2.css" />
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
 <body>

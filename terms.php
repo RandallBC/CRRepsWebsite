@@ -16,8 +16,7 @@
     width: 758px;
     height: 610px;
     background-color: #FFFFFF;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 15px;
 }
 
 
@@ -315,7 +314,7 @@ li ul
 <div class="post" id="derechaConten">
 
     <h2>Terms & Conditions</h2>
-    <p class="generalText"><span style="color: #660000; font-weight: bold">AGREEMENT:</span> Enrollment in a reservation and making payment for a service or a package inplies agreement and acceptance of the terms and conditions set forth below. In this agreement, Costa Rica Reps may be referred to as the operator or Costa Rica Reps S.A.</p>
+    <p class="generalText"><span style="color: #660000; font-weight: bold">AGREEMENT:</span> Enrollment in a reservation and making payment for a service or a package inplies agreement and acceptance of the terms and conditions set forth below.<br/> In this agreement, Costa Rica Reps may be referred to as the operator or Costa Rica Reps S.A.</p>
 
     <div id="menuleft">
         <br>

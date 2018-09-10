@@ -23,7 +23,7 @@ function iniXMLHttpRequest()
    catch(failed)
    {
     xmlRequest = false;
-   }  
+   }
   }
  }
 }
@@ -55,3 +55,117 @@ function updatePage()
   }
  }
 }
+
+/*funciones para el menu principal*/
+
+function loadcontents(menuopt) {
+  var file = menuopt + ".php";
+  $.ajax({
+    url: file,
+    success: function(data){
+      $("#izkierdo").html(data);
+    }
+  });
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+function dale() {
+  /*alert("Don't you forget to visit the full information for more details.");*/
+  $('#destina').slideUp("fast");
+  $('#destina').slideDown("fast");
+}
+
+function dale2() {
+  /*alert("Don't you forget to visit the full information for more details.");*/
+  $('#spetravel').slideUp("fast");
+  $('#spetravel').slideDown("fast");
+}
+
+/* inicio  funciones de los iconos rojos */
+
+function func_destina() {
+  var elemento = document.getElementById('padre1');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/destinations_red.png') no-repeat 4px center";
+}
+
+function func_destina_out() {
+  var elemento = document.getElementById('padre1');
+  elemento.style.background = "";
+}
+
+
+/*-----------------*/
+
+function func_stravel() {
+  var elemento = document.getElementById('padre2');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
+}
+
+function func_stravel_out() {
+  var elemento = document.getElementById('padre2');
+  elemento.style.background = "";
+}
+
+/*------------------*/
+
+function func_tguide() {
+  var elemento = document.getElementById('padre3');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
+}
+
+function func_tguide_out() {
+  var elemento = document.getElementById('padre3');
+  elemento.style.background = "";
+}
+
+/*------------------*/
+
+function func_aboutcr() {
+  var elemento = document.getElementById('padre4');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
+}
+
+function func_aboutcr_out() {
+  var elemento = document.getElementById('padre4');
+  elemento.style.background = "";
+}
+
+/*______________________________________________________Hijos_____________________________________________________*/
+
+function func_hijo1() {
+  var elemento = document.getElementById('hijo1');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
+}
+
+function func_hijo1_out() {
+  var elemento = document.getElementById('hijo1');
+  elemento.style.background = "";
+}
+
+/*------------------*/
+
+function func_hijo2() {
+  var elemento = document.getElementById('hijo2');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
+}
+
+function func_hijo2_out() {
+  var elemento = document.getElementById('hijo2');
+  elemento.style.background = "";
+}
+
+/*----------------*/
+
+function func_hijo3() {
+  var elemento = document.getElementById('hijo3');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
+}
+
+function func_hijo3_out() {
+  var elemento = document.getElementById('hijo3');
+  elemento.style.background = "";
+}
+
+/*___________________________________________________Fin Hijos_________________________________________________________*/
+
+/* fin funciones de los iconos rojos */

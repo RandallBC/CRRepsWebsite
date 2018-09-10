@@ -16,6 +16,7 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
 <link href="css/dropdown/style.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="css/general.css" media="screen" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.jfontsize-1.0.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 
 

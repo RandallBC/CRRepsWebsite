@@ -6,7 +6,6 @@ ini_set ('error_reporting', E_PARSE);
 <link href="css/sitemapstyle.css" media="screen" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/general.js"></script>
-    <script type="text/javascript" src="js/jquery-1.js"></script>
     <script type="text/javascript" src="sitefuncion.js"></script>
 
 
@@ -43,7 +42,7 @@ ini_set ('error_reporting', E_PARSE);
                      </li><br>
                      <li><a href="#" onclick="destinalert();" class="hijog">Northern Region</a>
                          <ul>
-                             <li><a href="#" onclick="destinalert();" class="nietog"">La Fortuna &amp; Arenal Lake</a></li>
+                             <li><a href="#" onclick="destinalert();" class="nietog">La Fortuna &amp; Arenal Lake</a></li>
                              <li><a href="#" onclick="destinalert();" class="nietog">Santa Elena &amp; Monteverde</a></li>
                              <li><a href="#" onclick="destinalert();" class="nietog">Boca Tapada de San Carlos</a></li>
                              <li><a href="#" onclick="destinalert();" class="nietog">Bijagua de Upala</a></li>
@@ -146,7 +145,7 @@ ini_set ('error_reporting', E_PARSE);
 
                      </li><br>
                      <li><a href="booksguides.php" id="hijog">Books &amp; Guides</a></li>
-                     <li><a href="http://www.costaricareps.com/blog" target="_blank" id="hijog">Blog</a></li>
+                     <!--li><a href="http://www.costaricareps.com/blog" target="_blank" id="hijog">Blog</a></li-->
                      <li><a href="climate.php" id="hijog">Climate</a></li>
                      <li><a href="entryrequirements.php" id="hijog">Entry Requirements</a></li>
                      <li><a href="health.php" id="hijog">Health &amp; Safety</a></li>

@@ -8,10 +8,9 @@ ini_set ('error_reporting', E_PARSE);
 require_once("conexion.php");
 ?>
 
-<script type="text/javascript"  src="js/jquery-2.1.1.min.js"></script>   <!-- botones de slide -->
     <script type="text/javascript" src="js/sliding.form.js"></script>
     <script type="text/javascript" src="js/ts_picker.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
 
 
 

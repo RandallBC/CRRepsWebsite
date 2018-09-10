@@ -4,8 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/general.js"></script>
-<script type="text/javascript" src="js/jquery-1.js"></script>
-
 <style>
 
     .taba{
@@ -350,31 +348,31 @@
 
     <label for="tab-1" class="tab-label-1">Central Valley</label>
 
-   
+
 
     <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
 
     <label for="tab-2" class="tab-label-2">Caribbean Coast</label>
 
-   
+
 
     <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
 
     <label for="tab-3" class="tab-label-3">Northern Region</label>
 
-    
+
 
     <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
 
     <label for="tab-4" class="tab-label-4">North Pacific</label>
 
-   
+
 
     <input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
 
     <label for="tab-5" class="tab-label-5">Central Pacific</label>
 
-   
+
 
     <input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
 

@@ -70,7 +70,7 @@
                padding: 2px;
                left:-100px!important;
                width: 385px!important;
-               height:251px;
+               height:210px;
                font-size: 15px !important;
                -webkit-transition: color .2s ease-in-out;
                -moz-transition: color .2s ease-in-out;
@@ -200,6 +200,10 @@
              left: 181px;
              top: -3px;
              z-index: 700;
+            }
+
+            #navhead ul .cobamar {
+              background: #c6c18e;
             }
 
     /*    #navhead li a.home {

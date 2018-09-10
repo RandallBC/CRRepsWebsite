@@ -15,7 +15,6 @@
    </div>
   </div>
 </div>
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
   <script src="js/index.js"></script>
 </body>
 

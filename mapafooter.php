@@ -25,7 +25,7 @@
             <ul class="tguid">
                 <li class="lijo"><a class="hijo" href="whycostarica.php" >About Costa Rica</a></li>
                 <li class="lijo"><a class="hijo" href="booksguides.php" >Books &amp; Guides</a></li>
-                <li class="lijo"><a class="hijo" href="http://www.costaricareps.com/blog" target="_blank">Blog</a></li>
+                <!--li class="lijo"><a class="hijo" href="http://www.costaricareps.com/blog" target="_blank">Blog</a></li-->
                 <li class="lijo"><a class="hijo" href="climate.php" >Climate</a></li>
             </ul>
 

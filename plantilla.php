@@ -10,7 +10,6 @@
     <script type="text/javascript" src="js/general.js"></script>
     <link href="css/general.css" media="screen" rel="stylesheet" type="text/css" />
 
-
 <?php include("head.php")?>
 <?php include("lengueta.php")?>
 <?php include("lengueta2.php")?>

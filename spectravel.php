@@ -3,7 +3,6 @@
     <meta charset="utf-8" />
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/general.js"></script>
-    <script type="text/javascript" src="js/jquery-1.js"></script>
     <link rel="stylesheet" href="css/specialtystyle.css" />
     <style>
 
