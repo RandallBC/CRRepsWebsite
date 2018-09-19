@@ -83,10 +83,8 @@
         <li><a href="#" id="hijo3" class="tguides">Climate</a>
           <ul onmouseover="func_hijo3();" onmouseout="func_hijo3_out();" class="cobamar">
             <li onclick="loadcontents('climate');"><a href="#" class="tguides">Climate in CR</a></li>
-            <li onclick="loadcontents('pacificcoast');"><a href="#" class="tguides">Pacific Coast</a></li>
-            <li onclick="loadcontents('caribbean');"><a href="#" class="tguides">On the Caribbean</a></li>
             <li onclick="loadcontents('temperature');"><a href="#" class="tguides">Temperature</a></li>
-            <li onclick="loadcontents('altitvariation');"><a href="#" class="tguides">Altitudinal Variation</a></li>
+            <li onclick="loadcontents('altitvariation');"><a href="#" class="tguides">Altitudinal<br/> Variation</a></li>
             <li onclick="loadcontents('winds');"><a href="#" class="tguides">Winds</a></li>
             <li onclick="loadcontents('rainfall');"><a href="#" class="tguides">Rainfall</a></li>
             <li onclick="loadcontents('carregion');"><a href="#" class="tguides">Caribbean Region</a></li>
