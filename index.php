@@ -16,7 +16,7 @@
             background: #f6f8ed;
             float: left;
             border-radius: 10px;
-            border: 1px solid #585919;
+            border-right: 2px solid #9C1B2D;
         }
 
         #derecho {
@@ -34,7 +34,6 @@
             width: 300px;
             height: 590px;
             background: #fff;
-            border: 1px solid #585919;
             float: left;
             border-radius: 10px;
 
@@ -45,7 +44,6 @@
             height: 82px;
             background: #fff;
             margin-bottom: 5px;
-            border: 1px solid #585919;
             border-radius: 10px;
             float: left;
         }

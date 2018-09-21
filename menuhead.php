@@ -82,7 +82,7 @@ border-right: 2px solid #9C1B2D;
             <li onclick="loadcontents('transportation');"><a href="#" class="tguides">Transportation</a></li>
           </ul>
         </li>
-        <li><a href="booksguides.php" class="tguides">Books &amp; Guides</a></li>
+        <li onclick="loadcontents('booksguides');"><a href="#" class="tguides">Books &amp; Guides</a></li>
         <!--li><a href="http://www.costaricareps.com/blog" target="_blank" class="tguides">Blog</a></li-->
         <li><a href="#" id="hijo3" class="tguides extendida">Climate</a>
           <ul onmouseover="func_hijo3();" onmouseout="func_hijo3_out();" class="cobamar">
@@ -113,8 +113,8 @@ border-right: 2px solid #9C1B2D;
         </li>
           <li><a href="maps.php" class="destin">Maps of Costa Rica</a></li>
             <li><a href="photogallery.php" class="pgallery">Photo Gallery</a></li>
-            <li><a href="roads.php" class="roads">Roads &amp; Driving</a></li>
-            <li><a href="whattopack.php" class="w2pack">What to Pack</a></li>
+            <li onclick="loadcontents('roads');"><a href="#" class="roads">Roads &amp; Driving</a></li>
+            <li onclick="loadcontents('whattopack');"><a href="#" class="w2pack">What to Pack</a></li>
           </div>
 
         </ul>
