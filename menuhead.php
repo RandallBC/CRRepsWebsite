@@ -1,5 +1,9 @@
 <link rel="stylesheet" type="text/css" href="css/menustyle.css" />
 <style>
+.extendida {
+border-right: 2px solid #9C1B2D;
+}
+
 .linkclose
 {
   float: right;
@@ -62,7 +66,7 @@
   <li id="tguide"><a id="padre3" href="#" class="tguide">Travel Guide</a>
     <ul  id="traguide" onmouseover="func_tguide();" onmouseout="func_tguide_out();">
       <div id="izki">
-        <li><a href="#" id="hijo1" class="tguides">About Costa Rica</a>
+        <li><a href="#" id="hijo1" class="tguides extendida">About Costa Rica</a>
           <ul onmouseover="func_hijo1();" onmouseout="func_hijo1_out();" class="cobamar">
             <li onclick="loadcontents('whycostarica');"><a href="#" class="tguides">Why Costa Rica?</a></li>
             <li onclick="loadcontents('ports');"><a href="#" class="tguides">Airports &amp; Ports</a></li>
@@ -80,7 +84,7 @@
         </li>
         <li><a href="booksguides.php" class="tguides">Books &amp; Guides</a></li>
         <!--li><a href="http://www.costaricareps.com/blog" target="_blank" class="tguides">Blog</a></li-->
-        <li><a href="#" id="hijo3" class="tguides">Climate</a>
+        <li><a href="#" id="hijo3" class="tguides extendida">Climate</a>
           <ul onmouseover="func_hijo3();" onmouseout="func_hijo3_out();" class="cobamar">
             <li onclick="loadcontents('climate');"><a href="#" class="tguides">Climate in CR</a></li>
             <li onclick="loadcontents('temperature');"><a href="#" class="tguides">Temperature</a></li>
@@ -93,12 +97,21 @@
           </ul>
         </li>
 
-        <li><a href="entryrequirements.php" class="tguides">Entry Requirements</a></li>
-        <li><a href="health.php" class="tguides">Health &amp; Safety</a></li>
+        <li onclick="loadcontents('entryrequirements');"><a href="#" class="tguides">Entry Requirements</a></li>
+        <li onclick="loadcontents('health')"><a href="#" class="tguides">Health &amp; Safety</a></li>
       </div>
       <div id="dere">
-        <li><a href="culture.php" class="tguides">Heritage &amp; Culture</a>
-          <li><a href="maps.php" class="destin">Maps of Costa Rica</a>
+        <li><a href="#" id="hijo4" class="tguides extendida">Heritage &amp; Culture</a>
+          <ul onmouseover="func_hijo4();" onmouseout="func_hijo4_out();" class="cobamardere">
+            <li onclick="loadcontents('culture');"><a href="#" class="tguides">Heritage &amp; Culture</a></li>
+            <li onclick="loadcontents('precolonial');"><a href="#" class="tguides">Pre-colonial <br/> History</a></li>
+            <li onclick="loadcontents('foodcuisine');"><a href="#" class="tguides">Food & Cuisine</a></li>
+            <li onclick="loadcontents('people');"><a href="#" class="tguides">Its People</a></li>
+            <li onclick="loadcontents('holidays');"><a href="#" class="tguides">National Holidays</a></li>
+            <li onclick="loadcontents('symbols');"><a href="#" class="tguides">National Symbols</a></li>
+          </ul>
+        </li>
+          <li><a href="maps.php" class="destin">Maps of Costa Rica</a></li>
             <li><a href="photogallery.php" class="pgallery">Photo Gallery</a></li>
             <li><a href="roads.php" class="roads">Roads &amp; Driving</a></li>
             <li><a href="whattopack.php" class="w2pack">What to Pack</a></li>

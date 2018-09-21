@@ -166,6 +166,18 @@ function func_hijo3_out() {
   elemento.style.background = "";
 }
 
+/*----------------*/
+
+function func_hijo4() {
+  var elemento = document.getElementById('hijo4');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
+}
+
+function func_hijo4_out() {
+  var elemento = document.getElementById('hijo4');
+  elemento.style.background = "";
+}
+
 /*___________________________________________________Fin Hijos_________________________________________________________*/
 
 /* fin funciones de los iconos rojos */

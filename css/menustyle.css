@@ -204,6 +204,11 @@
 
             #navhead ul .cobamar {
               background: #c6c18e;
+              margin-left: 5px;
+            }
+
+            #navhead ul .cobamardere {
+              background: #c6c18e;
             }
 
     /*    #navhead li a.home {
