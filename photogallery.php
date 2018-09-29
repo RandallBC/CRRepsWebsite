@@ -1,13 +1,7 @@
-<?php ob_start();
-ini_set ('error_reporting', E_PARSE);
-
-include ("travelguide_content/photogallery.php");
-
-    $paginacontenido = ob_get_contents();
-    ob_end_clean();
-
- require_once 'plantilla.php';
-
- ?>
-     
-    
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body>
+  <h2>Photo Gallery</h2>
+  <iframe  src="gallery/index.php" width="1000px" height="610px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
+</body>
+</html>

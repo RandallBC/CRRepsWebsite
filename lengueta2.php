@@ -103,6 +103,7 @@
     </style>
 
 <script type="text/javascript">
+
     $(document).ready(function(){
         $('#quote').click(function(){
             $('#popupquote').slideDown('slow');
@@ -141,7 +142,7 @@
         <div>
 
             <h2>Request a Quote </h2>
-            <iframe style="border-radius: 2px;" src="checkquote.php" width="1010" height="650" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+            <iframe style="border-radius: 2px;" src="checkquote.php" width="900" height="600" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
 
         </div>
     </div>
@@ -153,7 +154,7 @@
         <div>
 
             <h2>Contact Us </h2>
-            <iframe style="border-radius: 2px;" src="contactus.php" width="1000" height="630" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+            <iframe style="border-radius: 2px;" src="contactus.php" width="900" height="550" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
 
 
         </div>

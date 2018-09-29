@@ -378,7 +378,7 @@
                             <a id="honeymoons" class="experiential" href="#" >Honeymoons</a><br><br>
                             <a id="latindances" class="experiential" href="#" >Latin Dances</a><br><br>
                             <a id="yoga" class="yoga" href="#" >Yoga & Wellness</a><br><br>
-                            <a id="volunthropy" class="experiential" href="#" >Volunteering &amp; _____Philanthropy</a>
+                            <a id="volunthropy" class="experiential" href="#" >Volunteering &amp; <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Philanthropy</a>
                         </td>
                         <td width="800px" height="390px" id="tdecargaexper" style="-webkit-transition: .1s; -moz-transition: .1s; -o-transition: .1s; -ms-transition: .1s;">
                             <iframe  src="spectravel/experiential/coolcarousel.php" width="790px" height="390px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
@@ -395,8 +395,8 @@
                     <tr>
                         <td id="taba">
                             <a id="student" class="educational" href="#" >Student Travel</a><br><br>
-                            <a id="performance" class="educational" href="#" >Musical _____Performances</a><br><br>
-                            <a id="language" class="educational" href="#" >Language _____Immersion</a>
+                            <a id="performance" class="educational" href="#" >Musical <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Performances</a><br><br>
+                            <a id="language" class="educational" href="#" >Language <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Immersion</a>
                         </td>
                         <td width="800px" height="390px" id="tdecargaeduca" style="-webkit-transition: .1s; -moz-transition: .1s; -o-transition: .1s; -ms-transition: .1s;">
                             <iframe  src="spectravel/educational/coolcarousel.php" width="790px" height="390px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
@@ -430,7 +430,7 @@
                 <table border="0px" style="width: 1008px; height: 390px; background-color: #ffffcc;">
                     <tr>
                         <td id="taba">
-                            <a id="congress" class="corporate" href="#" >Congresses & _____Meetings</a><br><br>
+                            <a id="congress" class="corporate" href="#" >Congresses & <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meetings</a><br><br>
                             <a id="incentive" class="corporate" href="#" >Incentive Travel</a>
                         </td>
                         <td width="800px" height="390px" id="tdecargacorporate" style="-webkit-transition: .1s; -moz-transition: .1s; -o-transition: .1s; -ms-transition: .1s;">

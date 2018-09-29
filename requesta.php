@@ -2,18 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" href="css/quote.css" type="text/css" media="screen"/>
-
 <?php
-ini_set ('error_reporting', E_PARSE);
-require_once("conexion.php");
+/*ini_set ('error_reporting', E_PARSE);
+require_once("conexion.php");*/
 ?>
-
     <script type="text/javascript" src="js/sliding.form.js"></script>
     <script type="text/javascript" src="js/ts_picker.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
-
-
-
 </head>
 <style>
 
@@ -69,23 +64,10 @@ require_once("conexion.php");
         padding-bottom: 4px;
     }
 
-    /*.popup-overlay {
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 999;
-        display:none;
-        background-color: #777777;
-        cursor: pointer;
-        opacity: 0.7;
-    }*/
-
     .closeroom {
         position: absolute;
         right: 15px;
     }
-
 
 </style>
 
@@ -95,8 +77,6 @@ session_start();
 if(isset($_SESSION['email'])) {
     ?>
     <body>
-
-
     <script type="text/javascript">
 
         function switchHidden(elemName) {
@@ -110,12 +90,9 @@ if(isset($_SESSION['email'])) {
             }
         }
 
-
     </script>
 
-
     <div id="content">
-        <!--h2>Please Follow the Steps</h2-->
         <div id="wrapper">
             <div id="navigation" style="display:none;">
                 <ul style=" margin: 0px auto;">
@@ -262,7 +239,6 @@ if(isset($_SESSION['email'])) {
                                 </div>
                             </div>
                         </div>
-
 
                         <div id="cuartos">
 
@@ -441,7 +417,6 @@ if(isset($_SESSION['email'])) {
                             </tr>
                         </table>
                     </fieldset>
-
                     <fieldset class="step">
 
                         <legend>Activities of Interest</legend>
@@ -530,10 +505,7 @@ if(isset($_SESSION['email'])) {
                                         <?php } ?>
                                     </td>
                                 </tr>
-
                             </table>
-
-
                             <tr>
                                 <td style=" width: 80px; height: 25px; float: left;">
                                     <p style="width: 800px; height: auto;">
@@ -652,13 +624,7 @@ if(isset($_SESSION['email'])) {
 <?php
 }
 else {
-
     echo "<script>alert('There is no session started.');</script>";
-
 }
-
-
 ?>
-
-
 </html>

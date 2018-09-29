@@ -1,14 +1,7 @@
-
-<?php ob_start();
-ini_set ('error_reporting', E_PARSE);
-
-include ("travelguide_content/maps.php");
-
-    $paginacontenido = ob_get_contents();
-    ob_end_clean();
-
- require_once 'p_travelguide.php';
-
- ?>
-     
-    
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body>
+    <h2>Maps of Costa Rica</h2>
+    <iframe src="maps\maps.php" width="700px" height="450px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+  </body>
+</html>
