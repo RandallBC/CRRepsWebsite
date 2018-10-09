@@ -49,10 +49,6 @@ ul#navigation .gallery a {
   background-image: url(../images/social/gallery_b.png) !important;
 }
 
-ul#navigation .livechat a {
-  background-image: url(../images/social/livechat_b.png) !important;
-}
-
 ul#navigation .home a:hover {
   background-image: url(../images/social/home_b.png) !important;
 }
@@ -71,8 +67,4 @@ ul#navigation .videos a:hover {
 
 ul#navigation .gallery a:hover {
   background-image: url(../images/social/gallery.png) !important;
-}
-
-ul#navigation .livechat a:hover {
-  background-image: url(../images/social/livechat.png) !important;
 }

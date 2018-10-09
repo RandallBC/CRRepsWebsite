@@ -137,7 +137,7 @@
           <li><a href="workingus.php" class="abouta">Working with Us</a></li>
           <li><a href="meetus.php" class="abouta">Meet with Us</a></li>
           <li><a href="testimonials.php" class="abouta">Testimonials</a></li>
-          <li><a href="terms.php" class="terms">Terms &amp; Conditions</a></li>
+          <li onclick="loadcontents('terms');"><a href="#" class="terms">Terms &amp; Conditions</a></li>
 
 
 

@@ -105,6 +105,7 @@
 <script type="text/javascript">
 
     $(document).ready(function(){
+
         $('#quote').click(function(){
             $('#popupquote').slideDown('slow');
             $('.popupquote-overlay').slideDown('slow');
@@ -117,9 +118,7 @@
             $('.popupquote-overlay').slideUp('slow');
             return false;
         });
-    });
 
-    $(document).ready(function(){
         $('#contact').click(function(){
             $('#popupcontact').slideDown('slow');
             $('.popupcontact-overlay').slideDown('slow');
@@ -132,18 +131,16 @@
             $('.popupcontact-overlay').slideUp('slow');
             return false;
         });
-    });
 
+  });
 </script>
 
 <div id="popupquote" style="display: none;">
     <div class="content-popupquote">
         <div class="closequote"><a href="#" id="closequote"><img src="images/iconos_topmenu/cerrar.png"></a></div>
         <div>
-
             <h2>Request a Quote </h2>
             <iframe style="border-radius: 2px;" src="checkquote.php" width="900" height="600" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
-
         </div>
     </div>
 </div>
@@ -152,37 +149,25 @@
     <div class="content-popupcontact">
         <div class="closecontact"><a href="#" id="closecontact"><img src="images/iconos_topmenu/cerrar.png"></a></div>
         <div>
-
-            <h2>Contact Us </h2>
+            <h2>Contact Us</h2>
             <iframe style="border-radius: 2px;" src="contactus.php" width="900" height="550" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
-
-
         </div>
     </div>
 </div>
 
-
-
 <div id="prince">
     <ul id="menunaviga">
-        <li>
-            <a class="contact" id="contact" href="#">
-                <span style="z-index: 999999999999999999999999999999999999999999999999999999;">
-
-                </span>
-            </a>
+        <li class="contact">
+            <a class="contact" id="contact" href="#">Contact Us</a>
         </li>
-
-        <li>
-            <a class="quote" id="quote" href="#">
-                <span style="z-index: 999999999999999999999999999999999999999999999999999999">
-
-                </span>
-            </a>
+        <li class="quote">
+            <a class="quote" id="quote" href="#">Request a Quote</a>
         </li>
-
+        <li class="submite">
+            <a class="submite" id="submite" href="#">Newsletter</a>
+        </li>
     </ul>
-
 </div>
+
 </body>
 </html>

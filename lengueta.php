@@ -33,8 +33,6 @@
 
             </style>
 
-    <script type="text/javascript" defer="defer" src="https://mylivechat.com/chatbutton.aspx?hccid=12329520"></script>
-
     <body>
           <ul id="navigation">
                 <li class="home"><a href="index.php" title="Home"></a></li>
@@ -42,15 +40,6 @@
                 <li class="twitter"><a target="_blank" href="https://twitter.com/@costaricareps" title="Twitter"></a></li>
                 <li onclick="showgallery();" class="gallery"><a href="#" title="Photo Gallery"></a></li>
                 <!--li class="videos"><a target="_blank" href="http://costaricareps.com/blog/videos" title="Videos"></a></li>     <!--    falta poner el enlace de video bn             -->
-                <li class="livechat">
-                    <div href="#" class="showhim"><a href="#" title="Live Chat">
-                        <div class="showme">
-                            <div id="MyLiveChatContainer"></div>
-
-                        </div></a>
-                    </div>
-
-                    </li>
            </ul>
 
         <script type="text/javascript">

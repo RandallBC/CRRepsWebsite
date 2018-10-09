@@ -9,7 +9,7 @@
 <li id="destina"><a href="#" class="destinations">Destinations</a>
         <ul>
                <?php include 'destiny.php'; ?>
-                                        
+
                 </ul></li>
 <li><a href="whattopack.php" class="stravel">Specialty Travel</a>
         <ul>
@@ -25,14 +25,14 @@
                         <!--ul>
                             <li><a href="#">Student Travel</a></li>
                             <li><a href="#">Musical Performances</a></li>
-                            <li><a href="#">Languaje Inmersion</a></li>    
+                            <li><a href="#">Languaje Inmersion</a></li>
                         </ul-->
                     </li>
                     <li><a href="#"  class="abouta">Experiential Travel</a>
                         <!--ul>
                             <li><a href="#">General Discovery</a></li>
                             <li><a href="#">Culinary Tours</a></li>
-                            <li><a href="#">Family Travel</a></li>    
+                            <li><a href="#">Family Travel</a></li>
                             <li><a href="#">Honeymoons</a></li>
                             <li><a href="#">Latin Dances</a></li>
                             <li><a href="#">Yoga &amp; Wellness</a></li>
@@ -43,7 +43,7 @@
                         <!--ul>
                             <li><a href="#">Bird-Watching</a></li>
                             <li><a href="#">Natural History</a></li>
-                            <li><a href="#">Photography Tours</a></li>    
+                            <li><a href="#">Photography Tours</a></li>
                             <li><a href="#">Whale &amp; Dolphins</a></li>
                         </ul!-->
                     </li>
@@ -51,13 +51,13 @@
                         <!--ul>
                             <li><a href="#">Kosher</a></li>
                             <li><a href="#">Vegeterian/Vegan</a></li>
-                            <li><a href="#">Disability Travel</a></li>    
+                            <li><a href="#">Disability Travel</a></li>
                         </ul-->
                     </li>
                     <li><a href="#"  class="abouta">Corporate Travel</a>
                         <!--ul>
                             <li><a href="#">Congresses &amp; Meetings</a></li>
-                            <li><a href="#">Incentive Travel</a></li>    
+                            <li><a href="#">Incentive Travel</a></li>
                         </ul-->
                     </li>
         </ul>
@@ -110,11 +110,11 @@
                     <li><a href="#">Today's Weather</a></li>
                     <li><a href="#">Rainfall</a></li>
                 </ul-->
-                
+
             </li>
             <li><a href="#" class="tguides">What to Pack</a></li>
         </ul>
-        </li> 
+        </li>
 <li><a href="ourcompany.php" class="about">About C.R. Reps</a><ul>
 		    <li><a href="#" class="abouta">About Us</a></li>
 		    <li><a href="#" class="abouta">Our Team</a></li>
@@ -128,7 +128,7 @@
 					<li><a href="#">Transport &amp; Logistics</a></li>
 					<li><a href="#">Site Inspections, Fams &amp; Press Trips</a></li>
 					<li><a href="#">MICE &amp; Corporate Travel</a></li>
-					
+
 				</ul-->
 			</li>
 			<li><a href="#" class="abouta">Corporate Profile</a>
@@ -140,7 +140,7 @@
 				</ul-->
 			</li>
 			<li><a href="#" class="abouta">Corporate Policies</a>
-			    
+
 			    <!--ul>
                     <li><a href="#">Enviromental Policy</a></li>
                     <li><a href="#">Social Policy</a></li>
@@ -153,16 +153,13 @@
                     <li><a href="#">Technology &amp; Information Systems</a></li>
                     <li><a href="#">Affiliations, Memberships &amp; Licenses</a></li>
                 </ul-->
-			    
+
 			</li>
 			<li><a href="#" class="abouta">Working with Us</a></li>
 			<li><a href="#" class="abouta">Meet with Us</a></li>
 			<li><a href="#" class="abouta">Terms &amp; Conditions</a></li>
 			<li><a href="#" class="abouta">Testimonials</a></li>
 			<li><a href="#" class="abouta">Contact Us</a></li></ul></li>
-
-	    
-	<!--li><a href="livechat.php" class="lchat">Live Chat</a></li-->
 	
 </ul>
 </html>

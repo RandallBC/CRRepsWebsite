@@ -1,96 +1,87 @@
 *{
-    /* A universal CSS reset */
-    margin:0;
-    padding:0;
+  /* A universal CSS reset */
+  margin:0;
+  padding:0;
 }
 
 #menunaviga li{
-    list-style:none;
-    height:165px;
-    padding:2px;
-    width:40px;
-    background: #c0ba81;
-    border-radius: 5px;
-    border: 1px solid #585919;
-    z-index: 9999999999999999999999999999999;
+  list-style:none;
+  padding:10px;
+  background: #c0ba81;
+  border-radius: 3px;
+  border: 2px solid #585919;
+  z-index: 9999999999999999999999999999999;
 }
 
-#menunaviga span{
-    /* Container properties */
-    width:0;
-    right:38px;
-    padding:0;
-    position:absolute;
-    overflow:hidden;
+#menunaviga li.contact{
+  height:130px;
+}
 
-    /* CSS3 Transition: */
-    -webkit-transition: 0.25s;
+#menunaviga li.quote{
+  height:150px;
+}
 
-    /* Future proofing (these do not work yet): */
-    -moz-transition: 0.25s;
-    transition: 0.25s;
+#menunaviga li.submite{
+  height:130px;
 }
 
 #menunaviga a{
-    height:160px;
-    width:30px;
-    display:block;
-    position:relative;
-
+  color: #FFF;
+  height: 30px;
+  width: 170px;
+  font: normal 16px candara;
+  display:block;
+  position:relative;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  text-decoration:none;
 }
 
-/* General hover styles */
-/*#menunaviga .contact:hover span { width: 800px; height: 650px; padding:0 10px; overflow:visible; border-radius: 2px; top: -50px; border: 5px solid #585919; }*/
-/*#menunaviga .quote:hover span { width: 1030px; height: 730px; padding:0 10px; overflow:visible; border-radius: 2px; top: -250px; border: 5px solid #585919; }*/
+#menunaviga a.contact{
+  top: 60px;
+  right: 80px;
+}
 
+#menunaviga a.quote{
+  top: 60px;
+  right: 80px;
+}
+
+#menunaviga a.submite{
+  top: 60px;
+  right: 80px;
+}
 
 #menunaviga a:hover{
-    text-decoration:none;
+  text-decoration:none;
 }
 
-/* Green Button */
+#menunaviga a.contact {	color: #FFF;}
+#menunaviga a.contact:hover {background: url(../images/social/contact_hover.png) no-repeat left center; color: #585919;}
+#menunaviga a.contact:focus {background: url(../images/social/contact_checked.png) no-repeat left center; color: #9c1b2d;}
 
-#menunaviga .contact {	background: url(../images/social/contact.png) no-repeat;}
-#menunaviga .contact:hover {background: url(../images/social/contact_hover.png) no-repeat;}
-#menunaviga .contact:focus {background: url(../images/social/contact_checked.png) no-repeat;}
-#menunaviga .contact span{
-    background-color: #c0ba81;
-    color: #FFFFFF;
-    text-shadow:1px 1px 0 #585919;
-    height: 200px;
+#menunaviga a.quote { color: #FFF;}
+#menunaviga a.quote:hover { background: url(../images/social/quote_hover.png) no-repeat left center; color: #585919;}
+#menunaviga a.quote:focus { background: url(../images/social/quote_checked.png) no-repeat left center; color: #9c1b2d;}
 
-}
-
-/* Blue Button */
-
-#menunaviga .quote { background: url(../images/social/requesta.png) no-repeat;}
-#menunaviga .quote:hover { background: url(../images/social/requesta_hover.png) no-repeat}
-#menunaviga .quote:focus { background: url(../images/social/requesta_checked.png) no-repeat}
-#menunaviga .quote span{
-    background-color:#c0ba81;
-    color:#FFFFFF;
-    text-shadow:1px 1px 0 #585919;
-    height: 200px;
-}
+#menunaviga a.submite { color: #FFF;}
+#menunaviga a.submite:hover { background: url(../images/social/news_hover.png) no-repeat left center; color: #585919;}
+#menunaviga a.submite:focus { background: url(../images/social/news_checked.png) no-repeat left center; color: #9c1b2d;}
 
 
 /* The styles below are only needed for the demo page */
 
 #prince{
-    float: right;
-    width: 45px;
-}
-
-a:hover{
-    text-decoration:underline;
+  float: right;
+  width: 45px;
 }
 
 a img{
-    border:none;
+  border:none;
 }
 
 #titu {
-    font: normal 28px Candara;
-    color: #9c1b2d;
-    line-height: 60px;
+  font: normal 28px Candara;
+  color: #9c1b2d;
+  line-height: 60px;
 }
