@@ -178,6 +178,18 @@ function func_hijo4_out() {
   elemento.style.background = "";
 }
 
+/*----------------*/
+
+function func_hijo5() {
+  var elemento = document.getElementById('hijo5');
+  elemento.style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
+}
+
+function func_hijo5_out() {
+  var elemento = document.getElementById('hijo5');
+  elemento.style.background = "";
+}
+
 /*___________________________________________________Fin Hijos_________________________________________________________*/
 
 /* fin funciones de los iconos rojos */

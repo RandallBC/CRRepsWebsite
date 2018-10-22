@@ -1,34 +1,21 @@
 *{
-  /* A universal CSS reset */
   margin:0;
   padding:0;
 }
 
 #menunaviga li{
   list-style:none;
-  padding:10px;
+  height:150px;
+  padding: 10px;
   background: #c0ba81;
   border-radius: 3px;
   border: 2px solid #585919;
   z-index: 9999999999999999999999999999999;
 }
 
-#menunaviga li.contact{
-  height:130px;
-}
-
-#menunaviga li.quote{
-  height:150px;
-}
-
-#menunaviga li.submite{
-  height:130px;
-}
-
 #menunaviga a{
   color: #FFF;
-  height: 30px;
-  width: 170px;
+  height: 20px;
   font: normal 16px candara;
   display:block;
   position:relative;
@@ -37,36 +24,37 @@
   text-decoration:none;
 }
 
-#menunaviga a.contact{
-  top: 60px;
-  right: 80px;
+/*#menunaviga a.contact_a{
+  width: auto;
 }
 
-#menunaviga a.quote{
-  top: 60px;
-  right: 80px;
+#menunaviga a.quote_a{
+  width: auto;
 }
 
-#menunaviga a.submite{
-  top: 60px;
-  right: 80px;
-}
+#menunaviga a.submite_a{
+  width: auto;
+}*/
 
 #menunaviga a:hover{
   text-decoration:none;
 }
 
-#menunaviga a.contact {	color: #FFF;}
-#menunaviga a.contact:hover {background: url(../images/social/contact_hover.png) no-repeat left center; color: #585919;}
-#menunaviga a.contact:focus {background: url(../images/social/contact_checked.png) no-repeat left center; color: #9c1b2d;}
+#menunaviga a:focus{
+  text-decoration:none;
+}
 
-#menunaviga a.quote { color: #FFF;}
-#menunaviga a.quote:hover { background: url(../images/social/quote_hover.png) no-repeat left center; color: #585919;}
-#menunaviga a.quote:focus { background: url(../images/social/quote_checked.png) no-repeat left center; color: #9c1b2d;}
+#menunaviga a.contact_a {	color: #FFF;}
+#menunaviga a.contact_a:hover {background: url(../images/social/contact_hover.png) no-repeat top center #c0ba81; color: #585919;}
+#menunaviga a.contact_a:focus {background: url(../images/social/contact_checked.png) no-repeat top center #c0ba81; color: #9c1b2d;}
 
-#menunaviga a.submite { color: #FFF;}
-#menunaviga a.submite:hover { background: url(../images/social/news_hover.png) no-repeat left center; color: #585919;}
-#menunaviga a.submite:focus { background: url(../images/social/news_checked.png) no-repeat left center; color: #9c1b2d;}
+#menunaviga a.quote_a { color: #FFF;}
+#menunaviga a.quote_a:hover { background: url(../images/social/quote_hover.png) no-repeat top center #c0ba81; color: #585919;}
+#menunaviga a.quote_a:focus { background: url(../images/social/quote_checked.png) no-repeat top center #c0ba81; color: #9c1b2d;}
+
+#menunaviga a.submite_a { color: #FFF;}
+#menunaviga a.submite_a:hover { background: url(../images/social/news_hover.png) no-repeat top center #c0ba81; color: #585919;}
+#menunaviga a.submite_a:focus { background: url(../images/social/news_checked.png) no-repeat top center #c0ba81; color: #9c1b2d;}
 
 
 /* The styles below are only needed for the demo page */

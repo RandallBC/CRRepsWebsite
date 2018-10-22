@@ -7,167 +7,86 @@
 
 <body>
 <style>
-    #popupquote {
-        margin: auto;
-        position: absolute;
-        top: 0; left: 0; bottom: 0; right: 0;
-        width: 1050px;
-        height: 700px;
-        z-index: 1001;
+
+/* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 60%;
+  }
+
+    .close_btn:hover {
+    cursor: pointer;
     }
 
-    .content-popupquote {
-        margin:0px auto;
-        margin-top: 0px;
-        position:relative;
-        padding:10px;
-        width:1020px;
-        height:700px;
-        border-radius:5px;
-        background-color: #eeeeee;
-        box-shadow: 0 2px 5px #666666;
-        border: 2px solid #000000;
-    }
+</style>
 
-    .content-popupquote h2 {
-        color:#48484B;
-        border-bottom: 1px solid #48484B;
-        margin-top: 0;
-        padding-bottom: 4px;
-    }
-
-    .popupquote-overlay {
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 999;
-        display:none;
-        background-color: #777777;
-        cursor: pointer;
-        opacity: 0.7;
-    }
-
-    .closequote {
-        position: absolute;
-        right: 15px;
-    }
-
-    /*______________________________________________Contact Us_______________________________________*/
-
-    #popupcontact {
-        margin: auto;
-        position: absolute;
-        top: 0; left: 0; bottom: 0; right: 0;
-        width: 850px;
-        height: 640px;
-        z-index: 1001;
-    }
-
-    .content-popupcontact {
-        margin:0px auto;
-        margin-top: 0px;
-        position:relative;
-        padding:10px;
-        width:810px;
-        height:600px;
-        border-radius:5px;
-        background-color: #eeeeee;
-        box-shadow: 0 2px 5px #666666;
-        border: 2px solid #000000;
-    }
-
-    .content-popupcontact h2 {
-        color:#48484B;
-        border-bottom: 1px solid #48484B;
-        margin-top: 0;
-        padding-bottom: 4px;
-    }
-
-    .popupcontact-overlay {
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 999;
-        display:none;
-        background-color: #777777;
-        cursor: pointer;
-        opacity: 0.7;
-    }
-
-    .closecontact {
-        position: absolute;
-        right: 15px;
-
-    </style>
-
-<script type="text/javascript">
-
-    $(document).ready(function(){
-
-        $('#quote').click(function(){
-            $('#popupquote').slideDown('slow');
-            $('.popupquote-overlay').slideDown('slow');
-            $('.popupquote-overlay').height($(window).height());
-            return false;
-        });
-
-        $('#closequote').click(function(){
-            $('#popupquote').slideUp('slow');
-            $('.popupquote-overlay').slideUp('slow');
-            return false;
-        });
-
-        $('#contact').click(function(){
-            $('#popupcontact').slideDown('slow');
-            $('.popupcontact-overlay').slideDown('slow');
-            $('.popupcontact-overlay').height($(window).height());
-            return false;
-        });
-
-        $('#closecontact').click(function(){
-            $('#popupcontact').slideUp('slow');
-            $('.popupcontact-overlay').slideUp('slow');
-            return false;
-        });
-
-  });
-</script>
-
-<div id="popupquote" style="display: none;">
-    <div class="content-popupquote">
-        <div class="closequote"><a href="#" id="closequote"><img src="images/iconos_topmenu/cerrar.png"></a></div>
-        <div>
-            <h2>Request a Quote </h2>
-            <iframe style="border-radius: 2px;" src="checkquote.php" width="900" height="600" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
-        </div>
-    </div>
-</div>
-
-<div id="popupcontact" style="display: none;">
-    <div class="content-popupcontact">
-        <div class="closecontact"><a href="#" id="closecontact"><img src="images/iconos_topmenu/cerrar.png"></a></div>
-        <div>
-            <h2>Contact Us</h2>
-            <iframe style="border-radius: 2px;" src="contactus.php" width="900" height="550" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
-        </div>
-    </div>
-</div>
-
+       
 <div id="prince">
     <ul id="menunaviga">
-        <li class="contact">
-            <a class="contact" id="contact" href="#">Contact Us</a>
+        <li class="contact_li">
+            <a class="contact_a" onclick="showModal('contact');"  href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;Us</a>
         </li>
-        <li class="quote">
-            <a class="quote" id="quote" href="#">Request a Quote</a>
+        <li class="quote_li">
+            <a class="quote_a" onclick="showModal('quote');" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request&nbsp;a&nbsp;Quote</a>
         </li>
-        <li class="submite">
-            <a class="submite" id="submite" href="#">Newsletter</a>
+        <li class="submite_li">
+            <a class="submite_a" id="submite" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Newsletter</a>
         </li>
     </ul>
 </div>
 
 </body>
 </html>
+
+  <!-- The Modal -->
+  <div id="quote" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <h2>Request a Quote</h2>
+        <iframe style="margin: 0 auto;" src="checkquote.php" width="1000" height="600" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+    </div>
+    <img class="close_btn" onclick="closeModal('quote')" src="images/close.png">
+  </div>
+
+  <!-- The Modal -->
+  <div id="contact" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <h2>Contact Us</h2>
+        <iframe style="margin: 0 auto;" src="contactus.php" width="1000" height="550" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+    </div>
+    <img class="close_btn" onclick="closeModal('contact')" src="images/close.png">
+  </div>
+
+
+<script>
+
+    function showModal(nam_modal) {
+        var modal = document.getElementById(nam_modal);
+        modal.style.display = "block";
+    }
+
+    function closeModal(nam_modal) {
+        var modal = document.getElementById(nam_modal);
+        modal.style.display = "none";
+    }
+  
+  </script>

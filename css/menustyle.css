@@ -176,7 +176,6 @@
              margin: 0;
              padding: 0;
              position: absolute;
-             /*top: 35px;*/
              width: 185px;
             }
 
@@ -211,19 +210,7 @@
               background: #c6c18e;
             }
 
-    /*    #navhead li a.home {
-            background: url(../images/iconos_topmenu/home.png) no-repeat 14px center;
-            width: 15px;
-            height: 10px;
-        }
-
-        #navhead li a.home:hover {
-            background: url(../images/iconos_topmenu/home.png) no-repeat 14px center;
-            color:#595819;
-            width: 10px;
-            height: 10px;
-         }*/
-
+  
          #navhead #destina a.destinations:hover { background: url(../images/iconos_topmenu/destinations.png) no-repeat 4px center #c0ba81; color:#595819;}
          #navhead #spetravel a.stravel:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center #c0ba81; color:#595819;}
          #navhead #tguide a.tguide:hover { background: url(../images/iconos_topmenu/tguide.png) no-repeat 4px center #c0ba81; color:#595819;}

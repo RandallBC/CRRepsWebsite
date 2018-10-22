@@ -131,7 +131,7 @@ while ($row = mysql_fetch_object($query))
     $existe = $row->email;
 }
 
-require_once('recaptcha/recaptchalib.php');
+/*require_once('recaptcha/recaptchalib.php');
 $privatekey = "6LfJwvkSAAAAAE4Cvs1bop7b7O1VcV54WMR3xc94";
 $resp = recaptcha_check_answer ($privatekey,
     $_SERVER["REMOTE_ADDR"],
@@ -145,7 +145,7 @@ if (!$resp->is_valid) {
 } else {
     // Your code here to handle a successful verification
     $captch = 1;
-}
+}*/
 
 if ($existe == $email)
 {
@@ -154,14 +154,14 @@ if ($existe == $email)
     echo "document.location.href='index.php';";
     echo "</script>";
 }
-else if ($captch == 0){?>
+/*else if ($captch == 0){?>
 <script>
 
     alert("The reCAPTCHA wasn't entered correctly. Please try it again.");
     document.location.href='index.php';
 </script>
     <?php
-}
+}*/
 else {
     /*--------------------------------------------------------------------------------Link de Activacion------------------------------------------------------------------------------*/
 

@@ -1,45 +1,66 @@
+<?php
 
-<?php ob_start();
-ini_set ('error_reporting', E_PARSE);
-?>
+  echo ("
 
+  <style>
+  td.meetus {
+    padding: 10px 20px;
+    background: #efefef;
+    border-radius: 5px;
+  }
 
-<style>
-    p
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-
+  td.meetImg {
+    text-align: center;
+    background: #efefef;
+    border-radius: 5px;
     }
+
+ .meetLink {
+    color: #DB5A0A;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 </style>
 
-<h2 id="titulotexto">Meet With Us</h2>
+  <h2>Meet with Us</h2>
+  <p class='justif'>
+  In order to keep a global vision of travel trends both within Latin America and around the world we seek opportunities to share experiences with colleagues in the region and constantly research international travel tendencies.<br/>
+Costa Rica Reps actively participates in strategic Travel Shows around the globe. These are invaluable opportunities to meet with you in person, and to share new ideas and business strategies, share our corporate philosophy, and receive your feedback. <br/>
+Below is a list of travel shows we plan to attend in the next year. Please "); ?> <a class="meetLink" href='#' onclick="showModal('contact');">Contact Us</a> <?php echo(" to arrange a personal meeting during any of these travel shows:<br/><br/>
 
-<p></br></br>In order to keep a global vision of travel trends both within Latin America and around the world we seek opportunities to share experiences with colleagues in the region and constantly research international travel tendencies.
-</br>Costa Rica Reps actively participates in strategic Travel Shows around the globe. These are invaluable opportunities to meet with you in person, and to share new ideas and business strategies, share our corporate philosophy, and receive your feedback. 
-</br>Below is a list of travel shows we plan  to attend in the next year. Please contact us <link a la sección de contac us> to arrange a personal meeting during any of these travel shows:</br>
-</br><b>Travel Mart Latin America</b>
-</br>Iguassu Falls, Brazil
-</br>September  14-16, 2016
-</br>
-</br><b>World Travel Market at ExCel (WTM)</b>
-</br>London, England.
-</br>November 7-9, 2015
-</br> 
-</br><b>International Tourism Bourse (ITB)</b>	
-</br>Berlin, Germany	
-</br>March 9-13, 2016
-</br> 
-</br><b>Expotur – Costa Rica Travel Mart</b>	
-</br>San Jose, Costa Rica.
-</br>May 11-13, 2015</p>
+  <table style='margin: 0 auto;'>
+    <tr>
+        <td class='meetImg'><img src='images/logmeetus/1.png'></td>
+        <td class='meetus'>Travel Mart Latin America<br/>
+                          <b>When?:</b> Held every year in September<br/>
+                          <b>Location:</b> This is a Travel Market specialized and focused on Latin America. It is held every year at a random country and city of Latin America.
+        </td>
+    </tr>
+    <tr>
+        <td class='meetImg'><img src='images/logmeetus/2.png'></td>
+        <td class='meetus'>World Travel Market at ExCel (WTM)<br/>
+                          <b>When?:</b> Every year during the first week of November<br/>
+                          <b>Location:</b> At Excel Exhibition Centre in London, England.
+        </td>
+    </tr>
+    <tr>
+        <td class='meetImg'><img src='images/logmeetus/3.png'></td>
+        <td class='meetus'>International Tourism Bourse (ITB)<br/>    
+                          <b>When?:</b> Every year during the second week of March<br/>
+                          <b>Location:</b> At Messe Berlin in Berlin, Germany
+        </td>
+    </tr>
+    <tr>
+        <td class='meetImg'><img src='images/logmeetus/4.png'></td>
+        <td class='meetus'>Expotur – Costa Rica Travel Mart<br/>  
+                          <b>When?:</b> Every year during the second week of May<br/>
+                          <b>Location:</b> At Conventions & Exhibition Centre in San Jose, Costa Rica.
 
-<?php
-    $paginacontenido = ob_get_contents();
-    ob_end_clean();
 
- require_once 'p_about.php';
- ?>
-     
-    
+        </td>
+    </tr>
+  </table>
+</p>");
+?>
+   

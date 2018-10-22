@@ -100,8 +100,7 @@ body {
 }
 
 #footer0 {
- padding-top: 42px; /*kitar con el menu del sistema*/
-	border-radius: 5px;
+ padding-top: 40px; /*kitar con el menu del sistema*/
 	font-size: 12px;
 	margin: 0 auto;
 	color: #666;
@@ -112,11 +111,7 @@ body {
 }
 
 #footer1 {
-	border-radius: 5px;
-	padding-left: 20px;
-	padding-top: 10px;
 	font-size: 14px;
-	text-align: left;
 	color: #666;
 	width: 420px;
 	float: left;
@@ -126,21 +121,11 @@ body {
 }
 
 #footer2 {
-	border-radius: 5px;
 	padding: 0px 0px 0px 0px;
-	width: 580px;
+	width: 600px;
 	float: right;
 	height: 140px;
 	background-color: #FFFFFF;
-
-}
-
-#footer3 {
-	padding: 5px 0px 0px 0px;
-	width: 1020px;
-	height: 250px;
-	background-color: #FFFFFF;
-	margin: 0 auto;
 
 }
 
@@ -186,11 +171,13 @@ h3 {
 	font-size: 16px;
 	font-weight: bold;
 	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
 h4 {
 	font: bold 14px candara !important;
 	color: #65652b;
+	margin-left: 10px;
 }
 
 h5 {

@@ -17,7 +17,7 @@ ini_set ('error_reporting', E_PARSE);
     }
 
     #marco2{
-        width: 1030px;
+        width: 900px;
         height: 640px;
         background: #FFFFFF;
     }

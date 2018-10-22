@@ -125,24 +125,28 @@
   <li id="aboutcr"><a id="padre4" href="#" class="about">About C.R. Reps</a>
     <ul id="aboutcrreps" onmouseover="func_aboutcr();" onmouseout="func_aboutcr_out();" >
       <div id="izki">
-        <li><a id="hijo2" href="#" class="abouta">Our Company</a>
-          <ul style="left: 166px !important;" onmouseover="func_hijo2();" onmouseout="func_hijo2_out();" class="cobamar">
-            <li><a href="ourcompany.php" class="abouta">Our Company</a></li>
-            <li><a href="ourteam.php" class="abouta">Our Team</a></li>
-            <li><a href="affiliations.php" class="abouta">Affiliations</a></li>
-            <li><a href="responsible.php" class="abouta">Responsible Travel</a></li>
-            <li><a href="infosystems.php" class="abouta">Tech &amp; Info Systems</a></li>
-          </ul></li>
-          <li><a href="corporateprofile.php" class="abouta">Corporate Profile</a></li>
-          <li><a href="workingus.php" class="abouta">Working with Us</a></li>
-          <li><a href="meetus.php" class="abouta">Meet with Us</a></li>
-          <li><a href="testimonials.php" class="abouta">Testimonials</a></li>
-          <li onclick="loadcontents('terms');"><a href="#" class="terms">Terms &amp; Conditions</a></li>
-
-
-
+        <li><a id="hijo2" href="#" class="abouta extendida">Our Company</a>
+          <ul style="left: 177px !important;" onmouseover="func_hijo2();" onmouseout="func_hijo2_out();" class="cobamar">
+            <li onclick="loadcontents('ourcompany');"><a href="#" class="abouta">Our Company</a></li>
+            <li onclick="loadcontents('ourteam');"><a href="#" class="abouta">Our Team</a></li>
+            <li onclick="loadcontents('affiliations');"><a href="#" class="abouta">Affiliations</a></li>
+            <li onclick="loadcontents('responsible');"><a href="#" class="abouta">Responsible Travel</a></li>
+            <li onclick="loadcontents('infosystems');"><a href="#" class="abouta">Tech &amp; Info Systems</a></li>
+          </ul>
+        </li>
+        <li><a id="hijo5" href="#" class="abouta extendida">Corporate Profile</a>
+            <ul style="left: 177px !important;" onmouseover="func_hijo5();" onmouseout="func_hijo5_out();" class="cobamar">
+            <li onclick="loadcontents('corpProfile');"><a href="#" class="abouta">Corporate Profile</a></li>
+            <li onclick="loadcontents('corpPhilosophy');"><a href="#" class="abouta">Our Corporate<br/>Philosophy</a></li>
+            <li onclick="loadcontents('corpPolicies');"><a href="#" class="abouta">Corporate Policies</a></li>
+          </ul>
+        </li>
+        <li onclick="loadcontents('workingus');"><a href="#" class="abouta">Working with Us</a></li>
+        <li onclick="loadcontents('meetus');"><a href="#" class="abouta">Meet with Us</a></li>
+        <li onclick="loadcontents('testimonials/testim/testimon');"><a href="#" class="abouta">Testimonials</a></li>
+        <li onclick="loadcontents('terms');"><a href="#" class="terms">Terms &amp; Conditions</a></li>
         </div>
-        <div id="dere" onclick="location.href='services.php'" style="border-bottom: 2px solid #9C1B2D;" >
+        <div id="dere" onclick="loadcontents('services')"style="border-bottom: 2px solid #9C1B2D;" >
           <br>
           <div style="background: url(images/frame.png) no-repeat; width: 175px; height: 200px;">
             <li><label class="abouta">Our Services</label></li><br>
@@ -153,9 +157,6 @@
             <li class="chikis"><label class="servi">Hotel Reservations</label></li>
             <li class="chikis"><label class="servi">Transport &amp; Logistics</label></li>
             <li class="chikis"><label class="servi">Corporate Travel</label></li>
-
-            <!--li><a href="services.php" class="abouta">Services Information</a></li-->
-
           </div>
         </div>
       </ul>
@@ -206,17 +207,17 @@
   }
   </style>
 
+
   <!-- The Modal -->
   <div id="myModal" class="modal">
-
     <!-- Modal content -->
     <div class="modal-content">
       <iframe src="gallery/index.php" width="900px" height="600px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
     </div>
-
   </div>
 
-  <script>
+
+<script>
   var modal = document.getElementById('myModal');
 
   function showgallery() {
@@ -228,4 +229,19 @@
           modal.style.display = "none";
       }
   }
+  
   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

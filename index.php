@@ -131,7 +131,7 @@
 
 
   </div>
-
+  
   <div id="principal">
 
     <div id="derecho">
@@ -414,8 +414,6 @@
               <br>
               <input class="botonlog" type="submit" value="Send"/>
             </form>
-
-
 
           </div>
         </div>

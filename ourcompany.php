@@ -1,33 +1,29 @@
-
-<?php ob_start();
-ini_set ('error_reporting', E_PARSE);
-?>
-
-
-<style>
-    p
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-
-    }
+<style type="text/css">
+    
+.testi {
+    color: #DB5A0A;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 </style>
 
-<h2 id="titulotexto">Our Company</h2>
-<p></br>Costa Rica Reps is a travel company based in San Jose, Costa Rica dedicated to providing comprehensive destination management and all related travel services to International Whole-sale and specialized Travel companies. Founded in 1996 as Eco-Safari a nature and adventure tour operator, the company was rebranded in 2003 as a natural evolution to the market needs for authentic tours and vacations filled with life-experiences – hence the Costa Rica Reps motto “Creating unique travel experiences” 
-</br></br>Today Costa Rica Reps caters to the moderate to luxury Central American traveler and specializes on designing, customizing and operating travel itineraries for groups and individuals seeking to:
-</br></br>&#8226;&nbsp;&nbsp;&nbsp;Explore inspiring natural destinations.
-</br>&#8226;&nbsp;&nbsp;&nbsp;Encounter endemic wildlife.
-</br>&#8226;&nbsp;&nbsp;&nbsp;Experience enriching cultural interactions.
-</br>&#8226;&nbsp;&nbsp;&nbsp;And enjoying life-changing adventures.
-</br></br>Please visit our *Testimonials* <link a esta sección> section for comments from clients and travel partners</p>
-<Corporate Fact Sheet>
 <?php
-    $paginacontenido = ob_get_contents();
-    ob_end_clean();
 
- require_once 'p_about.php';
- ?>
-     
-    
+  echo ("
+
+  <h2>Our Company</h2>
+  <p class='justif'>
+
+  Costa Rica Reps is a Central American Tour Operator dedicated to creating unique travel experiences and providing fully customizable travel services. The company was founded in 1996 as a local Tour Operator and today the company has evolved into a full-service Destination Management Company specializing on experiential travel and life-changing adventures. Today Costa Rica Reps caters to the moderate to luxury Central American traveler and specializes on designing, customizing and operating travel itineraries for groups and individuals seeking to:<br/><br/>
+♦   Explore inspiring natural destinations.<br/>
+♦   Encounter endemic wildlife.<br/>
+♦   Experience enriching cultural interactions<br/>
+♦   And enjoying life-changing adventures.<br/><br/>
+    What sets us apart from others?<br/><br/>
+    Our dedication. Not just in the service delivery and execution of the logistics, but our true B2B Focus and exclusive dedication to the selected partners we represent.<br/><br/>
+    Please visit our "); ?> <a class="testi" href='#' onclick="loadcontents('testimonials/testim/testimon');">Testimonials</a> <?php echo(" section for comments from clients and travel partners. 
+
+  </p>");
+
+?>

@@ -1,7 +1,5 @@
 <?php
 ini_set ('error_reporting', E_PARSE);
-require_once('recaptcha/recaptchalib.php');
-$publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from the signup page
 ?>
 
 <title>Costa Rica Reps Tour Development &amp; Destination Management</title>
@@ -17,8 +15,6 @@ $publickey = "6LfJwvkSAAAAAGLeoOOucBy-SXR-3bFiTf_9KIBm"; // you got this from th
 <link href="css/general.css" media="screen" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.jfontsize-1.0.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
-
 
 <style>
 
@@ -557,14 +553,6 @@ $(document).ready(function(){
           </tr>
         </table>
 
-
-        <script type="text/javascript">
-        var RecaptchaOptions = {
-          theme : 'white'
-        };
-        </script>
-
-        <?php echo recaptcha_get_html($publickey); ?>
         <br>
         <input class="botonlog" type="submit" value="Register" id="submit_reg" />
       </form>
@@ -643,7 +631,7 @@ $(document).ready(function(){
         <tr>
 
           <td colspan="3" id="techo" align="center">
-            <div id="flags" align="right">
+            <!--div id="flags" align="right">
 
               <script type='text/javascript'>
               //<![CDATA[
@@ -671,9 +659,9 @@ $(document).ready(function(){
               <!--a href="http://www.costaricareps.com"><img src="images/icon_England.png" height="25px" width="33px"></a>
               <a href="http://www.costaricareps.com/es"><img src="images/icon_Spain.png" height="25px" width="33px"></a>
               <a href="http://www.costaricareps.com/de"><img src="images/icon_Germany.png" height="25px" width="33px"></a>
-              <a href="http://www.costaricareps.com/fr"><img src="images/icon_France.png" height="25px" width="33px"></a-->
+              <a href="http://www.costaricareps.com/fr"><img src="images/icon_France.png" height="25px" width="33px"></a>
 
-            </div>
+            </div-->
             <center><?php include("menuhead.php")?></center>
 
           </td>
