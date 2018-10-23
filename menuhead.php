@@ -45,6 +45,12 @@
   list-style: circle;
 }
 
+.servics {
+  background: url(images/frame.png) no-repeat;
+  width: 175px;
+  height: 200px;
+}
+
 </style>
 
 <ul id="navhead">
@@ -146,9 +152,9 @@
         <li onclick="loadcontents('testimonials/testim/testimon');"><a href="#" class="abouta">Testimonials</a></li>
         <li onclick="loadcontents('terms');"><a href="#" class="terms">Terms &amp; Conditions</a></li>
         </div>
-        <div id="dere" onclick="loadcontents('services')"style="border-bottom: 2px solid #9C1B2D;" >
+        <div id="dere" onclick="loadcontents('services/serv')"style="border-bottom: 2px solid #9C1B2D;" >
           <br>
-          <div style="background: url(images/frame.png) no-repeat; width: 175px; height: 200px;">
+          <div class="servics">
             <li><label class="abouta">Our Services</label></li><br>
 
             <li class="chikis"><label class="servi">Fixed Tour Departures</label></li>

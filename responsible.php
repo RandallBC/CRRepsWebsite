@@ -12,6 +12,7 @@
     <table style='float:right;'><tr>
         <td style='padding-right: 20px;'><img src='images/cst.png'></td>
         <td style='padding-right: 20px;'><img src='images/apn.png'></td>
+        <td style='padding-right: 20px;'><img src='images/raf.png'></td>
     </tr></table>
 
   </p>");

@@ -1,175 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <meta name="description" content="Circular Content Carousel with jQuery" />
-        <meta name="keywords" content="jquery, conent slider, content carousel, circular, expanding, sliding, css3" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-		<link href='http://fonts.googleapis.com/css?family=Coustard:900' rel='stylesheet' type='text/css' />
-		<link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
-    </head>
-    <body>
-		<div class="container">
+<head>
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<link rel="stylesheet" href="css/mi-slider.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery.nivo.slider.js"></script>
 
-			<div id="ca-container" class="ca-container">
-				<div class="ca-wrapper">
-					<div class="ca-item ca-item-1">
-						<div class="ca-item-main">
-							<div class="ca-icon"></div>
-							<h3>Fixed Tour Departures</h3>
-							<h4>
-								<span class="ca-quote">&ldquo;</span>
-								<span>The greatness of a nation and its moral progress can be judged by the way in which its animals are treated.</span>
-							</h4>
-								<a href="#" class="ca-more">more...</a>
-						</div>
-						<div class="ca-content-wrapper">
-							<div class="ca-content">
-								<h6>Fixed Tour Departures</h6>
-								<a href="#" class="ca-close">close</a>
-								<div class="ca-content-text">
-									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
-									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-								</div>
+	<script type="text/javascript"> 
+		$(window).on('load', function() {
+		    $('#slider').nivoSlider(); 
+		}); 
+	</script>
+</head>
 
-							</div>
-						</div>
-					</div>
-					<div class="ca-item ca-item-2">
-						<div class="ca-item-main">
-							<div class="ca-icon"></div>
-							<h3>Custom Itineraries</h3>
-							<h4>
-								<span class="ca-quote">&ldquo;</span>
-								<span>I hold that the more helpless a creature, the more entitled it is to protection by man from the cruelty of man.</span>
-							</h4>
-								<a href="#" class="ca-more">more...</a>
-						</div>
-						<div class="ca-content-wrapper">
-							<div class="ca-content">
-								<h6>Custom Itineraries</h6>
-								<a href="#" class="ca-close">close</a>
-								<div class="ca-content-text">
-									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
-									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-								</div>
+<body>
+	<div class="slider-wrapper theme-mi-slider">
+		<div id="slider" class="nivoSlider">     
+		    <img src="img/1.jpg" alt="" title="#htmlcaption1" />    
+		    <img src="img/2.jpg" alt="" title="#htmlcaption2" />    
+		    <img src="img/3.jpg" alt="" title="#htmlcaption3" />
+		    <img src="img/4.jpg" alt="" title="#htmlcaption4" />    
+		    <img src="img/5.jpg" alt="" title="#htmlcaption5" />    
+		    <img src="img/6.jpg" alt="" title="#htmlcaption6" />     
+		    <img src="img/7.jpg" alt="" title="#htmlcaption7" />    
+		    <img src="img/8.jpg" alt="" title="#htmlcaption8" />    
+		</div> 
 
-							</div>
-						</div>
-					</div>
-					<div class="ca-item ca-item-3">
-						<div class="ca-item-main">
-							<div class="ca-icon"></div>
-							<h3>Group Travel</h3>
-							<h4>
-								<span class="ca-quote">&ldquo;</span>
-								<span>I feel that spiritual progress does demand at some stage that we should cease to kill our fellow creatures for the satisfaction of our bodily wants.</span>
-							</h4>
-								<a href="#" class="ca-more">more...</a>
-						</div>
-						<div class="ca-content-wrapper">
-							<div class="ca-content">
-								<h6>Group Travel</h6>
-								<a href="#" class="ca-close">close</a>
-								<div class="ca-content-text">
-									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
-									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="ca-item ca-item-4">
-						<div class="ca-item-main">
-							<div class="ca-icon"></div>
-							<h3>Hotel Reservations</h3>
-							<h4>
-								<span class="ca-quote">&ldquo;</span>
-								<span>A man is but the product of his thoughts what he thinks, he becomes.</span>
-							</h4>
-								<a href="#" class="ca-more">more...</a>
-						</div>
-						<div class="ca-content-wrapper">
-							<div class="ca-content">
-								<h6>Hotel Reservations</h6>
-								<a href="#" class="ca-close">close</a>
-								<div class="ca-content-text">
-									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
-									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="ca-item ca-item-5">
-						<div class="ca-item-main">
-							<div class="ca-icon"></div>
-							<h3>Transport &amp; Logistics</h3>
-							<h4>
-								<span class="ca-quote">&ldquo;</span>
-								<span>A weak man is just by accident. A strong but non-violent man is unjust by accident.</span>
-							</h4>
-								<a href="#" class="ca-more">more...</a>
-						</div>
-						<div class="ca-content-wrapper">
-							<div class="ca-content">
-								<h6>Transport &amp; Logistics</h6>
-								<a href="#" class="ca-close">close</a>
-								<div class="ca-content-text">
-									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
-									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="ca-item ca-item-6">
-						<div class="ca-item-main">
-							<div class="ca-icon"></div>
-							<h3>Corporate Travel</h3>
-							<h4>
-								<span class="ca-quote">&ldquo;</span>
-								<span>An error does not become truth by reason of multiplied propagation, nor does truth become error because nobody sees it.</span>
-							</h4>
-								<a href="#" class="ca-more">more...</a>
-						</div>
-						<div class="ca-content-wrapper">
-							<div class="ca-content">
-								<h6>Corporate Travel</h6>
-								<a href="#" class="ca-close">close</a>
-								<div class="ca-content-text">
-									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
-									<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream;</p>
-									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
+		<div id="htmlcaption1" class="nivo-html-caption">     
+		    <h1>Regularly Scheduled Departures</h1>
+		    <p>Costa Rica Reps offers classic Costa Rican Tours on a monthly basis including visits to the Country’s most popular highlights.</p>
 		</div>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-		<!-- the jScrollPane script -->
-		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-		<script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
-		<script type="text/javascript">
-			$('#ca-container').contentcarousel();
-		</script>
-    </body>
+		<div id="htmlcaption2" class="nivo-html-caption">     
+		    <h1>Customized Itineraries</h1>
+		    <p>Costa Rica Reps provides a variety of recommendations in order to ensure we create the perfect itinerary to suit your clients’ specific needs. Additionally, we offer a la carte travel options with one to four night pre-tour or post-tour add-on itineraries to easily customize a clients overall vacation experience.</p>
+		</div>
+		<div id="htmlcaption3" class="nivo-html-caption">     
+		    <h1>Special Interest Itineraries</h1>
+		    <p>We have experience in creating itineraries for a variety of special interest groups including students, seniors, sports teams, bands, choirs, wedding parties, ornithologists, and the physically impaired.</p>
+		</div>
+		<div id="htmlcaption4" class="nivo-html-caption">     
+		    <h1>Privately Guided Travel Itineraries</h1>
+		    <p>We offer guides who can communicate in English, French, German, Italian, Portuguese, Russian, Chinese and Japanese. Guides are selected based on command of the language, ability to connect with travelers, and friendly attentive personality traits.  All of our guides are licensed by the Costa Rican Board of Tourism and in many cases hold University degrees.</p>
+		</div>
+		<div id="htmlcaption5" class="nivo-html-caption">     
+		    <h1>Hotel Reservations and Allotments</h1>
+		    <p>Costa Rica Reps can coordinate your hotel, Villa and Condo reservations, as well as manage all allotments for serial group departures.</p>
+		</div>
+		<div id="htmlcaption6" class="nivo-html-caption">     
+		    <h1>Transport & Logistics</h1>
+		    <p>Costa Rica Reps provides a comprehensive transport and logistics service including equipment and luggage transport, private transfers, shuttle service, car rental, commercial in-country flights, privately chartered planes and helicopters. We also have vehicles with ramps and hydraulic lifts to satisfy the needs of travelers with mobility limitations.</p>
+		</div>
+		<div id="htmlcaption7" class="nivo-html-caption">     
+		    <h1>Site Inspection, Familiarization & Press Trips</h1>
+		    <p>We can coordinate site inspections, familiarization tours (Fam Tours) and press trips to all hotels, venues and other destinations required by your group.</p>
+		</div>
+		<div id="htmlcaption8" class="nivo-html-caption">     
+		    <h1>Organization of congress, meetings and corporate incentive tours.</h1>
+		    <p>Costa Rica Reps will act as a full service Destination Management Company coordinating all travel details required to ensure a successful and professional operation for your congress, meeting and corporate incentive trips including team-building workshops and experiential adventures.</p>
+		</div>
+	</div>
+</body>
 </html>
