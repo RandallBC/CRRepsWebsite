@@ -1,10 +1,8 @@
 <html>
-
 <head>
     <link rel="stylesheet" type="text/css" href="css/lengueta2.css" />
     <script type="text/javascript" src="js/jquery.js"></script>
 </head>
-
 <body>
 <style>
 
@@ -32,8 +30,13 @@
       width: 60%;
   }
 
-    .close_btn:hover {
+    .close_btn {
     cursor: pointer;
+    float: right;
+    }
+
+    h2.tit {
+      font: normal 28px candara;
     }
 
 </style>
@@ -60,20 +63,22 @@
   <div id="quote" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
-        <h2>Request a Quote</h2>
+        <img class="close_btn" onclick="closeModal('quote')" src="images/close.png">
+        <h2 class="tit">Request a Quote</h2>
         <iframe style="margin: 0 auto;" src="checkquote.php" width="1000" height="600" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
     </div>
-    <img class="close_btn" onclick="closeModal('quote')" src="images/close.png">
+    
   </div>
 
   <!-- The Modal -->
   <div id="contact" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
-        <h2>Contact Us</h2>
-        <iframe style="margin: 0 auto;" src="contactus.php" width="1000" height="550" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+        <img class="close_btn" onclick="closeModal('contact')" src="images/close.png">
+        <h2 class="tit">Contact Us</h2>
+        <iframe style="margin: 0 auto;" src="contactus.php" width="1000" height="600" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
     </div>
-    <img class="close_btn" onclick="closeModal('contact')" src="images/close.png">
+    
   </div>
 
 

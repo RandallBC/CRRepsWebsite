@@ -16,7 +16,7 @@
 #menunaviga a{
   color: #FFF;
   height: 20px;
-  font: normal 16px candara;
+  font-size: 14px;
   display:block;
   position:relative;
   -webkit-transform: rotate(90deg);

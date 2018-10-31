@@ -20,6 +20,7 @@ ini_set ('error_reporting', E_PARSE);
         width: 900px;
         height: 640px;
         background: #FFFFFF;
+        margin: 0px auto;
     }
 
     #linki {
@@ -49,7 +50,7 @@ session_start();
 
 if(isset($_SESSION['email'])) {
 ?>
-<iframe id="quote" name="quote" src="requesta.php" width="1024px" height="640px" marginwidth="0" marginheight="0" frameborder="1" scrolling="yes" >Your web browser does not support this content.</iframe>
+<iframe style="margin: 0 auto;" id="quote" name="quote" src="requesta.php" width="1024px" height="640px" marginwidth="0" marginheight="0" frameborder="1" scrolling="yes" >Your web browser does not support this content.</iframe>
 <?php
         }
 
@@ -57,7 +58,7 @@ if(isset($_SESSION['email'])) {
         ?>
         <div id="marco2">
            <br><h2 id="alerta">Hello, to request a quote please <a id="linki" href="quotelogueo.php" target="_parent" >LogIn</a> or <a id="linki" href="quoteregister.php" target="_parent" >Register</a> first.</h2>
-        <br/><img style="display:block;margin:0 auto 0 auto;" src="images/lock.png">
+        <br/><img style="display:block; margin:0 auto 0 auto;" src="images/lock.png">
 
 </div>
 <?php } ?>

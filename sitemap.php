@@ -1,24 +1,10 @@
-<?php
-ob_start();
-ini_set ('error_reporting', E_PARSE);
-?>
-
 <link href="css/sitemapstyle.css" media="screen" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/general.js"></script>
-    <script type="text/javascript" src="sitefuncion.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="sitefuncion.js"></script>
 
-
-<?php
-
-    $buscado = $_POST['busqueda'];
-    $cont = 0;
-
- if ($buscado == "") { ?>
-
-
-     <div id="mapag">
- <p id="titulog">Costa Rica Reps Site Map.</p>
+<div id="mapag">
+<p id="titulog">Costa Rica Reps Site Map.</p>
 
 
         <div id="clase1">
@@ -179,39 +165,8 @@ ini_set ('error_reporting', E_PARSE);
                      <li><a href="transportlogistics.php" id="hijog">Transport & Logistics</a></li>
                      <li><a href="corporatetravel.php" id="hijog">Corporate Travel</a></li>
                      <li><a href="terms.php" id="hijog">Terms &amp; Conditions</a></li>
-
                  </ul>
      </div>
-
  </div>
 
-<?php } else {
-              echo "<p style='padding: 20px; font: normal 18px Candara;'>Search: <b>". $buscado . "<b></p>";
-
-     echo "<div id='resultados'>";
-     $lines = file('sitemap.php');
-     foreach($lines as $line)
-     {
-         if(stripos($line, $buscado) !== false)
-             echo $line;
-     }
-     echo "</div>";
-
-     ?>
-
-     <script>
-         if ($('#resultados').is(':empty')) {
-
-             document.write("<p style='padding: 30px; font: normal 16px Candara;'>Nothing Found, Please Try Again.</p>");
-
-    } </script>
-
- <?php
-
-}
-
-$paginacontenido = ob_get_contents();
-ob_end_clean();
-
-require_once 'plantilla.php';
-?>
+ 

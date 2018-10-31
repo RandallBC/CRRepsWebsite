@@ -1,62 +1,66 @@
 <style>
 
     .formText, .formList {
-        width: 200px;
+        width: 100%;
     }
 
     .labeldatos
     {
         line-height: 24px;
-        text-align: center;
+        text-align: right;
     }
 
 </style>
 
 
 
-<table border="0px" style=" border-top: 5px solid #c0ba81 ; width: 800px; height: 570px; margin: 0px 5px 5px 5px; background-color: #FFFFFF;">
+<table border="0px" style=" border-top: 5px solid #c0ba81 ; width: 980px; height: 550px; margin: 0px auto; background-color: #FFFFFF;">
     <tr>
-        <td style="float: left; width: 375px">
-            <div style="float: left; width: 370px;">
+        <td style="float: left; width: 480px">
+            <div style="float: left; width: auto;">
                 <p class="generalText" style="color: #660000">To request additional information please contact us at:</p>
-                <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">(506) 2248-3127&nbsp;&nbsp;(Telephone)<br />
-                    (506) 2256-3526&nbsp;&nbsp;(Facsimile)<br />
-                    (506) 8366-0217&nbsp;&nbsp;(Mobile for Emergencies)<br />
-                <p class="generalText divLine" style="color: #660000">Postal address:</p>
+                <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">
+                    Costa Rica:<br/><br/>
+                      (506) 4000-2288 (Telephone)<br/> 
+                      (506) 4000-2225 (Telephone)<br/>
+                      (506) 2256-3526 (Facsimile)<br/>
+                      (506) 8366-0217  (Mobile for Emergencies)<br/><br/>
+                <p class="generalText divLine" style="color: #660000">Mailing address:</p>
                 <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">Costa Rica Reps<br />
                     Apartado Postal 13132 - CP 1000<br />Oficina Central de Correos<br />San Jos&eacute;, Costa Rica<br />Central America</p>
                 <p class="generalText divLine" style="color: #660000">Physical Address:</p>
-                <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">Casa Azul #325. Calle 34 Avenida 3-5. Paseo Col&oacute;n, San Jose, Costa Rica. </p>
-                <p class="generalText divLine">We are conveniently located near the city of San Jos&eacute;.<br /><br />Tobias Bola&ntilde;os Regional Airport (SYQ): 5 miles<br />
+                <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">Casa Azul #325. Calle 34 Avenida 3-5. Del Taco Bell Paseo Col&oacute;n 224 metros Norte, Casa Azul a mano izquierda. Paseo Col&oacute;n,<br/> San Jose, Costa Rica. </p>
+
+                <p class="generalText divLine">We are conveniently located near the city of San Jos&eacute;.<br /><br />Tobias Bola&ntilde;os Regional Airport (SYQ): 3 miles<br />
                     Juan Santamaria Int. Airport (SJO): 10 miles.</p>
             </div>
 
         </td>
 
-        <td  style="float: left; width: 400px; border-left: 1px solid #DB5A0A;">
+        <td  style="float: left; width: 485px; border-left: 1px solid #DB5A0A;">
 
-        <div id="enquiry" style="padding-left: 20px;">
-        <h2>General Enquiry</h2>
+        <div id="enquiry" style="padding-left: 50px;">
+        <h3>General Enquiry</h3>
         <form action="enquiry.php" method="post" name="enquiryForm" id="enquiryForm">
-        <table>
+        <table border="0">
         <tr>
-          <td valign="top" class="labeldatos">First Name*</td>
+          <td valign="top" class="labeldatos">First Name <span style="color: #e00000">*</span></td>
           <td><input class="formText" type="text" id="firstName" name="firstName" required="yes" onfocus="hilightON('firstName')" onblur="hilightOFF('firstName')" /></td>
         </tr>
         <tr>
-          <td valign="top" class="labeldatos">Last Name*</td>
+          <td valign="top" class="labeldatos">Last Name <span style="color: #e00000">*</span></td>
           <td><input class="formText" type="text" id="lastName" name="lastName"  required="yes" onfocus="hilightON('lastName')" onblur="hilightOFF('lastName')" /></td>
         </tr>
         <tr>
-          <td valign="top" class="labeldatos">Telephone*</td>
+          <td valign="top" class="labeldatos">Telephone <span style="color: #e00000">*</span></td>
           <td><input class="formText" type="text" id="tel" name="tel"  required="yes" onfocus="hilightON('tel')" onblur="hilightOFF('tel')" /></td>
         </tr>
         <tr>
-          <td valign="top" class="labeldatos">E-mail*</td>
+          <td valign="top" class="labeldatos">E-mail <span style="color: #e00000">*</span></td>
           <td><input class="formText" type="text" id="emailAdr" name="emailAdr"  required="yes" onfocus="hilightON('emailAdr')" onblur="hilightOFF('emailAdr')" /></td>
         </tr>
         <tr>
-          <td valign="top" class="labeldatos">Country*</td>
+          <td valign="top" class="labeldatos">Country <span style="color: #e00000">*</span></td>
           <td><select id="country" name="country" class="formList" onfocus="hilightON('country')" onblur="hilightOFF('country')">
           <option value="" selected="selected">Please select&nbsp;&gt;&gt;</option>
           <option value="Afghanistan">Afghanistan</option>
@@ -298,30 +302,41 @@
           </select></td>
         </tr>
         <tr>
-          <td valign="top" class="labeldatos">State</td>
+          <td valign="top" class="labeldatos">State </td>
           <td><input class="formText" type="text" id="state" name="state"  required="yes" onfocus="hilightON('state')" onblur="hilightOFF('state')" /></td>
         </tr>
-        </table>
-        <p style="color: #e00000; font-size: 12px; margin-bottom: 15px">(* fields are required)</p>
-        <p class="divLine">Additional comments:</p>
-        <textarea name="comment" id="comment" style="width: 300px; height: 60px;" onfocus="hilightON('comment')" onblur="hilightOFF('comment')"></textarea>
-        <p class="divLine">Please select the department you would like this enquiry to be forwarded to:</p>
-        <select id="dep" name="dep" class="formList" style="width: 360px" onchange="updateDepDesc(this.selectedIndex)" onfocus="hilightON('dep')" onblur="hilightOFF('dep')">
+        <tr><td colspan="2"><p style="color: #e00000; font-size: 12px;">(<span style="color: #e00000">*</span> fields are required)</p></td></tr>   
+        <tr>
+          <td><p class="divLine">Additional comments:</p></td>
+          <td><textarea name="comment" id="comment" style="width: 300px; height: 60px; resize: none;" onfocus="hilightON('comment')" onblur="hilightOFF('comment')"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><p class="divLine">Please select the department you would like this enquiry to be forwarded to:</p></td>
+        </tr>
+        <tr><td colspan="2">
+          <select id="dep" name="dep" class="formList" style="width: 100%;" onchange="updateDepDesc(this.selectedIndex)" onfocus="hilightON('dep')" onblur="hilightOFF('dep')">
             <option value="tp">Travel Planning</option>
             <option value="fi">Finance &amp; Accounting</option>
             <option value="op" selected="selected">Operations &amp; Service Delivery</option>
             <option value="mg">Management</option>
         </select>
-        <p class="descText" id="depDesc">Last minute incidents, flight changes, client feedback</p>
-        <div class="divLine" style="text-align: center">
+        </td></tr>
+        <tr><td colspan="2" >
+        <p class="descText" id="depDesc">Last minute incidents, flight changes, client feedback</p>  
+        </td></tr>
+        <tr><td colspan="2" >
+        <img src="images/captcha.png" style="float: right;">
+        </td></tr>
+        <tr><td style="width: 100%;" colspan="2">
+          <div class="divLine" style="text-align: right; width: 300px;">
             <input type="reset" name="Clear" value="Clear" />
             <input type="submit" name="Send" value="Send" />
-        </div>
+        </div>  
+        </td></tr>
+        </table>
         </form>
         </div>
         </div>
-
         </td>
     </tr>
-
 </table>

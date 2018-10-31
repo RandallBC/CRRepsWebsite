@@ -4,9 +4,8 @@ ini_set ('error_reporting', E_PARSE);
 
 <title>Costa Rica Reps Tour Development &amp; Destination Management</title>
 <meta content="ALL" name="ROBOTS" />
-<meta content="&copy; 2014 Costa Rica Reps DMC S.A. All Rights Reserved." name="copyright" />
+<meta content="&copy; 2018 Costa Rica Reps DMC S.A. All Rights Reserved." name="copyright" />
 <link rel="shortcut icon" href="images/favicon.ico">
-
 
 <!--dropdown menu import start-->
 
@@ -201,6 +200,13 @@ ini_set ('error_reporting', E_PARSE);
   height: 30px;
   width: 250px;
 }
+
+.menuheadDiv {
+  width: auto;
+  height: auto;
+  float: right;
+  padding-right: 25px;              
+              }
 
 </style>
 
@@ -580,10 +586,10 @@ $(document).ready(function(){
   <div id="pageHeader">
 
     <!-- dropdown menu starts-->
-    <table class="tabhead" border="0px" height="auto" width="auto" >
+    <table class="tabhead" border="0px" height="130px" width="1020px" >
       <tr>
-        <td rowspan="2" style="align: right; width: 261px; height: 86px"><a href="index.php"><img src="images/logocrreps.png" /></a></td>
-        <td style="float: right; width: 300px;">
+        <td rowspan="2" style="align: right; width: 325px; height: auto"><a href="index.php"><img src="images/logocrreps.png" /></a></td>
+        <td style="float: right; width: auto;">
           <ul>
 
             <?php
@@ -613,24 +619,24 @@ $(document).ready(function(){
             </ul>
           </td>
 
-          <td style="float: right; width: 200px;">
+          <td style="float: right; width: auto;">
             <ul>
-              <li class="sitemapa"><a href="sitemap.php" class="sitemapa">Site Map</a></li>
+              <li class="sitemapa" onclick="loadcontents('sitemap');"><a href="#" class="sitemapa">Site Map</a></li>
             </ul>
           </td>
-          <td valign="top" style="width: 220px; height: 25px !important;"  >
+          <td style="width: auto; height: 25px;"  >
             <div id="busqueda-form">
-              <form method="post" action="sitemap.php">
+              <!--form method="post" action="sitemap.php"-->
                 <input type="text" id="busqueda" name="busqueda" placeholder="  Search..." required="required"/>
                 <input type="image" src="images/lupa.png" id="submita" />
-              </form>
+              <!--/form-->
             </div>
 
           </td>
         </tr>
         <tr>
 
-          <td colspan="3" id="techo" align="center">
+          <td colspan="3" id="techo">
             <!--div id="flags" align="right">
 
               <script type='text/javascript'>
@@ -662,8 +668,9 @@ $(document).ready(function(){
               <a href="http://www.costaricareps.com/fr"><img src="images/icon_France.png" height="25px" width="33px"></a>
 
             </div-->
-            <center><?php include("menuhead.php")?></center>
-
+            <div class="menuheadDiv">
+            <?php include("menuhead.php")?>
+            </div>
           </td>
         </tr>
 

@@ -40,7 +40,7 @@ body {
 }
 
 #techo {
-	width: 737px;
+	width: 682px;
 	height: 70px;
 	background-image: url(../images/techo_bar.png);
 	background-repeat: no-repeat;
@@ -248,7 +248,6 @@ ul.boldList li {
 
 .compactText {
 	padding-left: 10px;
-	/* font-family: Tahoma, Geneva, sans-serif;*/
 	font: candara !important;
 	font-size: 14px;
 }
@@ -309,54 +308,23 @@ ul.boldList li {
 
 /*form busqueda*/
 
-#busqueda-form {
-	height: 25px;
-	width: 230px;
-	border-radius: 2px;
-	float: right;
-
-
-}
-
 #busqueda-form #busqueda {
-	font-size: 14px;
-	height: 25px;
-	font-family: Arial, san-serif;
-	background: #f0f0f0;
-	border: 1px solid #585919;
-	;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 5px 0 0 5px;
+	top: 10px;
+	font: normal 14px candara;
+	height: 38px;
+	width: 198px;
 	float: left;
-
-
-}
-
-
-#busqueda-form #busqueda:focus {
-	background-color: #f0f0f0;
-
+	background: #fff;
+	color: #4c4c4c;
+	border-left: 1px solid #E5E6E7;
+	border-bottom: 1px solid #E5E6E7;
+	border-radius: 2px;
 }
 
 
 #busqueda-form #submita {
-	color: #FFFFFF;
-	background-color: #c0ba81;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	padding: 2px;
-	border-radius: 0 5px 5px 0;
-	margin-left: -4px !important;
-	border: 1px solid #585919;
-	height: 21px;
 	float: left;
-
-}
-
-#busqueda-form #submita:hover {
-	background-color: #c0ba81;
-	color: #595819;
 }
 
 #busqueda-form .required {
@@ -390,52 +358,50 @@ ul.boldList li {
 	text-align: justify !important;
 }
 
-
 li.sitemapa {
 	border: 1px solid #FFFFFF;
 	width: 200px;
 	display: inline-block;
 	float: left;
-	height: 25px;
-	text-align: center;
+	height: 35px;
+	padding-top: 10px;
 }
 
 a.sitemapa:hover {
 	background: url(../images/iconos_topmenu/sitemapa.png) no-repeat 14px center;
 	width: 150px;
-	height: 10px;
+	height: 30px;
 }
 
 a.admini:hover {
 	background: url(../images/iconos_topmenu/admin.png) no-repeat 12px center;
 	width: 200px;
-	height: 10px;
+	height: 30px;
 }
 
 a.admini2:hover {
 	background: url(../images/iconos_topmenu/admin.png) no-repeat 12px center;
 	width: 200px;
-	height: 10px;
+	height: 30px;
 }
 
 a.sitemapa:active {
 	background: url(../images/iconos_topmenu/sitemapa_red.png) no-repeat 14px center;
 	width: 150px;
-	height: 10px;
+	height: 30px;
 }
 
 a.admini:active {
 	background: url(../images/iconos_topmenu/admin_red.png) no-repeat 12px center;
 	width: 200px;
-	height: 10px;
+	height: 30px;
 }
 
 a.admini2:active {
 	background: url(../images/iconos_topmenu/admin_red.png) no-repeat 12px center;
 	width: 200px;
-	height: 10px;
+	height: 30px;
 }
-
 
 li.sitemapa:hover {
 	border: 1px solid #FFFFFF;
@@ -444,7 +410,7 @@ li.sitemapa:hover {
 a.sitemapa,
 a.admini {
 	color: #c0ba81;
-	font: normal 14px Candara;
+	font: normal 16px Candara;
 	text-decoration: none;
 	padding-left: 40px;
 }

@@ -39,16 +39,15 @@
 
 .servi {
   color: #ffffcc;
-  font: normal 18px Candara;
-  top: 5px;
+  font: normal 16px Candara;
   text-align: left;
   list-style: circle;
 }
 
 .servics {
-  background: url(images/frame.png) no-repeat;
-  width: 175px;
-  height: 200px;
+  background: url(images/frame.png) no-repeat center;
+  width: 240px;
+  height: 220px;
 }
 
 </style>
@@ -157,12 +156,14 @@
           <div class="servics">
             <li><label class="abouta">Our Services</label></li><br>
 
-            <li class="chikis"><label class="servi">Fixed Tour Departures</label></li>
-            <li class="chikis"><label class="servi">Custom Itineraries</label></li>
-            <li class="chikis"><label class="servi">Group Travel</label></li>
-            <li class="chikis"><label class="servi">Hotel Reservations</label></li>
+            <li class="chikis"><label class="servi">Regularly Scheduled Departures</label></li>
+            <li class="chikis"><label class="servi">Customized Itineraries</label></li>
+            <li class="chikis"><label class="servi">Special Interest Itineraries</label></li>
+            <li class="chikis"><label class="servi">Privately Guided Travel Itineraries</label></li>
+            <li class="chikis"><label class="servi">Hotel Reservations and Allotments</label></li>
             <li class="chikis"><label class="servi">Transport &amp; Logistics</label></li>
-            <li class="chikis"><label class="servi">Corporate Travel</label></li>
+            <li class="chikis"><label class="servi">Site Inspection, Familiarization &amp; Press Trips</label></li>
+            <li class="chikis"><label class="servi">Organization of congress, meetings and corporate incentive tours.</label></li>
           </div>
         </div>
       </ul>
