@@ -1,75 +1,143 @@
-*{
-  margin:0;
-  padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#menunaviga li{
-  list-style:none;
-  height:150px;
-  padding: 10px;
-  background: #c0ba81;
-  border-radius: 3px;
-  border: 2px solid #585919;
-  z-index: 9999999999999999999999999999999;
+#menunaviga li {
+    list-style: none;
+    height: 150px;
+    padding: 10px;
+    background: #c0ba81;
+    border-radius: 3px;
+    border: 2px solid #585919;
+    z-index: 9999999999999999999999999999999;
 }
 
-#menunaviga a{
-  color: #FFF;
-  height: 20px;
-  font-size: 14px;
-  display:block;
-  position:relative;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  text-decoration:none;
+#menunaviga a {
+    font: normal 16px Candara;
+    color: #FFF;
+    height: 20px;
+    display: block;
+    position: relative;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    text-decoration: none;
 }
 
-/*#menunaviga a.contact_a{
-  width: auto;
+#menunaviga a:hover {
+    text-decoration: none;
 }
 
-#menunaviga a.quote_a{
-  width: auto;
+#menunaviga a:focus {
+    text-decoration: none;
 }
 
-#menunaviga a.submite_a{
-  width: auto;
-}*/
-
-#menunaviga a:hover{
-  text-decoration:none;
+#menunaviga a.contact_a {
+    color: #FFF;
 }
 
-#menunaviga a:focus{
-  text-decoration:none;
+#menunaviga a.contact_a:hover {
+    background: url(../images/social/contact_hover.png) no-repeat top center #c0ba81;
+    color: #585919;
 }
 
-#menunaviga a.contact_a {	color: #FFF;}
-#menunaviga a.contact_a:hover {background: url(../images/social/contact_hover.png) no-repeat top center #c0ba81; color: #585919;}
-#menunaviga a.contact_a:focus {background: url(../images/social/contact_checked.png) no-repeat top center #c0ba81; color: #9c1b2d;}
+#menunaviga a.contact_a:focus {
+    background: url(../images/social/contact_checked.png) no-repeat top center #c0ba81;
+    color: #9c1b2d;
+}
 
-#menunaviga a.quote_a { color: #FFF;}
-#menunaviga a.quote_a:hover { background: url(../images/social/quote_hover.png) no-repeat top center #c0ba81; color: #585919;}
-#menunaviga a.quote_a:focus { background: url(../images/social/quote_checked.png) no-repeat top center #c0ba81; color: #9c1b2d;}
+#menunaviga a.quote_a {
+    color: #FFF;
+}
 
-#menunaviga a.submite_a { color: #FFF;}
-#menunaviga a.submite_a:hover { background: url(../images/social/news_hover.png) no-repeat top center #c0ba81; color: #585919;}
-#menunaviga a.submite_a:focus { background: url(../images/social/news_checked.png) no-repeat top center #c0ba81; color: #9c1b2d;}
+#menunaviga a.quote_a:hover {
+    background: url(../images/social/quote_hover.png) no-repeat top center #c0ba81;
+    color: #585919;
+}
+
+#menunaviga a.quote_a:focus {
+    background: url(../images/social/quote_checked.png) no-repeat top center #c0ba81;
+    color: #9c1b2d;
+}
+
+#menunaviga a.submite_a {
+    color: #FFF;
+}
+
+#menunaviga a.submite_a:hover {
+    background: url(../images/social/news_hover.png) no-repeat top center #c0ba81;
+    color: #585919;
+}
+
+#menunaviga a.submite_a:focus {
+    background: url(../images/social/news_checked.png) no-repeat top center #c0ba81;
+    color: #9c1b2d;
+}
 
 
 /* The styles below are only needed for the demo page */
 
-#prince{
-  float: right;
-  width: 45px;
+#prince {
+    float: right;
+    width: 45px;
 }
 
-a img{
-  border:none;
+a img {
+    border: none;
 }
 
 #titu {
-  font: normal 28px Candara;
-  color: #9c1b2d;
-  line-height: 60px;
+    font: normal 28px Candara;
+    color: #9c1b2d;
+    line-height: 60px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 150px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.modal-content-news {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+}
+
+.close_btn {
+    cursor: pointer;
+    float: right;
+}
+
+h2.tit {
+    font: normal 28px candara;
 }

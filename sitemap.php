@@ -1,15 +1,15 @@
 <link href="css/sitemapstyle.css" media="screen" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/general.js"></script>
-<script type="text/javascript" src="sitefuncion.js"></script>
+<link rel="stylesheet" href="css/jquery-confirm.min.css">
+<script src="js/jquery-confirm.min.js"></script>
 
 <div id="mapag">
 <p id="titulog">Costa Rica Reps Site Map.</p>
 
-
-        <div id="clase1">
-            <a href="#" onclick="destinalert();" id="padreg">Destinations</a>
-                 <ul>
+    <div id="clase1">
+        <li class="li_padreg"><a href="#" onclick="destinalert();" id="padreg">Destinations</a></li>
+            <ul>
                      <li><a href="#" onclick="destinalert();" class="hijog">Central Valley</a>
                          <ul>
                              <li><a href="#" onclick="destinalert();" class="nietog">San Jose City</a></li>
@@ -58,12 +58,11 @@
                              <li><a href="#" onclick="destinalert();" class="nietog">Dulce Gulf &amp; Burica Peninsula</a></li>
                          </ul>
                      </li>
-                 </ul>
+            </ul>
+    </div>
 
-         </div>
-
-     <div id="clase2">
-            <a href="#" onclick="spectra();" id="padreg">Specialty Travel</a>
+    <div id="clase2">
+        <li class="li_padreg"><a href="#" onclick="spectra();" id="padreg">Specialty Travel</a></li>
                  <ul>
                      <li><a href="#" onclick="spectra();" class="hijog">Active Adventures</a>
                          <ul>
@@ -108,65 +107,86 @@
                              <li><a href="#" onclick="spectra();" class="nietog">Incentive Travel</a></li>
                          </ul></li><br>
                  </ul>
-     </div>
+    </div>
 
-     <div id="clase3">
-             <a href="#" id="padreg">Travel Guide</a>
+    <div id="clase3">
+        <li class="li_padreg"><a href="#" id="padreg">Travel Guide</a></li>
+        <ul>
+                <li><a href="#" id="hijog">About Costa Rica</a>
                  <ul>
-                     <li><a href="#" id="hijog">About Costa Rica</a>
-                         <ul>
-                             <li><a href="whycostarica.php" id="nietog">Why Costa Rica?</a></li>
-                             <li><a href="ports.php" id="nietog">Airports &amp; Ports</a></li>
-                             <li><a href="economy.php" id="nietog">Bussiness &amp; Economy</a></li>
-                             <li><a href="comunications.php" id="nietog">Comunications</a></li>
-                             <li><a href="education.php" id="nietog">Education</a></li>
-                             <li><a href="electricity.php" id="nietog">Electricity</a></li>
-                             <li><a href="government.php" id="nietog">Government</a></li>
-                             <li><a href="factsheet.php" id="nietog">Fact Sheet</a></li>
-                             <li><a href="parksnature.php" id="nietog">Parks &amp; Nature Reserves</a></li>
-                             <li><a href="timezones.php" id="nietog">Time Zones</a></li>
-                             <li><a href="tipping.php" id="nietog">Tipping</a></li>
-                             <li><a href="transportation.php" id="nietog">Transportation</a></li>
-                         </ul>
-
-                     </li><br>
-                     <li><a href="booksguides.php" id="hijog">Books &amp; Guides</a></li>
-                     <!--li><a href="http://www.costaricareps.com/blog" target="_blank" id="hijog">Blog</a></li-->
-                     <li><a href="climate.php" id="hijog">Climate</a></li>
-                     <li><a href="entryrequirements.php" id="hijog">Entry Requirements</a></li>
-                     <li><a href="health.php" id="hijog">Health &amp; Safety</a></li>
-                     <li><a href="culture.php" id="hijog">Heritage &amp; Culture</a></li>
-                     <li><a href="maps.php" id="hijog">Maps of Costa Rica</a></li>
-                     <li><a href="photogallery.php" id="hijog">Photo Gallery</a></li>
-                     <li><a href="roads.php" id="hijog">Roads &amp; Driving</a></li>
-                     <li><a href="whattopack.php" id="hijog">What to Pack</a></li>
+                  <li onclick="loadcontents('whycostarica');"><a href="#" class="nietog">Why Costa Rica?</a></li>
+                  <li onclick="loadcontents('ports');"><a href="#" class="nietog">Airports &amp; Ports</a></li>
+                  <li onclick="loadcontents('economy');"><a href="#" class="nietog">Bussiness &amp; Economy</a></li>
+                  <li onclick="loadcontents('comunications');"><a href="#" class="nietog">Comunications</a></li>
+                  <li onclick="loadcontents('education');"><a href="#" class="nietog">Education</a></li>
+                  <li onclick="loadcontents('electricity');"><a href="#" class="nietog">Electricity</a></li>
+                  <li onclick="loadcontents('government');"><a href="#" class="nietog">Government</a></li>
+                  <li onclick="loadcontents('factsheet');"><a href="#" class="nietog">Fact Sheet</a></li>
+                  <li onclick="loadcontents('parksnature');"><a href="#" class="nietog">Parks &amp; Nature Reserves</a></li>
+                  <li onclick="loadcontents('timezones');"><a href="#" class="nietog">Time Zones</a></li>
+                  <li onclick="loadcontents('tipping');"><a href="#" class="nietog">Tipping</a></li>
+                  <li onclick="loadcontents('transportation');"><a href="#" class="nietog">Transportation</a></li>
                  </ul>
-     </div>
-
-     <div id="clase4">
-            <a href="#" id="padreg">About CR. Reps</a>
+                </li><br>
+                 <li onclick="loadcontents('booksguides');"><a href="#" id="hijog">Books &amp; Guides</a></li><br>
+                 <li><a href="#" id="hijog">Climate</a>
                  <ul>
-                     <li><a href="#" id="hijog">Our Company</a>
-                         <ul>
-                             <li><a href="ourcompany.php" id="nietog">Our Company</a></li>
-                             <li><a href="ourteam.php" id="nietog">Our Team</a></li>
-                             <li><a href="affiliations.php" id="nietog">Affiliations</a></li>
-                             <li><a href="responsible.php" id="nietog">Responsible Travel</a></li>
-                             <li><a href="infosystems.php" id="nietog">Tech &amp; Info Systems</a></li>
-                         </ul></li><br>
-                     <li><a href="corporateprofile.php" id="hijog">Corporate Profile</a></li>
-                     <li><a href="workingus.php" id="hijog">Working with Us</a></li>
-                     <li><a href="meetus.php" id="hijog">Meet with Us</a></li>
-                     <li><a href="testimonials.php" id="hijog">Testimonials</a></li>
-                     <li><a href="fixedtour.php" id="hijog">Fixed Tour Departures</a></li>
-                     <li><a href="customitineraries.php" id="hijog">Custom Itineraries</a></li>
-                     <li><a href="grouptravel.php" id="hijog">Group Travel</a></li>
-                     <li><a href="reservations.php" id="hijog">Hotel Reservations</a></li>
-                     <li><a href="transportlogistics.php" id="hijog">Transport & Logistics</a></li>
-                     <li><a href="corporatetravel.php" id="hijog">Corporate Travel</a></li>
-                     <li><a href="terms.php" id="hijog">Terms &amp; Conditions</a></li>
+                   <li onclick="loadcontents('climate');"><a href="#" class="nietog">Climate in CR</a></li>
+                   <li onclick="loadcontents('temperature');"><a href="#" class="nietog">Temperature</a></li>
+                   <li onclick="loadcontents('altitvariation');"><a href="#" class="nietog">Altitudinal Variation</a></li>
+                   <li onclick="loadcontents('winds');"><a href="#" class="nietog">Winds</a></li>
+                   <li onclick="loadcontents('rainfall');"><a href="#" class="nietog">Rainfall</a></li>
+                   <li onclick="loadcontents('carregion');"><a href="#" class="nietog">Caribbean Region</a></li>
+                   <li onclick="loadcontents('pacificregion');"><a href="#" class="nietog">Pacific Region</a></li>
+                   <li onclick="loadcontents('lilsummers');"><a href="#" class="nietog">Little Summers</a></li>
                  </ul>
-     </div>
+                 </li>
+
+                <li onclick="loadcontents('entryrequirements');"><a href="#" class="nietog">Entry Requirements</a></li>
+                <li onclick="loadcontents('health')"><a href="#" class="nietog">Health &amp; Safety</a></li><br/>
+
+                <li><a href="#" id="hijog">Heritage &amp; Culture</a>
+                   <ul>
+                    <li onclick="loadcontents('culture');"><a href="#" class="nietog">Heritage &amp; Culture</a></li>
+                    <li onclick="loadcontents('precolonial');"><a href="#" class="nietog">Pre-colonial History</a></li>
+                    <li onclick="loadcontents('foodcuisine');"><a href="#" class="nietog">Food & Cuisine</a></li>
+                    <li onclick="loadcontents('people');"><a href="#" class="nietog">Its People</a></li>
+                    <li onclick="loadcontents('holidays');"><a href="#" class="nietog">National Holidays</a></li>
+                    <li onclick="loadcontents('symbols');"><a href="#" class="nietog">National Symbols</a></li>
+                   </ul>
+                </li>
+                <li onclick="loadcontents('maps');"><a href="#" class="nietog">Maps of Costa Rica</a></li>
+                <li onclick="showgallery();"><a href="#" class="nietog">Photo Gallery</a></li>
+                <li onclick="loadcontents('roads');"><a href="#" class="nietog">Roads &amp; Driving</a></li>
+                <li onclick="loadcontents('whattopack');"><a href="#" class="nietog">What to Pack</a></li>
+             </ul>
+    </div>
+
+    <div id="clase4">
+        <li class="li_padreg"><a href="#" id="padreg">About CR. Reps</a></li>
+        <ul>
+            <li><a href="#" id="hijog">Our Company</a>
+                <ul>
+                 <li onclick="loadcontents('ourcompany');"><a href="#" class="nietog">Our Company</a></li>
+                 <li onclick="loadcontents('ourteam');"><a href="#" class="nietog">Our Team</a></li>
+                 <li onclick="loadcontents('affiliations');"><a href="#" class="nietog">Affiliations</a></li>
+                 <li onclick="loadcontents('responsible');"><a href="#" class="nietog">Responsible Travel</a></li>
+                 <li onclick="loadcontents('infosystems');"><a href="#" class="nietog">Tech &amp; Info Systems</a></li>
+                </ul></li><br>
+            <li><a href="#" id="hijog">Corporate Profile</a>
+                <ul>
+                 <li onclick="loadcontents('corpProfile');"><a href="#" class="nietog">Corporate Profile</a></li>
+                 <li onclick="loadcontents('corpPhilosophy');"><a href="#" class="nietog">Our Corporate Philosophy</a></li>
+                 <li onclick="loadcontents('corpPolicies');"><a href="#" class="nietog">Corporate Policies</a></li>
+                </ul>
+            </li><br/>
+            <li onclick="loadcontents('workingus');"><a href="#" class="hijog">Working with Us</a></li>
+            <li onclick="loadcontents('meetus');"><a href="#" class="hijog">Meet with Us</a></li>
+            <li onclick="loadcontents('testimonials/testim/testimon');"><a href="#" class="hijog">Testimonials</a></li>
+            <li onclick="loadcontents('terms');"><a href="#" class="hijog">Terms &amp; Conditions</a></li>
+            <li onclick="loadcontents('services/serv');"><a href="#" class="hijog">Our Services</a></li>
+        </ul>
+    </div>
  </div>
 
  

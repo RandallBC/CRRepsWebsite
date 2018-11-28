@@ -1,17 +1,17 @@
 #footstyle {
 
-background: #FFFFFF;
-border-radius: 5px;
-padding: 2px;
-width: 1000px;
-height: 110px;
--webkit-transition: color .2s ease-in-out;
--moz-transition: color .2s ease-in-out;
--o-transition: color .2s ease-in-out;
--ms-transition: color .2s ease-in-out;
-transition: color .2s ease-in-out;
-text-decoration: none !important;
-list-style-type:none !important;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 2px;
+    width: 1000px;
+    height: 110px;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    text-decoration: none !important;
+    list-style-type: none !important;
 
 }
 
@@ -21,41 +21,10 @@ list-style-type:none !important;
 
 }
 
-th.footsitemap {
-    font: normal 18px Candara;
-    height: 18px;
-    color: #9C1B2D;
-    width: 340px;
-}
-
-td.footsitemap {vertical-align: top; padding: 5px 30px 0 25px;}
-
-.destinspec {
-width: 130px;
-    font: normal 16px Candara;
-    height: 18px;
-    color: #9C1B2D;
-}
-
-.tguid {
-    float: left;
-    padding: 0 30px 0 15px;
-    height: 18px;
-    color: #9C1B2D;
-
-}
-
-.aboutcr {
-    width: 210px;
-    height: 18px;
-    color: #9C1B2D;
-    font: normal 16px Candara;
-
-}
 
 li.lijo {
     height: 20px;
-    list-style-type:none !important;
+    list-style-type: none !important;
 
 }
 
@@ -63,7 +32,7 @@ a.padre {
     color: #9c1b2d !important;
     font: normal 20px Candara;
     list-style: inherit;
-    text-decoration: none  !important;
+    text-decoration: none !important;
 }
 
 a.hijo {
@@ -71,7 +40,7 @@ a.hijo {
     color: #595819 !important;
     font: normal 14px Candara;
     text-decoration: none !important;
-    list-style-type:none !important;
+    list-style-type: none !important;
 
 }
 
@@ -79,5 +48,5 @@ a.hijo:hover {
 
     color: #9C1B2D !important;
     text-decoration: none;
-    list-style-type:none !important;
+    list-style-type: none !important;
 }

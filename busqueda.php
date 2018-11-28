@@ -1,16 +1,14 @@
 <?php
-ob_start();
 
-ini_set ('error_reporting', E_PARSE);
-
-
-$buscado = $_POST['busqueda'];
-
-/*echo ("Usted ha buscado ".$buscado);*/
-
-
-$paginacontenido = ob_get_contents();
-ob_end_clean();
-
-require_once 'plantilla.php';
+$buscado = $_POST['busca'];
+$retorno = "";
+    
+    $lines = file('sitemap.php');
+    foreach($lines as $line)
+    {
+        if((stripos($line, $buscado) !== false) && (stripos($line, "onclick=") !== false)){
+          $retorno = $retorno . $line;
+        } 
+    }
+    echo $retorno;
 ?>

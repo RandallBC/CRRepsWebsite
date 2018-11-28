@@ -1,48 +1,57 @@
 #mapag {
-
-    width: 1018px;
+    width: 1005px;
     height: 780px;
     align-content: center;
 }
 
-li {list-style: none;}
+li {
+    list-style: none;
+}
 
 #titulog {
-    font: normal 20px verdana, arial, helvetica;
+    font: normal 18px candara;
     color: #9C1B2D;
     text-decoration: none;
     padding: 20px;
+}
 
+.li_padreg {
+    background: #000;
+    width: 99%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #padreg {
-    margin-left: 30px;
-    font: normal 18px verdana, arial, helvetica;
-    color: #000000;
+    font: normal 16px candara;
+    color: #fff;
     text-decoration: none;
-
 }
 
-#hijog, .hijog {
+#hijog,
+.hijog {
     text-align: justify;
     margin-left: 40px;
-    font: normal 14px verdana, arial, helvetica;
+    font: normal 14px candara;
     color: #9C1B2D;
     text-decoration: none;
     list-style: none;
 
 }
 
-#nietog, .nietog {
+#nietog,
+.nietog {
     text-align: justify;
     margin-left: 60px;
-    font: normal 11px verdana, arial, helvetica;
+    font: normal 12px candara;
     color: #555555;
     text-decoration: none;
-    line-height: 22px;
 }
 
-#hijog:hover, #nietog:hover, .hijog:hover, .nietog:hover {
+#hijog:hover,
+#nietog:hover,
+.hijog:hover,
+.nietog:hover {
     text-align: justify;
     color: #585919;
     text-decoration: underline;
@@ -51,22 +60,29 @@ li {list-style: none;}
 
 #clase1 {
     float: left;
-    width: 254px;
+    width: 250px;
     padding-left: 2px;
+    background: #efefef;
+    height: 721px;
 }
 
 #clase2 {
     float: left;
-    width: 254px;
+    width: 250px;
+    background: #efefef;
+    height: 721px;
 }
 
 #clase3 {
     float: left;
-    width: 254px;
+    width: 250px;
+    background: #efefef;
+    height: 721px;
 }
 
 #clase4 {
     float: left;
-    width: 254px;
+    width: 250px;
+    background: #efefef;
+    height: 721px;
 }
-

@@ -16,20 +16,22 @@
 
 <table border="0px" style=" border-top: 5px solid #c0ba81 ; width: 980px; height: 550px; margin: 0px auto; background-color: #FFFFFF;">
     <tr>
-        <td style="float: left; width: 480px">
+        <td style="float: left; width: 485px; border-right: 1px solid #DB5A0A; ">
             <div style="float: left; width: auto;">
                 <p class="generalText" style="color: #660000">To request additional information please contact us at:</p>
-                <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">
-                    Costa Rica:<br/><br/>
-                      (506) 4000-2288 (Telephone)<br/> 
-                      (506) 4000-2225 (Telephone)<br/>
-                      (506) 2256-3526 (Facsimile)<br/>
-                      (506) 8366-0217  (Mobile for Emergencies)<br/><br/>
+                <p class="generalText" style="padding-left: 35px; padding-bottom: 5px">
+                    Costa Rica:<br/>
+                    <table>
+                      <tr><td style="text-align: center;"><img src="images/phn.png"></td><td>&nbsp;&nbsp;&nbsp;&nbsp;(506) 4000-2288 (Telephone)<br/>&nbsp;&nbsp;&nbsp;&nbsp;(506) 4000-2225 (Telephone)</td></tr>
+                      <tr><td style="text-align: center;"><img src="images/fax.png"></td><td>&nbsp;&nbsp;&nbsp;&nbsp;(506) 2256-3526 (Facsimile)</td></tr>
+                      <tr><td style="text-align: center;"><img src="images/mbl.png"></td><td>&nbsp;&nbsp;&nbsp;&nbsp;(506) 8366-0217 (Mobile for Emergencies)</td></tr>
+                      <tr><td style="text-align: center;"><img src="images/wha.png"></td><td>&nbsp;&nbsp;&nbsp;&nbsp;(506) 8730-0657 (WhatsApp)</td></tr>
+                    </table>
                 <p class="generalText divLine" style="color: #660000">Mailing address:</p>
-                <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">Costa Rica Reps<br />
+                <p class="generalText" style="padding-left: 35px; padding-bottom: 5px">Costa Rica Reps<br />
                     Apartado Postal 13132 - CP 1000<br />Oficina Central de Correos<br />San Jos&eacute;, Costa Rica<br />Central America</p>
                 <p class="generalText divLine" style="color: #660000">Physical Address:</p>
-                <p class="generalText" style="padding-left: 35px; padding-bottom: 10px">Casa Azul #325. Calle 34 Avenida 3-5. Del Taco Bell Paseo Col&oacute;n 224 metros Norte, Casa Azul a mano izquierda. Paseo Col&oacute;n,<br/> San Jose, Costa Rica. </p>
+                <p class="generalText" style="padding-left: 35px; padding-bottom: 5px">Casa Azul #325. Calle 34 Avenida 3-5. Del Taco Bell Paseo Col&oacute;n 224 metros Norte, Casa Azul a mano izquierda. Paseo Col&oacute;n,<br/> San Jose, Costa Rica. </p>
 
                 <p class="generalText divLine">We are conveniently located near the city of San Jos&eacute;.<br /><br />Tobias Bola&ntilde;os Regional Airport (SYQ): 3 miles<br />
                     Juan Santamaria Int. Airport (SJO): 10 miles.</p>
@@ -37,7 +39,7 @@
 
         </td>
 
-        <td  style="float: left; width: 485px; border-left: 1px solid #DB5A0A;">
+        <td  style="float: left; width: 480px;">
 
         <div id="enquiry" style="padding-left: 50px;">
         <h3>General Enquiry</h3>

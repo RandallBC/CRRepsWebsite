@@ -57,7 +57,7 @@
   <li id="destina"><a id="padre1" href="#" class="destinations">Destinations</a>
 
     <ul id="destinaclose" onmouseover="func_destina()" onmouseout="func_destina_out()">
-      <iframe  src="destiny.php" width="985px" height="442px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
+      <iframe  src="destiny.php" width="1018px" height="778px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
       <p onclick="dale();" class="linkclose2"><img src="images/deleicon.png"></p>
 
     </ul>

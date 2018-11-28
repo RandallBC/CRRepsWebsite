@@ -1,6 +1,6 @@
 <html>
 	<head>
-
+		<link href="../destyle.css" media="screen" rel="stylesheet" type="text/css" />		
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
 		<script src="jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
 
@@ -20,94 +20,6 @@
 				});
 			});
 		</script>
-		<style type="text/css">
-			html, body {
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-
-			body * {
-				font-family: Arial, Geneva, SunSans-Regular, sans-serif;
-				font-size: 14px;
-				color: #333;
-				line-height: 22px;
-			}
-
-			#wrapper {
-				background-color: #F4F0EE;
-				border-top: 1px solid #ccc;
-				border-bottom: 1px solid #ccc;
-				width: 100%;
-				height: 315px;
-				padding-top: 25px;
-				margin: -150px 0 0 0;
-				position: absolute;
-				left: 0;
-				top: 50%;
-			}
-			#tabs > div {
-				width: 800px;
-				height: 350px;
-				float: left;
-				overflow: hidden;
-			}
-			#tabs img {
-				display: block;
-				margin: 0;
-				float: left;
-			}
-			#tabs h3 {
-				font-size: 20px;
-				line-height: 20px;
-				margin: 30px 0 10px 0;
-			}
-
-			#tabs #blue img {
-				margin-top: 0px;
-				width: 100%;
-				height: 93%;
-			}
-			#tabs #pink img {
-				margin-top: 0;
-			}
-			#tabs #white img {
-				margin-top: 0px;
-				width: 100%;
-				height: 100%;
-			}
-
-			#pager {
-				width: 700px;
-				margin: -76px auto 5px auto;
-				text-align: center;
-			}
-			#pager a {
-				border: 1px solid transparent;
-				border-bottom: none;
-				border-left: none;
-				border-color: #ccc;
-				color: #999;
-				font-size: 16px;
-				text-decoration: none;
-				line-height: 30px;
-				display: inline-block;
-				height: 30px;
-				padding: 10px 30px;
-			}
-			#pager a:hover {
-				color: #666;
-			}
-			#pager a:first-child {
-				border-left: 1px solid #ccc;
-			}
-			#pager a.selected {
-				background-color: #F4F0EE;
-				color: #333;
-			}
-
-
-		</style>
 	</head>
 	<body>
 		<div id="wrapper">
