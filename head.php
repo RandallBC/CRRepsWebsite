@@ -28,8 +28,16 @@ ini_set ('error_reporting', E_PARSE);
   <!-- Modal content -->
   <div class="modal-content-login">
     <img class="close_btn" onclick="closeModal('login')" src="images/close.png">
-    <h2 class="tit">Login</h2>
-    <iframe style="margin: 0 auto;" src="loginForm.php" width="240" height="220" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+    <h2 class="tit">Login</h2><br/>
+    <table border="0"  class="tablalogeo">
+      <tr><td width="20px"><img src="images/user.png"></td><td><input type="email" id="UserLogin" name="UserLogin" style="width: 200px; border-radius: 3px;" value="" placeholder="E-mail" required="required"/></td></tr>
+      <tr><td width="20px"><img src="images/pass.png"></td><td><input type="password" id="password" name="password" style=" width: 200px; border-radius: 3px;" value="" placeholder="Password" required="required"/></td></tr>
+      <tr><td colspan="2"><input type="checkbox" checked="yes" name="rememberme" id="rememberme"><label for="rememberme" >Remember Me</label></td></tr>
+      <tr><td colspan="2" style="padding: 10px;"><a href="#" class="regi" onclick="regLogin();">Register With Us</a><br/>
+                            <a href="#" class="regi" onclick="forgotPassword();" >Forgot Password</a>
+      </td></tr>
+      <tr><td colspan="2"><input class="botonlog" type="submit" value="Log In" id="submit" /></td></tr>
+    </table>
   </div>
 </div>
 

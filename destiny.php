@@ -27,22 +27,33 @@
         });
     }
 
+    function destiloadPadre(lugar,region) {
+
+        $.ajax({
+            type: "POST",
+            url: "destinations/"+lugar+"_carrusel/load.php",
+            success: function(a) {
+                $('#'+region).html(a);
+            }
+        });
+    }
+
 </script>
 
 <div id="contenedor">
 
     <input id="tab-1" type="radio" checked="checked" name="radio-set" class="tab-selector-1" />
-    <label for="tab-1" class="tab-label-1">Central Valley</label>
+    <label for="tab-1" class="tab-label-1" onclick="destiloadPadre('centralvalley','destinat');">Central Valley</label>
     <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-    <label for="tab-2" class="tab-label-2">Caribbean Coast</label>
+    <label for="tab-2" class="tab-label-2" onclick="destiloadPadre('caribbeancoast','destinat_cc');">Caribbean Coast</label>
     <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-    <label for="tab-3" class="tab-label-3">Northern Region</label>
+    <label for="tab-3" class="tab-label-3" onclick="destiloadPadre('northernregion','destinat_nr');">Northern Region</label>
     <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-    <label for="tab-4" class="tab-label-4">North Pacific</label>
+    <label for="tab-4" class="tab-label-4" onclick="destiloadPadre('northpacific','destinat_np');">North Pacific</label>
     <input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" />
-    <label for="tab-5" class="tab-label-5">Central Pacific</label>
+    <label for="tab-5" class="tab-label-5" onclick="destiloadPadre('centralpacific','destinat_cp');">Central Pacific</label>
     <input id="tab-6" type="radio" name="radio-set" class="tab-selector-6" />
-    <label for="tab-6" class="tab-label-6">South Pacific</label>
+    <label for="tab-6" class="tab-label-6" onclick="destiloadPadre('southpacific','destinat_sp');">South Pacific</label>
 
     <div class="content">
         <div class="content-1">

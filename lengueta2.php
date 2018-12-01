@@ -4,7 +4,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
-     
+
 <div id="prince">
     <ul id="menunaviga">
         <li class="contact_li">
@@ -28,9 +28,32 @@
     <div class="modal-content">
         <img class="close_btn" onclick="closeModal('quote')" src="images/close.png">
         <h2 class="tit">Request a Quote</h2>
-        <iframe style="margin: 0 auto;" src="checkquote.php" width="1000" height="600" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+
+        <?php
+        ini_set ('error_reporting', E_PARSE);
+        session_start();
+
+        if(isset($_SESSION['email'])) {
+        ?>
+        <iframe style="margin: 0 auto;" id="quote" name="quote" src="requesta.php" width="1024px" height="640px" marginwidth="0" marginheight="0" frameborder="1" scrolling="yes" >Your web browser does not support this content.</iframe>
+        <?php
+                }
+
+            else {
+                ?>
+                <div id="marco2">
+                   <br><h2 id="alerta">Hello, to request a quote please <a id="linki" href="#" onclick="closeModal('quote'); showModal('login');" target="_parent" >LogIn</a> or <a id="linki" onclick="closeModal('quote'); showModal('register')" href="#" target="_parent" >Register</a> first.</h2>
+                <br/><img style="display:block; margin:0 auto 0 auto;" src="images/lock.png">
+
+        </div>
+        <?php } ?>
+
+
+
+
+
     </div>
-    
+
   </div>
 
   <!-- The Contact Us Modal -->

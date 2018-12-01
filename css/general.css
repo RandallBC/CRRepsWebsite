@@ -122,7 +122,7 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 2px solid #9c1b2d;
   width: 20%;
 }
 
@@ -130,8 +130,8 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 13%;
+  border: 2px solid #9c1b2d;
+  width: 15%;
 }
 
 .botonlog {
@@ -400,6 +400,7 @@ ul.boldList li {
   font: normal 14px candara;
   height: 38px;
   width: 180px;
+  padding-left: 10px;
   float: left;
   background: #fff;
   color: #4c4c4c;
@@ -492,8 +493,6 @@ a.admini2:active {
   background: url(../images/iconos_topmenu/admin_red.png) no-repeat 3px center;
 }
 
-
-
 a.asitemapa:hover,
 a.admini:hover {
   color: #595819;
@@ -574,4 +573,9 @@ p.justif {
   border-right: 1px solid #585919;
   border-bottom: 2px solid #c0ba81;
   border-radius: 5px;
+}
+
+h2.tit {
+    font: normal 28px candara;
+    border-bottom: 2px solid #9c1b2d;
 }

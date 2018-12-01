@@ -121,7 +121,7 @@ a img {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #9c1b2d;
     width: 60%;
 }
 
@@ -129,7 +129,7 @@ a img {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #9c1b2d;
     width: 20%;
 }
 
@@ -138,6 +138,35 @@ a img {
     float: right;
 }
 
-h2.tit {
-    font: normal 28px candara;
+#alerta {
+    font: normal 24px Candara !important;
+    color: #002851;
+    text-shadow: #0D0D0D;
+    line-height: 100px;
+    text-align: center;
+}
+
+#marco2{
+    width: 900px;
+    height: 640px;
+    background: #FFFFFF;
+    margin: 0px auto;
+}
+
+#linki {
+    text-decoration: none;
+    color: #585919;
+    border: 1px solid #585919;
+    background: #f0ffd0;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#linki:hover {
+    text-decoration: none;
+    color: #9C1B2D;
+    border: 1px solid #9C1B2D;
+    background: #f0ffd0;
+    padding: 3px;
+    border-radius: 5px;
 }
