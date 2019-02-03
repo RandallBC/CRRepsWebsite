@@ -51,110 +51,31 @@ function loadcontents(menuopt) {
   });
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
-function dale() {
-  /*alert("Don't you forget to visit the full information for more details.");*/
-  $('#destina').slideUp("fast");
-  $('#destina').slideDown("fast");
+/*funciones para abrir y cerrar destinations y specialty */
+
+function openDestSpec(MenOpc){
+  document.getElementById(MenOpc).style.display = "block";
 }
 
-function dale2() {
-  /*alert("Don't you forget to visit the full information for more details.");*/
-  $('#spetravel').slideUp("fast");
-  $('#spetravel').slideDown("fast");
+function closeDestSpec(MenOpc) {
+  document.getElementById(MenOpc).style.display = "none";
 }
 
 /* inicio  funciones de los iconos rojos */
 
-function func_destina() {
-  document.getElementById('padre1').style.background = "#c0ba81 url('images/iconos_topmenu/destinations_red.png') no-repeat 4px center";
-}
+function func_destina() { document.getElementById('padre1').style.background = "#c0ba81 url('images/iconos_topmenu/destinations_red.png') no-repeat 4px center"; }
+function func_stravel() { document.getElementById('padre2').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center"; }
+function func_tguide() { document.getElementById('padre3').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center"; }
+function func_aboutcr() { document.getElementById('padre4').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center"; }
 
-function func_destina_out() {
-  document.getElementById('padre1').style.background = "";
-}
+function func_hijo1() { document.getElementById('hijo1').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center"; }
+function func_hijo2() { document.getElementById('hijo2').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center"; }
+function func_hijo3() { document.getElementById('hijo3').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center"; }
+function func_hijo4() { document.getElementById('hijo4').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center"; }
+function func_hijo5() { document.getElementById('hijo5').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center"; }
 
-/*-----------------*/
-
-function func_stravel() {
-  document.getElementById('padre2').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
-}
-
-function func_stravel_out() {
-  document.getElementById('padre2').style.background = "";
-}
-
-/*------------------*/
-
-function func_tguide() {
-  document.getElementById('padre3').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
-}
-
-function func_tguide_out() {
-  document.getElementById('padre3').style.background = "";
-}
-
-/*------------------*/
-
-function func_aboutcr() {
-  document.getElementById('padre4').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
-}
-
-function func_aboutcr_out() {
-  document.getElementById('padre4').style.background = "";
-}
-
-/*______________________________________________________Hijos_____________________________________________________*/
-
-function func_hijo1() {
-  document.getElementById('hijo1').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
-}
-
-function func_hijo1_out() {
-  document.getElementById('hijo1').style.background = "";
-}
-
-/*------------------*/
-
-function func_hijo2() {
-  document.getElementById('hijo2').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
-}
-
-function func_hijo2_out() {
-  document.getElementById('hijo2').style.background = "";
-}
-
-/*----------------*/
-
-function func_hijo3() {
-  document.getElementById('hijo3').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
-}
-
-function func_hijo3_out() {
-  document.getElementById('hijo3').style.background = "";
-}
-
-/*----------------*/
-
-function func_hijo4() {
-  document.getElementById('hijo4').style.background = "#c0ba81 url('images/iconos_topmenu/tguide_red.png') no-repeat 4px center";
-}
-
-function func_hijo4_out() {
-  document.getElementById('hijo4').style.background = "";
-}
-
-/*----------------*/
-
-function func_hijo5() {
-  document.getElementById('hijo5').style.background = "#c0ba81 url('images/iconos_topmenu/about_red.png') no-repeat 4px center";
-}
-
-function func_hijo5_out() {
-  document.getElementById('hijo5').style.background = "";
-}
-
-/*___________________________________________________Fin Hijos_________________________________________________________*/
+function func_padre_out(padre) { document.getElementById(padre).style.background = ""; }
+function func_hijo_out(hijo) { document.getElementById(hijo).style.background = ""; }
 
 /* fin funciones de los iconos rojos */
 
@@ -182,8 +103,8 @@ function spectra() {
 /****************************************************************************/
 
 function validateEmail($email) {
- var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
- return emailReg.test( $email );
+  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  return emailReg.test( $email );
 }
 
 function showModal(nam_modal) {
@@ -233,12 +154,24 @@ function forgotPassword() {
               useBootstrap: false,
             });
           } else {
-            $.alert({
-              title: 'Success',
-              type: 'green',
-              columnClass: 'small',
-              content: 'Your new password has been sent to <b>' + emailRec + '</b>',
-              useBootstrap: false,
+            var respForgotJS = "";
+            $.ajax({
+              type: "POST",
+              url: "forgotpass.php",
+              data:{email:emailRec},
+              success: function(respforgot) {
+                if (respforgot.search("successForgot") != -1) { respForgotJS = 'Your new password has been sent to <b>' + emailRec + '</b>'; }
+                else if (respforgot.search("ErrorUpdatingForgot") != -1) { respForgotJS = 'System Error, please contact system admin';}
+                else if (respforgot.search("notRegisteredForgot") != -1) { respForgotJS = 'This email is not registered.';}
+
+                $.alert({
+                  title: 'Information',
+                  type: 'green',
+                  columnClass: 'small',
+                  content: respForgotJS,
+                  useBootstrap: false,
+                });
+              }
             });
           }
         }

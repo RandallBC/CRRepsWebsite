@@ -1,236 +1,290 @@
-            /*css menu header*/
-            #navhead {
-                background: #c0ba81;
-                border: 2px solid #595819;
-                border-radius: 2px;
-                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-                line-height: 90%;
-                margin-top: 0px;
-                margin-bottom: 0px;
-                margin: 0 auto;
-                padding: 2px;
-               width: 600px;
-               height:40px;
-               font-size: 15px !important;
-               display: block;
-               -webkit-transition: color .2s ease-in-out;
-               -moz-transition: color .2s ease-in-out;
-               -o-transition: color .2s ease-in-out;
-               -ms-transition: color .2s ease-in-out;
-               transition: color .2s ease-in-out;
-               }
+/*css menu header*/
+#navhead {
+  background: #c0ba81;
+  border: 2px solid #595819;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  line-height: 90%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 0 auto;
+  padding: 2px;
+  width: 600px;
+  height:40px;
+  font-size: 15px !important;
+  display: block;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
 
-               #destina, #spetravel, #traguide, #aboutcrreps
-               {
-                 border-top:1px solid #c0ba81;
-               }
+#destina > a, #spetravel > a, #traguide > a, #aboutcrreps > a
+{
+  border-top:2px solid #c0ba81;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-               #destina:hover ul {
-               background: #c0ba81;
-               border-top: 1px solid #595819;
-               border-radius: 2px;
-               line-height: 90%;
-               padding: 2px;
-               left:-400px;
-               width: 1020px;
-               height:800px;
-               font-size: 15px !important;
-               -webkit-transition: color .2s ease-in-out;
-               -moz-transition: color .2s ease-in-out;
-               -o-transition: color .2s ease-in-out;
-               -ms-transition: color .2s ease-in-out;
-               transition: color .2s ease-in-out;}
+#destina:hover ul, #destinaclose {
+  background: #c0ba81;
+  border-top: 2px solid #595819;
+  border-radius: 2px;
+  line-height: 90%;
+  left:-400px !important;
+  width: 1020px !important;
+  height:800px;
+  font-size: 15px !important;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
 
-               #spetravel:hover ul {
-               background: #c0ba81;
-               border-top: 1px solid #595819;
-               border-radius: 2px;
-               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-               line-height: 90%;
-               padding: 2px;
-               left:-497px;
-               width: 1020px;
-               height:465px;
-               font-size: 15px !important;
-               -webkit-transition: color .2s ease-in-out;
-               -moz-transition: color .2s ease-in-out;
-               -o-transition: color .2s ease-in-out;
-               -ms-transition: color .2s ease-in-out;
-               transition: color .2s ease-in-out;
-               }
+  #spetravel:hover ul, #spetravelclose {
+    background: #c0ba81;
+    border-top: 2px solid #595819;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    line-height: 90%;
+    left:-497px !important;
+    width: 1020px !important;
+    height:465px;
+    font-size: 15px !important;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
 
-               #traguide{
-                background: #c0ba81;
-               border-top: 1px solid #595819;
-               border-bottom: 2px solid #595819;
-               border-radius: 2px;
-               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-               line-height: 90%;
-               margin-top: 15px;
-               padding: 2px;
-               left:-100px!important;
-               width: 385px!important;
-               height:210px;
-               font-size: 15px !important;
-               -webkit-transition: color .2s ease-in-out;
-               -moz-transition: color .2s ease-in-out;
-               -o-transition: color .2s ease-in-out;
-               -ms-transition: color .2s ease-in-out;
-               transition: color .2s ease-in-out;
-               }
+  #traguide{
+    background: #c0ba81;
+    border-top: 1px solid #595819;
+    border-bottom: 2px solid #595819;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    line-height: 90%;
+    margin-top: 15px;
+    padding: 2px;
+    left:-100px!important;
+    width: 385px!important;
+    height:210px;
+    font-size: 15px !important;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
 
-               #aboutcrreps{
-                background: #c0ba81;
-               border-top: 1px solid #595819;
-               border-bottom: 2px solid #595819;
-               border-radius: 2px;
-               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-               line-height: 90%;
-               margin-top: 15px;
-               padding: 2px;
-               left:-100px!important;
-               width: 426px!important;
-               height:250px;
-               font-size: 15px !important;
-               -webkit-transition: color .2s ease-in-out;
-               -moz-transition: color .2s ease-in-out;
-               -o-transition: color .2s ease-in-out;
-               -ms-transition: color .2s ease-in-out;
-               transition: color .2s ease-in-out;
-               }
+  #aboutcrreps{
+    background: #c0ba81;
+    border-top: 1px solid #595819;
+    border-bottom: 2px solid #595819;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    line-height: 90%;
+    margin-top: 15px;
+    padding: 2px;
+    left:-100px!important;
+    width: 426px!important;
+    height:250px;
+    font-size: 15px !important;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
 
-               #izki{ float: left !important;}
-               #dere{ float: right !important; cursor: pointer;}
+  #izki{ float: left !important;}
+  #dere{ float: right !important; cursor: pointer;}
 
-               li.chikis {
-                transform: scale(0.75);
-                line-height: 25% !important;
-                text-align: right;
-                cursor: pointer !important;
-                }
+  li.chikis {
+    transform: scale(0.75);
+    line-height: 25% !important;
+    text-align: right;
+    cursor: pointer !important;
+  }
 
-                #navhead li {    float: left;    list-style: none outside none;    position: relative;}
+  #navhead li {    float: left;    list-style: none outside none;    position: relative;}
 
-               #navhead a {
-                font: normal 16px candara;
-                border-radius: 2px;
-                margin: 2px;
-                color: #FFFFFF; /* fuente del menu principal*/
-                display: block;
-                padding: 5px 13px 13px 35px;
-                text-decoration: none;
-                text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-                }
+  #navhead a {
+    font: normal 16px candara;
+    border-radius: 2px;
+    margin: 2px;
+    color: #FFFFFF; /* fuente del menu principal*/
+    display: block;
+    padding: 5px 13px 13px 35px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
 
-                #navhead li:hover > a, #navhead li ul li:hover > a {
-                    /* efecto arriba del menu normal*/
-                color: #9c1b2d;
-                border-top:1px solid #595819;
-                background: #c0ba81;
-                font-weight: bold;
-                -webkit-transition: color .2s ease-in-out;
-                -moz-transition: color .2s ease-in-out;
-                -o-transition: color .2s ease-in-out;
-                -ms-transition: color .2s ease-in-out;
-                transition: color .2s ease-in-out;
-           }
+  #navhead li:hover > a, #navhead li ul li:hover > a {
+    /* efecto arriba del menu normal*/
+    color: #9c1b2d;
+    border-top:1px solid #595819;
+    background: #c0ba81;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
 
-           #navhead #destina:hover > a,#navhead #spetravel:hover > a,#navhead #tguide:hover > a,#navhead #aboutcr:hover > a,#navhead #destina:active > a#navhead #spetravel:active > a#navhead #tguide:active > a#navhead #aboutcr:active > a {
-                /* efecto arriba del menu normal para padres*/
-           border-top: 2px solid #595819;
-           background: #c0ba81;
-           -webkit-transition: color .2s ease-in-out;
-           -moz-transition: color .2s ease-in-out;
-           -o-transition: color .2s ease-in-out;
-           -ms-transition: color .2s ease-in-out;
-           transition: color .2s ease-in-out;
-         }
+  #navhead #destina:hover > a,#navhead #spetravel:hover > a,#navhead #tguide:hover > a,#navhead #aboutcr:hover > a,#navhead #destina:active > a#navhead #spetravel:active > a#navhead #tguide:active > a#navhead #aboutcr:active > a {
+    /* efecto arriba del menu normal para padres*/
+    border-top: 2px solid #595819;
+    background: #c0ba81;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
 
-           a.leermas { color: #fff !important; text-align: center;}
-           a.leermas:hover { text-align: center;color: #9C1B2D !important;}
+  #navhead ul li:hover a, #navhead li:hover li a {
+    color: #FFFFFF;/*color de fuente del submenu*/
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
 
-           #navhead ul li:hover a, #navhead li:hover li a {
-            color: #FFFFFF;/*color de fuente del submenu*/
-            -webkit-transition: color .2s ease-in-out;
-            -moz-transition: color .2s ease-in-out;
-            -o-transition: color .2s ease-in-out;
-            -ms-transition: color .2s ease-in-out;
-            transition: color .2s ease-in-out;
-            }
+  #navhead ul a:hover {
+    background: #c0ba81 !important; /*color del fondo del submenu en hover*/
+    color: #595819 !important;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
 
-            #navhead ul a:hover {
-             background: #c0ba81 !important; /*color del fondo del submenu en hover*/
-             color: #595819 !important;
-             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-            }
+  #navhead li:hover > ul { display: block; }
 
-            #navhead li:hover > ul { display: block; }
+  #navhead ul {
+    background: #c0ba81;
+    border: 2px solid #595819;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 185px;
+  }
 
-            #navhead ul {
-             background: #c0ba81;
-             border: 2px solid #595819;
-             border-radius: 2px;
-             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-             display: none;
-             left: 0;
-             margin: 0;
-             padding: 0;
-             position: absolute;
-             width: 185px;
-            }
+  #navhead ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
 
-           #navhead ul li {
-            float: none;
-            margin: 0;
-            padding: 0;
-            }
+  #navhead ul a {
+    font-weight: normal;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+  }
 
-            #navhead ul a {
-            font-weight: normal;
-            -webkit-transition: color .2s ease-in-out;
-            -moz-transition: color .2s ease-in-out;
-            -o-transition: color .2s ease-in-out;
-            -ms-transition: color .2s ease-in-out;
-            transition: color .2s ease-in-out;
-            }
+  #navhead ul a:hover { font-weight: bold;}
+  #navhead ul ul {
+    left: 181px;
+    top: -3px;
+    z-index: 700;
+  }
 
-            #navhead ul a:hover { font-weight: bold;}
-            #navhead ul ul {
-             left: 181px;
-             top: -3px;
-             z-index: 700;
-            }
+  #navhead ul .cobamar {
+    background: #c6c18e;
+    margin-left: 5px;
+  }
 
-            #navhead ul .cobamar {
-              background: #c6c18e;
-              margin-left: 5px;
-            }
+  #navhead ul .cobamardere {
+    background: #c6c18e;
+  }
 
-            #navhead ul .cobamardere {
-              background: #c6c18e;
-            }
+  .extendida {
+    border-right: 2px solid #9C1B2D;
+  }
 
-  
-         #navhead #destina a.destinations:hover { background: url(../images/iconos_topmenu/destinations.png) no-repeat 4px center #c0ba81; color:#595819;}
-         #navhead #spetravel a.stravel:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center #c0ba81; color:#595819;}
-         #navhead #tguide a.tguide:hover { background: url(../images/iconos_topmenu/tguide.png) no-repeat 4px center #c0ba81; color:#595819;}
-         #navhead #aboutcr a.about:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center #c0ba81; color:#595819;}
-         #navhead ul a.abouta:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center !important; color:#595819;}
-         #navhead ul a.destin:hover { background: url(../images/iconos_topmenu/destin.png) no-repeat 4px center !important; color:#595819;}
-         #navhead ul a.tguides:hover { background: url(../images/iconos_topmenu/tguide.png) no-repeat 4px center !important; color:#595819;}
-         #navhead ul a.pgallery:hover { background: url(../images/iconos_topmenu/pgallery.png) no-repeat 4px center !important; color:#595819;}
-         #navhead ul a.roads:hover { background: url(../images/iconos_topmenu/roads.png) no-repeat 4px center !important; color:#595819;}
-         #navhead ul a.w2pack:hover { background: url(../images/iconos_topmenu/w2pack.png) no-repeat 4px center !important; color:#595819;}
-         #navhead ul a.terms:hover { background: url(../images/iconos_topmenu/terms.png) no-repeat 4px center !important; color:#595819; }
-         label.abouta { color:#9c1b2d; font-size: 20px; width: 65% !important; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);}
+  .linkclose  {
+    float: right;
+    font: normal 14px Candara;
+    color: #9C1B2D;
+  }
+
+  .linkclose:hover
+  {
+    float: right;
+    font: normal 14px Candara;
+    color: #ffffcc;
+  }
+
+  .servi {
+    color: #ffffcc;
+    font: normal 16px Candara;
+    text-align: left;
+    list-style: circle;
+  }
+
+  .servics {
+    background: url(images/frame.png) no-repeat center;
+    width: 240px;
+    height: 220px;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 
-               /*Iconos en Rojo*//*a.destinations:hover { background: url(../images/iconos_topmenu/destinations_red.png) no-repeat 4px center #c0ba81 !important;
-        color: #9C1B2D;}a.stravel {background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
-        color: #9C1B2D;}a.tguide {background: url(../images/iconos_topmenu/tguide_red.png) no-repeat 4px center #c0ba81  !important;
-        color: #9C1B2D;}a.about {background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
-        color: #9C1B2D;}#navhead #destina a.destinations:visited { background: url(../images/iconos_topmenu/destinations_red.png) no-repeat 4px center #c0ba81 !important;
-        color: #9C1B2D;}#navhead #spetravel a.stravel:visited { background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
-        color: #9C1B2D;}#navhead #tguide a.tguide:visited { background: url(../images/iconos_topmenu/tguide_red.png) no-repeat 4px center #c0ba81  !important;
-        color: #9C1B2D}#navhead #aboutcr a.about:visited { background: url(../images/iconos_topmenu/about_red.png) no-repeat 4px center #c0ba81  !important;
-        color: #9C1B2D}*/
+  #navhead #destina a.destinations:hover { background: url(../images/iconos_topmenu/destinations.png) no-repeat 4px center #c0ba81; color:#595819;}
+  #navhead #spetravel a.stravel:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center #c0ba81; color:#595819;}
+  #navhead #tguide a.tguide:hover { background: url(../images/iconos_topmenu/tguide.png) no-repeat 4px center #c0ba81; color:#595819;}
+  #navhead #aboutcr a.about:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center #c0ba81; color:#595819;}
+  #navhead ul a.abouta:hover { background: url(../images/iconos_topmenu/about.png) no-repeat 4px center !important; color:#595819;}
+  #navhead ul a.destin:hover { background: url(../images/iconos_topmenu/destin.png) no-repeat 4px center !important; color:#595819;}
+  #navhead ul a.tguides:hover { background: url(../images/iconos_topmenu/tguide.png) no-repeat 4px center !important; color:#595819;}
+  #navhead ul a.pgallery:hover { background: url(../images/iconos_topmenu/pgallery.png) no-repeat 4px center !important; color:#595819;}
+  #navhead ul a.roads:hover { background: url(../images/iconos_topmenu/roads.png) no-repeat 4px center !important; color:#595819;}
+  #navhead ul a.w2pack:hover { background: url(../images/iconos_topmenu/w2pack.png) no-repeat 4px center !important; color:#595819;}
+  #navhead ul a.terms:hover { background: url(../images/iconos_topmenu/terms.png) no-repeat 4px center !important; color:#595819; }
+  label.abouta { color:#9c1b2d; font-size: 20px; width: 65% !important; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);}

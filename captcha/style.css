@@ -1,0 +1,88 @@
+.jCaptchaText {
+  width: 60px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 3px;
+  box-shadow: 0 0 5px #4e4706;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+}
+
+.jCaptcha {
+
+  padding: 5px; font-size: 14px; width: 200px; box-sizing: border-box; outline: none;
+  border-radius: 4px 0 0 4px; border: none; vertical-align: middle; transition: all 150ms linear; box-shadow: 0 0 8px #4e4706;
+
+}
+
+.jCaptcha:focus,
+.jCaptcha:focus ~ .button {
+
+  box-shadow: 0 0 8px #a79816;
+
+}
+
+.jCaptcha.error,
+.jCaptcha.error ~ .button {
+
+  box-shadow: 0 0 8px #c5391a;
+
+}
+
+.jCaptcha.error ~ .button {
+
+  background: #c5391a; color: #fff;
+
+}
+
+.jCaptcha.success,
+.jCaptcha.success ~ .button {
+
+  box-shadow: 0 0 8px #93a023;
+
+}
+
+.jCaptcha.success ~ .button {
+
+  background: #b1c317; color: #fff;
+
+}
+
+.button {
+
+  padding: 6px; width: 70px; vertical-align: middle; box-sizing: border-box;
+  font-size: 14px; font-weight: bold; background: #e8d639; cursor: pointer; border: none; color: #292b2b; line-height: 1; text-transform: uppercase; border-radius: 0 4px 4px 0; margin-left: -4px; letter-spacing: 0.5px; transition: all 150ms linear; box-shadow: 0 0 8px #4e4706; outline: none;
+
+}
+
+.button:hover,
+.button:focus {
+
+  background: #e8d20b;
+
+}
+
+.codeBtn {
+
+  display: inline-block; margin: 15px auto 0 auto; color: #ddd; font-size: 14px; padding: 5px; cursor: pointer;
+
+}
+
+.jPopup .content {
+
+  max-height: 82%; margin: 0 auto;
+  text-align: center; color: #292b2b; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; overflow: auto;
+
+}
+
+.jPopup .content strong {
+
+  font-size: 20px; display: block; padding-bottom: 10px;
+
+}
+
+.jPopup .content p {
+  font-size: 16px; text-align: left; display: inline-block; padding-bottom: 50px;
+  white-space: nowrap;
+}

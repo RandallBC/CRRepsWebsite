@@ -1,18 +1,11 @@
 <?php
-ob_start();
-
 session_start();
-session_destroy();
+$action = $_POST['action'];
+$happened = "fail";
 
-echo "<script language='javascript'>";
-echo "alert('You have logged out successfully');";
-echo "document.location.href='index.php';";
-echo "</script>";
-
-
-$paginacontenido = ob_get_contents();
-ob_end_clean();
-
-require_once 'plantilla.php';
-?>
+if ($action == "1"){
+  session_destroy();
+  $happened = "done";
+}
+echo $happened;
 ?>

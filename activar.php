@@ -1,80 +1,113 @@
-<?php
-ob_start();
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Costa Rica Reps Activation Page</title>
+</head>
 
-ini_set ('error_reporting', E_PARSE);
-require_once("conexion.php");
+<style media="screen">
 
-
-$code = mysql_real_escape_string($_GET['code']);
-
-$correodecode = base64_decode($code);
-
-$sqlexistemail = "SELECT email FROM member_auth WHERE (email = '$correodecode')";
-
-$query = mysql_query ($sqlexistemail);
-while ($row = mysql_fetch_object($query))
-{
-    $existe = $row->email;
+h2{
+  text-align: center;
+  padding: 20px;
+  font: 26px normal candara;
+  color: #9C1B2D;
 }
 
-if ($existe == $correodecode ){
+.activation {
+  margin: 0 auto;
+  height: 150px;
+  width: 600px;
+  border: 1px solid #000;
+  padding: 20px;
+  font: 18px normal candara;
+  color: #65652b;
+  vertical-align:middle;
+  text-align: center;
+}
 
-    $sql = "SELECT flag FROM member_auth WHERE (email = '$correodecode')";
+.gomainD {
+  margin: 0 auto;
+  height: 50px;
+  width: 600px;
+  display:table-cell;
+  vertical-align:middle;
+  text-align: center;
+}
 
-    $query1 = mysql_query ($sql);
-    while ($row = mysql_fetch_object($query1))
-    {
-        $flag = $row->flag;
+a.gomain {
+  text-align: center;
+  text-decoration: none;
+  color: #DB5A0A;
+  font: 20px bold candara;
+}
+
+a.gomain:hover {
+  color: #9C1B2D;
+}
+
+</style>
+
+<body>
+  <h2>Costa Rica Reps Register Activation</h2>
+  <div class="activation">
+    <?php
+
+    include "medoo/medoo.php";
+    include "db_con.php";
+    use medoo\medoo;
+
+    $database = new Medoo([
+      'database_type' => 'mysql',
+      'database_name' => CRR_DBNAME,
+      'server' => CRR_SERVER,
+      'username' => CRR_USER,
+      'password' => CRR_PASS
+    ]);
+
+    $correodecode = base64_decode($_GET['code']);
+    $newflag = "";
+
+    $dataEmailNews = $database->select('member_auth', [
+      'email',
+      'flag'
+    ], [
+      'email' => $correodecode
+    ]);
+
+    foreach ($dataEmailNews as $data) {
+      $existe = $data["email"];
+      $flag = $data["flag"];
     }
 
-    /*----------------------------------------------------------------------------------funcion de extraer y cambiar los datos----------------------------------------*/
+    if ($existe == $correodecode ){
 
-    $flagbinario = decbin($flag);
-    $tamaño = strlen($flagbinario);
+      $flagbinario = decbin($flag);
+      $tamaño = strlen($flagbinario);
+      $arreglo[$tamaño] = $flagbinario;
 
-    $arreglo[$tamaño] = $flagbinario;
-
-    for ($i=0; $i<=$tamaño-2;$i++){
-
+      for ($i=0; $i<=$tamaño-2;$i++){
         $arreglo[$i] = $flagbinario[$i];
         $newflag = $newflag . $arreglo[$i];
-    }
-    $arreglo[$tamaño-1] = 1;
-    $newflag = $newflag . $arreglo[$tamaño-1];
-    $newflagdecimal = bindec($newflag);
+      }
+      $arreglo[$tamaño-1] = 1;
+      $newflag = $newflag . $arreglo[$tamaño-1];
+      $newflagdecimal = bindec($newflag);
 
-/*----------------------------------------------------------------------------------funcion de extraer y cambiar los datos----------------------------------------*/
+      $actualizar = $database->update("member_auth", [
+        "flag" => $newflagdecimal,
+      ], [
+        "email" => $correodecode
+      ]);
 
-
-
-
-/*-------------------------------------------------------------------------------- actualizar el dato ------------------------------------------------------------*/
-
-    $actualizar = "UPDATE member_auth SET flag = '$newflagdecimal' WHERE email='$correodecode'";
-
-    $resultado = mysql_query($actualizar) or die ("Error in Register");
-
-    if (!$resultado) {
-        echo "Error updating record";
-    } else {
-        ?>
-        <script>
-        alert("Thanks for registering your email <?php echo $correodecode;?>, the process has been successfully completed.");
-            document.location.href='index.php';
-        </script>
-<?php
-    }
-
-    /*-------------------------------------------------------------------------------- actualizar el dato ------------------------------------------------------------*/
-
-}  //fin del if
-
-else {echo "This email is not registered";}
-
-mysql_close($link);
-
-$paginacontenido = ob_get_contents();
-ob_end_clean();
-
-require_once 'plantilla.php';
-?>
+      if ($actualizar->rowCount() >= 1) { echo ("<br>Thanks for registering your email " .  $correodecode . ", the process has been successfully completed."); }
+      else { echo "<br>The Activation of this Email has been already made";}
+    }  //fin del if
+    else {echo "<br>This email is not registered";}
+    ?>
+    <br>
+    <div class="gomainD">
+      <a class="gomain" href="www.costaricareps.com">Go to Costa Rica Reps Main Page</a>
+    </div>
+  </div>
+</body>
+</html>

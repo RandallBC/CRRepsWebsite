@@ -47,13 +47,7 @@
 
         </div>
         <?php } ?>
-
-
-
-
-
     </div>
-
   </div>
 
   <!-- The Contact Us Modal -->
@@ -72,6 +66,6 @@
     <div class="modal-content-news">
         <img class="close_btn" onclick="closeModal('newsletter')" src="images/close.png">
         <h2 class="tit">Newsletter</h2>
-        <iframe style="margin: 0 auto;" src="newsletter.php" width="300" height="360" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
+        <iframe style="margin: 0 auto;" src="newsletterForm.php" width="300" height="380" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" >Content not Supported</iframe>
     </div>
   </div>
