@@ -17,7 +17,7 @@
   color: #fff;
   background-color: #65652b;
   display: inline-block;
-  font: bold 12px candara;
+  font: bold 12px Candara;
   padding: 8px 11px;
   text-decoration: none;
 }

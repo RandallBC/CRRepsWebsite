@@ -30,9 +30,7 @@
 
 .tcList1 li
 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
+  font: bold 14px Candara;
   padding-bottom: 6px;
 }
 
@@ -57,9 +55,7 @@
 
 .tcList2 li
 {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 12px;
-  font-weight: normal;
+  font: normal 12px Candara;  
   padding-top: 2px;
   padding-bottom: 2px;
   cursor: hand !important;

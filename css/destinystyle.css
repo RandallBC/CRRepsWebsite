@@ -47,7 +47,7 @@
 }
 
 .destro {
-	font: bold 15px candara;
+	font: bold 15px Candara;
 	color: #595819;
 	text-decoration: none;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -68,7 +68,7 @@
 	background: #c0ba81;
 	/* Fondo de las pesta�as */
 	margin-right: 1px;
-	font: normal 15px candara;
+	font: normal 15px Candara;
 	border-top: 1px solid #595819;
 	border-left: 1px solid #595819;
 	border-right: 1px solid #595819;
@@ -83,7 +83,7 @@
 	line-height: 40px;
 	height: 30px;
 	padding: 0 8px;
-	font: normal 15px candara;
+	font: normal 15px Candara;
 	border-top: 1px solid #595819;
 	border-left: 1px solid #595819;
 	border-right: 1px solid #595819;
@@ -98,7 +98,7 @@
 	line-height: 40px;
 	height: 30px;
 	padding: 0 8px;
-	font: bold 15px candara;
+	font: bold 15px Candara;
 	border-top: 1px solid #595819;
 	border-left: 1px solid #595819;
 	border-right: 1px solid #595819;

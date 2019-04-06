@@ -311,7 +311,7 @@
   color: #fff;
   background-color: #65652b;
   display: inline-block;
-  font: bold 12px candara;
+  font: bold 12px Candara;
   padding: 8px 11px;
   text-decoration: none;
 }
@@ -394,7 +394,6 @@ function submitRegister(){
     $("#warning_reg").html(image);
     perm=false;
     document.getElementById("warning_reg").style.display = "block";
-
     $.ajax({
       type: "POST",
       url: "register.php",

@@ -113,7 +113,7 @@
   #navhead li {    float: left;    list-style: none outside none;    position: relative;}
 
   #navhead a {
-    font: normal 16px candara;
+    font: normal 16px Candara;
     border-radius: 2px;
     margin: 2px;
     color: #FFFFFF; /* fuente del menu principal*/

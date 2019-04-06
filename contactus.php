@@ -39,7 +39,7 @@
   color: #fff;
   background-color: #65652b;
   display: inline-block;
-  font: bold 12px candara;
+  font: bold 12px Candara;
   padding: 8px 11px;
   text-decoration: none;
 }
@@ -68,7 +68,7 @@
             Apartado Postal 13132 - CP 1000<br />Oficina Central de Correos<br />San Jos&eacute;, Costa Rica<br />Central America</p>
             <p class="generalText divLine" style="color: #660000">Physical Address:</p>
             <p class="generalText" style="padding-left: 35px; padding-bottom: 5px">Casa Azul #325. Calle 34 Avenida 3-5. Del Taco Bell Paseo Col&oacute;n 224 metros Norte, Casa Azul a mano izquierda. Paseo Col&oacute;n,<br/> San Jose, Costa Rica. </p>
-
+            
             <p class="generalText divLine">We are conveniently located near the city of San Jos&eacute;.<br /><br />Tobias Bola&ntilde;os Regional Airport (SYQ): 3 miles<br />
               Juan Santamaria Int. Airport (SJO): 10 miles.</p>
             </div>
@@ -376,9 +376,9 @@
           </td>
         </tr>
       </table>
-
+      
       <script>
-
+      
       function ContactClearFields(){
         $("#firstName").val("");
         $("#lastName").val("");
@@ -388,7 +388,7 @@
         $("#state").val("");
         $("#comment").val("");
       }
-
+      
       function sendContact() {
         var firstName = $("#firstName").val();
         var lastName = $("#lastName").val();
@@ -398,7 +398,7 @@
         var state = $("#state").val();
         var comment = $("#comment").val();
         var department = $("#dep").val();
-
+        
         if ((firstName == "") || (lastName == "") || (phone == "") || (emailAdr == "") || (country == "")) {
           $("#warnContact").html("<p style='color: #9c1b2d;'>Please complete all required fields (*)</p>");
           document.getElementById("warnContact").style.display = "block";
@@ -413,12 +413,18 @@
           }, 2000);
         } else {
           var alertaResp = "";
+          var image = new Image();
+          var src = 'images/proc.gif';
+          image.src = src;
+          $("#warnContact").html(image);
+          perm=false;
+          document.getElementById("warnContact").style.display = "block";
           $.ajax({
             type: "POST",
             url: "enquiry.php",
             data:{ nombre:firstName, apellido:lastName, telefono:phone, email:emailAdr, pais:country, estado:state, comentario:comment, depa:department},
             success: function(respContact) {
-
+              
               if (respContact == "sent") {
                 alertaResp = "<p style='color: #65652b;'>Thank you for contact us, We will respond you as soon as posible.</p>";
                 ContactClearFields();
@@ -426,7 +432,7 @@
               else if (respContact == "not") {
                 alertaResp = "<p style='color: #9c1b2d;'>Sorry, there was an error sending your enquire.</p>";
               }
-
+              
               $("#warnContact").html("<p>"+alertaResp+"</p>");
               document.getElementById("warnContact").style.display = "block";
               setTimeout(function(){
@@ -436,7 +442,7 @@
           });
         }
       }
-
+      
       var myCaptcha = new jCaptcha({
         callback: function(response, $captchaInputElement) {
           if (response == 'success') {
@@ -452,10 +458,10 @@
           }
         }
       });
-
+      
       document.querySelector('form').addEventListener('submit', function(e) {
         e.preventDefault();
         myCaptcha.validate();
       });
-
+      
       </script>

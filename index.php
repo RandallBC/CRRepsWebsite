@@ -1,10 +1,7 @@
 <?php ob_start(); ?>
 <div class="post" id="derechaConten">
-
   <script type="text/javascript">
-
   $(document).ready(function(){
-
     $('#submite').click(function(){
       $.confirm({
         title: 'Question',
@@ -12,7 +9,6 @@
         useBootstrap: false,
         content: 'Do you want to become a registered user too?',
         buttons: {
-
           Yes: {
             btnClass: 'btn-green',
             action: function(){
@@ -28,19 +24,19 @@
         }
       });
     });
-
   });
-
   </script>
-
+  
   <link href="css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/dropdown/style.css" media="screen" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="css/menustyle.css" />
   <link rel="stylesheet" href="css/jquery-confirm.min.css">
   <script type="text/javascript" src="js/jquery-confirm.min.js"></script>
-
-  <div id="izkierdo"></div>
-
+  
+  <div id="izkierdo">
+    <iframe src="http://www.costaricareps.com/blog" width="1020" height="670" scrolling="yes" marginwidth="50" marginheight="50" frameborder="0" >Content not supported</iframe>
+  </div>
+  
   <div id="principal">
     <div id="abajo" style="margin: 0px auto;">
       <iframe src="carrusel/carrusel.php" width="1020" height="220px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" >Content not supported</iframe>

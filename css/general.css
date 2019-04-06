@@ -149,7 +149,7 @@ body {
   color: #fff;
   background-color: #65652b;
   display: inline-block;
-  font: bold 12px candara;
+  font: bold 12px Candara;
   padding: 8px 11px;
   text-decoration: none;
 }
@@ -179,7 +179,7 @@ body {
 
 .tablachangePass {
   height: 30px;
-  width: 360px;
+  width: 370px;
 }
 
 .menuheadDiv {
@@ -187,6 +187,11 @@ body {
   height: auto;
   float: right;
   padding-right: 25px;
+}
+
+#war_chngPass {
+  width:350px;
+  height: 35px;
 }
 
 #nav {
@@ -265,32 +270,26 @@ h2 {
   text-align: left;
   margin-left: 10px;
   color: #9c1b2d;
-  font: candara !important;
-  font-size: 24px;
-  font-weight: bold;
+  font: bold 24px Candara;
   padding: 15px;
 }
 
 h3 {
   color: #65652b;
-  font: candara !important;
-  font-size: 16px;
-  font-weight: bold;
+  font: bold 16px Candara;
   margin-bottom: 10px;
   margin-left: 10px;
 }
 
 h4 {
-  font: bold 14px candara !important;
+  font: bold 14px Candara;
   color: #65652b;
   margin-left: 10px;
 }
 
 h5 {
   padding-left: 10px;
-  font: candara !important;
-  font-size: 14px;
-  font-weight: bold;
+  font: bold 14px Candara;
   margin-bottom: 10px;
 }
 
@@ -324,19 +323,19 @@ ul.boldList li {
 }
 
 .compactList li {
-  font: candara !important;
+  font: Candara !important;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
 .normalList li {
-  font: candara !important;
+  font: Candara !important;
   letter-spacing: 1px;
   font-size: 15px;
 }
 
 .boldList li {
-  font: candara !important;
+  font: Candara !important;
   letter-spacing: 1px;
   font-size: 15px;
   font-weight: bold;
@@ -354,7 +353,7 @@ ul.boldList li {
 
 .compactText {
   padding-left: 10px;
-  font: candara !important;
+  font: Candara !important;
   font-size: 14px;
 }
 
@@ -368,16 +367,14 @@ ul.boldList li {
 .quoteText {
   padding-left: 10px;
   margin: 5px 0px;
-  font: candara !important;
+  font: Candara !important;
   font-style: italic;
   font-weight: bold;
   font-size: 16px;
 }
 
 .unfinishText {
-  font: candara !important;
-  font-size: 48px;
-  font-weight: bold;
+  font: bold 48px Candara;
   text-align: center;
   color: #d0d0d0;
   margin: 40px 0;
@@ -410,7 +407,7 @@ ul.boldList li {
 
 #busqueda-form #busqueda {
   top: 10px;
-  font: normal 14px candara;
+  font: normal 14px Candara;
   height: 38px;
   width: 180px;
   padding-left: 10px;
@@ -461,14 +458,14 @@ ul.boldList li {
 .userman {
   font: normal 18px Candara;
   color: #9C1B2D;
+  padding-left: 10px;
 }
 
 li.lisitemapa {
   border: 1px solid #f4f4f4;
-  width: 150px;
   display: inline-block;
   height: 35px;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 li.lisitemapa:hover {
@@ -594,6 +591,73 @@ p.justif {
 }
 
 h2.tit {
-    font: normal 28px candara;
-    border-bottom: 2px solid #9c1b2d;
+  font: normal 28px Candara;
+  border-bottom: 2px solid #9c1b2d;
+}
+
+
+
+/* submenu de login */
+
+#menu ul li {
+  z-index: 2;
+}
+
+#menu ul {
+  list-style:none;
+}
+
+#menu ul a {
+  display:block;
+  text-decoration:none;
+  font: 600 16px Candara;
+  padding:10px;
+  color: #585919;
+}
+
+#menu ul li {
+  position: relative;
+}
+
+#menu ul li:hover {
+  color: #000;
+}
+
+#menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+
+#menu ul ul li {
+  float:none;
+  width:200px;
+}
+
+#menu ul ul a {
+  padding:5px 10px;
+}
+
+#menu ul ul a:hover {
+  background: #9c1b2d;
+  color: #fff;
+}
+
+#menu ul li:hover > ul {
+  display:block;
+  background:#fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.BotonConfig {
+  width: 35px;
+  height: 25px;
+  padding: 2px;
+  margin: 0px auto;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 2px;
 }

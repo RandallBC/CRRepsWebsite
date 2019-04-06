@@ -9,7 +9,7 @@
 h2{
   text-align: center;
   padding: 20px;
-  font: 26px normal candara;
+  font: 26px normal Candara;
   color: #9C1B2D;
 }
 
@@ -19,7 +19,7 @@ h2{
   width: 600px;
   border: 1px solid #000;
   padding: 20px;
-  font: 18px normal candara;
+  font: 18px normal Candara;
   color: #65652b;
   vertical-align:middle;
   text-align: center;
@@ -38,7 +38,7 @@ a.gomain {
   text-align: center;
   text-decoration: none;
   color: #DB5A0A;
-  font: 20px bold candara;
+  font: 20px bold Candara;
 }
 
 a.gomain:hover {

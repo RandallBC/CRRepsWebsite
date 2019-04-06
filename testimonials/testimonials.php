@@ -20,11 +20,11 @@
  
     .cycle-title{background-color: #595819;}
     
-    .cycle-title label{color:#FFF; margin-left:5px; font: bold 16px candara; }
+    .cycle-title label{color:#FFF; margin-left:5px; font: bold 16px Candara; }
     
-    .cycle-content{height:75px; text-align:justify; font: 14px candara; color: #595819;}
+    .cycle-content{height:75px; text-align:justify; font: 14px Candara; color: #595819;}
  
-    .bolds { font: bold 14px candara; color: #9c1b2d; float: right; margin: 5px;}
+    .bolds { font: bold 14px Candara; color: #9c1b2d; float: right; margin: 5px;}
 
 </style>
 

@@ -51,6 +51,14 @@ function loadcontents(menuopt) {
   });
 }
 
+function loadSlider(slider) {
+  var sliderActual = $("#slidActual").val();
+  if ((sliderActual != slider) || (sliderActual == "" )){
+    $("#rotator").html('<iframe src="banner/'+slider+'/slider.php" width="1020" height="310" scrolling="no" marginwidth="0px" marginheight="0px" frameborder="0" ></iframe>');
+    $("#slidActual").val(slider);
+  }
+}
+
 /*funciones para abrir y cerrar destinations y specialty */
 
 function openDestSpec(MenOpc){

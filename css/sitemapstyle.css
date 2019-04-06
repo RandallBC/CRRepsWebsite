@@ -9,7 +9,7 @@ li {
 }
 
 #titulog {
-    font: normal 18px candara;
+    font: normal 18px Candara;
     color: #9C1B2D;
     text-decoration: none;
     padding: 20px;
@@ -23,7 +23,7 @@ li {
 }
 
 #padreg {
-    font: normal 16px candara;
+    font: normal 16px Candara;
     color: #fff;
     text-decoration: none;
 }
@@ -32,7 +32,7 @@ li {
 .hijog {
     text-align: justify;
     margin-left: 40px;
-    font: normal 14px candara;
+    font: normal 14px Candara;
     color: #9C1B2D;
     text-decoration: none;
     list-style: none;
@@ -43,7 +43,7 @@ li {
 .nietog {
     text-align: justify;
     margin-left: 60px;
-    font: normal 12px candara;
+    font: normal 12px Candara;
     color: #555555;
     text-decoration: none;
 }

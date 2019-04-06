@@ -3,8 +3,8 @@
   echo ("
   
 <style>
- b.mainPol { color: #9c1b2d; font: 24 bold candara; padding-left: 20px;}
- b.secPol  { color: #65652b; font: 14 bold candara; padding-left: 15px;}
+ b.mainPol { color: #9c1b2d; font: 24 bold Candara; padding-left: 20px;}
+ b.secPol  { color: #65652b; font: 14 bold Candara; padding-left: 15px;}
  </style>
 
   <h2>Corporate Policies</h2>

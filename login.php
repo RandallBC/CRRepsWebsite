@@ -1,6 +1,6 @@
 <?php
 session_start();
-//ini_set ('error_reporting', E_PARSE);
+ini_set ('error_reporting', E_PARSE);
 include "medoo/medoo.php";
 include "db_con.php";
 use medoo\medoo;
@@ -81,19 +81,16 @@ if (($correoexiste == $email ) and ($passexiste == $password)) {
       ], [
         "email" => $email
       ]);
-      $updateVal = "";
-      if ($actualizar->rowCount() >= 1) { $updateVal = "updateSuccess"; }
-      else { $updateVal =  "updateFail";}
+      $updateVal = ($actualizar->rowCount() >= 1) ? "updateSuccess" : "updateFail";
       echo 'Activated-SendIndex';     //location.href = "index.php";
     }
   } else {
-    session_destroy();
     echo "emailNotActivated";// ("The user is Registered but has not been activated yet, please check the activation email we sent to " . $email . ", and please try again.</center></h2>");
     session_destroy();
   }
 } else {
-  {echo "emailNotRegistered"; //"The email <b>" .$email . "</b> is not registered in Costa Rica Reps Or your password is wrong, please try again.";
-    session_destroy();
-  }
+  if ($correoexiste != $email ) { echo "emailNotRegistered"; }
+  else if ($passexiste != $password){ echo "IncPassword"; }
+  session_destroy();
 }
 ?>

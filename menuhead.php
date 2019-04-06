@@ -1,20 +1,20 @@
 <ul id="navhead">
-
-  <li id="destina"><a id="padre1"  onmouseover="closeDestSpec('spetravelclose'); openDestSpec('destinaclose');" href="#" class="destinations">Destinations</a>
+  
+  <li id="destina"><a id="padre1"  onmouseover="closeDestSpec('spetravelclose'); openDestSpec('destinaclose'); loadSlider('destinations');" href="#" class="destinations">Destinations</a>
     <ul id="destinaclose" onmouseover="func_destina()" onmouseout="func_padre_out('padre1')">
       <iframe  src="destiny.php" width="1018px" height="778px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
       <p onclick="closeDestSpec('destinaclose');" class="linkclose"><img src="images/deleicon.png"></p>
     </ul>
   </li>
-
-  <li id="spetravel"><a id="padre2"  onmouseover="closeDestSpec('destinaclose'); openDestSpec('spetravelclose');" href="#" class="stravel">Specialty Travel</a>
+  
+  <li id="spetravel"><a id="padre2" onmouseover="closeDestSpec('destinaclose'); openDestSpec('spetravelclose'); loadSlider('specialty');" href="#" class="stravel">Specialty Travel</a>
     <ul id="spetravelclose" onmouseover="func_stravel();" onmouseout="func_padre_out('padre2');">
       <iframe  src="spectravel.php" width="1014px" height="442px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" ></iframe>
       <p onclick="closeDestSpec('spetravelclose');" class="linkclose"><img src="images/deleicon.png"></p>
     </ul>
   </li>
-
-  <li id="tguide"><a id="padre3" href="#" class="tguide">Travel Guide</a>
+  
+  <li id="tguide"><a id="padre3" onmouseover="closeDestSpec('spetravelclose'); closeDestSpec('destinaclose'); loadSlider('travel');" href="#" class="tguide">Travel Guide</a>
     <ul  id="traguide" onmouseover="func_tguide();" onmouseout="func_padre_out('padre3');">
       <div id="izki">
         <li><a href="#" id="hijo1" class="tguides extendida">About Costa Rica</a>
@@ -47,7 +47,7 @@
             <li onclick="loadcontents('lilsummers');"><a href="#" class="tguides">Little Summers</a></li>
           </ul>
         </li>
-
+        
         <li onclick="loadcontents('entryrequirements');"><a href="#" class="tguides">Entry Requirements</a></li>
         <li onclick="loadcontents('health')"><a href="#" class="tguides">Health &amp; Safety</a></li>
       </div>
@@ -67,11 +67,11 @@
         <li onclick="loadcontents('roads');"><a href="#" class="roads">Roads &amp; Driving</a></li>
         <li onclick="loadcontents('whattopack');"><a href="#" class="w2pack">What to Pack</a></li>
       </div>
-
+      
     </ul>
   </li>
-
-  <li id="aboutcr"><a id="padre4" href="#" class="about">About C.R. Reps</a>
+  
+  <li id="aboutcr"><a id="padre4" onmouseover="closeDestSpec('spetravelclose'); closeDestSpec('destinaclose'); loadSlider('aboutus');" href="#" class="about">About C.R. Reps</a>
     <ul id="aboutcrreps" onmouseover="func_aboutcr();" onmouseout="func_padre_out('padre4');" >
       <div id="izki">
         <li><a id="hijo2" href="#" class="abouta extendida">Our Company</a>
@@ -99,7 +99,7 @@
         <br>
         <div class="servics">
           <li><label class="abouta">Our Services</label></li><br>
-
+          
           <li class="chikis"><label class="servi">Regularly Scheduled Departures</label></li>
           <li class="chikis"><label class="servi">Customized Itineraries</label></li>
           <li class="chikis"><label class="servi">Special Interest Itineraries</label></li>
