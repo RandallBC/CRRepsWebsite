@@ -1,17 +1,27 @@
 #contenedor {
 	margin: 5px;
-	width: 950px;
-	/* Ancho del contenedor */
+	width: 1000px;
 	height: 300px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	float: left;
 }
 
+.taba{
+	width:170px !important;
+	height:200px;
+}
+
+.linkclose  {
+	float: right;
+	font: normal 14px Candara;
+	color: #9C1B2D;
+}
+
 .tabula {
 	/*border: 1px solid #103C56;
 	border-radius: 3px;*/
-	background-color: #ffffcc;
+	background-color: #ffffe0;
 	padding: 10px;
 	margin: 0px auto;
 	list-style-type: none;
@@ -20,13 +30,13 @@
 }
 
 .tabula:hover {
-	background-color: #ffffcc !important;
+	background-color: #ffffe0 !important;
 }
 
 .tabula2 {
 	color: #595819 !important;
 	border-radius: 3px;
-	background-color: #ffffcc;
+	background-color: #ffffe0;
 	font: normal 16px Candara;
 	text-decoration: none;
 	list-style-type: none;
@@ -35,7 +45,7 @@
 .tabula2:hover {
 	color: #9C1B2D !important;
 	border-radius: 3px;
-	background-color: #ffffcc !important;
+	background-color: #ffffe0 !important;
 	font: normal 16px Candara;
 }
 
@@ -59,7 +69,7 @@
 	cursor: pointer;
 	line-height: 40px;
 	height: 30px;
-	padding: 0 8px;
+	padding: 5px 10px;
 	display: block;
 	color: #FFFFFF;
 	/* Color del texto de las pesta�as */
@@ -82,7 +92,6 @@
 	position: relative;
 	line-height: 40px;
 	height: 30px;
-	padding: 0 8px;
 	font: normal 15px Candara;
 	border-top: 1px solid #595819;
 	border-left: 1px solid #595819;
@@ -97,7 +106,6 @@
 	position: relative;
 	line-height: 40px;
 	height: 30px;
-	padding: 0 8px;
 	font: bold 15px Candara;
 	border-top: 1px solid #595819;
 	border-left: 1px solid #595819;
@@ -106,7 +114,7 @@
 }
 
 .content {
-	background: #ffffcc;
+	background: #ffffe0;
 	border: 1px solid #000000;
 	position: relative;
 	width: 1000px;

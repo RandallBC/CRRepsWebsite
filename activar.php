@@ -106,7 +106,7 @@ a.gomain:hover {
     ?>
     <br>
     <div class="gomainD">
-      <a class="gomain" href="www.costaricareps.com">Go to Costa Rica Reps Main Page</a>
+      <a class="gomain" href="index.php">Go to Costa Rica Reps Main Page</a>
     </div>
   </div>
 </body>

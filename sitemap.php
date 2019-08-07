@@ -140,10 +140,10 @@
                    <li onclick="loadcontents('pacificregion');"><a href="#" class="nietog">Pacific Region</a></li>
                    <li onclick="loadcontents('lilsummers');"><a href="#" class="nietog">Little Summers</a></li>
                  </ul>
-                 </li>
+                 </li><br>
 
-                <li onclick="loadcontents('entryrequirements');"><a href="#" class="nietog">Entry Requirements</a></li>
-                <li onclick="loadcontents('health')"><a href="#" class="nietog">Health &amp; Safety</a></li><br/>
+                <li onclick="loadcontents('entryrequirements');"><a href="#" class="hijog">Entry Requirements</a></li><br>
+                <li onclick="loadcontents('health')"><a href="#" class="hijog">Health &amp; Safety</a></li><br/>
 
                 <li><a href="#" id="hijog">Heritage &amp; Culture</a>
                    <ul>
@@ -154,11 +154,11 @@
                     <li onclick="loadcontents('holidays');"><a href="#" class="nietog">National Holidays</a></li>
                     <li onclick="loadcontents('symbols');"><a href="#" class="nietog">National Symbols</a></li>
                    </ul>
-                </li>
-                <li onclick="loadcontents('maps');"><a href="#" class="nietog">Maps of Costa Rica</a></li>
-                <li onclick="showgallery();"><a href="#" class="nietog">Photo Gallery</a></li>
-                <li onclick="loadcontents('roads');"><a href="#" class="nietog">Roads &amp; Driving</a></li>
-                <li onclick="loadcontents('whattopack');"><a href="#" class="nietog">What to Pack</a></li>
+                </li><br>
+                <li onclick="loadcontents('maps');"><a href="#" class="hijog">Maps of Costa Rica</a></li><br>
+                <li onclick="showgallery();"><a href="#" class="hijog">Photo Gallery</a></li><br>
+                <li onclick="loadcontents('roads');"><a href="#" class="hijog">Roads &amp; Driving</a></li><br>
+                <li onclick="loadcontents('whattopack');"><a href="#" class="hijog">What to Pack</a></li><br>
              </ul>
     </div>
 
@@ -179,14 +179,12 @@
                  <li onclick="loadcontents('corpPhilosophy');"><a href="#" class="nietog">Our Corporate Philosophy</a></li>
                  <li onclick="loadcontents('corpPolicies');"><a href="#" class="nietog">Corporate Policies</a></li>
                 </ul>
-            </li><br/>
-            <li onclick="loadcontents('workingus');"><a href="#" class="hijog">Working with Us</a></li>
-            <li onclick="loadcontents('meetus');"><a href="#" class="hijog">Meet with Us</a></li>
-            <li onclick="loadcontents('testimonials/testim/testimon');"><a href="#" class="hijog">Testimonials</a></li>
-            <li onclick="loadcontents('terms');"><a href="#" class="hijog">Terms &amp; Conditions</a></li>
+            </li><br>
+            <li onclick="loadcontents('workingus');"><a href="#" class="hijog">Working with Us</a></li><br>
+            <li onclick="loadcontents('meetus');"><a href="#" class="hijog">Meet with Us</a></li><br>
+            <li onclick="loadcontents('testimonials/testim/testimon');"><a href="#" class="hijog">Testimonials</a></li><br>
+            <li onclick="loadcontents('terms');"><a href="#" class="hijog">Terms &amp; Conditions</a></li><br>
             <li onclick="loadcontents('services/serv');"><a href="#" class="hijog">Our Services</a></li>
         </ul>
     </div>
  </div>
-
- 

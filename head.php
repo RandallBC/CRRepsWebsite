@@ -27,11 +27,11 @@ session_start();
 <div id="login" class="modal">
   <div class="modal-content-login">
     <img class="close_btn" onclick="closeModal('login')" src="images/close.png">
-    <h2 class="tit">Login</h2><br/>
+    <h2 class="tit">LogIn</h2><br/>
     <table border="0"  class="tablalogeo">
-      <tr><td width="20px"><img src="images/user.png"></td><td><input type="email" id="userLogin" name="UserLogin" style="width: 200px; border-radius: 3px;" value="" placeholder="E-mail" required="required"/></td></tr>
-      <tr><td width="20px"><img src="images/pass.png"></td><td><input type="password" id="userPass" name="password" style=" width: 200px; border-radius: 3px;" value="" placeholder="Password" required="required"/></td></tr>
-      <tr><td colspan="2"><input type="checkbox" checked="yes" name="rememberme" id="rememberme"><label for="rememberme" >Remember Me</label></td></tr>
+      <tr><td width="20px"><img src="images/user.png"></td><td><input type="email" id="userLogin" class="logFields" value="" placeholder="E-mail" required="required"/></td></tr>
+      <tr><td width="20px"><img src="images/pass.png"></td><td><input type="password" id="userPass" class="logFields" value="" placeholder="Password" required="required"/></td></tr>
+      <tr><td colspan="2"><input type="checkbox" checked="yes" id="rememberme"><label for="rememberme" >&nbsp;&nbsp;Remember Me</label></td></tr>
       <tr><td colspan="2" style="padding: 10px;"><a href="#" class="regi" onclick="regLogin();">Register With Us</a><br/>
         <a href="#" class="regi" onclick="forgotPassword();" >Forgot Password</a>
       </td></tr>

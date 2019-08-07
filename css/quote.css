@@ -36,7 +36,6 @@
   width: 926px;
   height: auto;
   margin: 0px auto;
-  border: 1px solid #ddd;
   display: none;
   padding: 6px 12px;
   -webkit-animation: fadeEffect 1s;
@@ -106,6 +105,20 @@ p.doubles {
   border: 1px solid #aaa;
 }
 
+#sumTable td {
+  border-left: 1px solid #aaa;
+  border-bottom: 2px solid #9c1b2d;
+  border-radius: 5px;
+  width: 720px;
+}
+
+#sumTable td.sumIzk {
+  border-left: 1px solid #aaa;
+  border-bottom: 2px solid #65652b;
+  border-radius: 5px;
+  width: auto;
+}
+
 .ckecksareas {
   float: left;
   border: 1px solid #aaa;
@@ -131,7 +144,7 @@ p.doubles {
   color: #000;
   background: #fafafa;
   padding: 5px 10px;
-  width: 80px;
+  width: 120px;
 }
 
 .requiredquote {
@@ -140,12 +153,40 @@ p.doubles {
 
 .alertsSend {
   width: 925px;
-  height: 50px;
+  height: 70px;
   margin: 0 auto;
+  float: left;
 }
 
-.alertsQuotes {
-  width: 780px;
-  height: 50px;
+.reqButtons{
+  width: 200px;
+  height: 30px;
+  float: right;
+  padding: 20px;
+}
+
+.reqNext {
+  width: 60px;
+  padding: 5px 10px;
+  color: #65652b;
+  border: 1px solid #65652b;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  float: right;
+}
+
+p.green {color: #65652b;}
+p.red {color: #9c1b2d;}
+
+#quoteMsj {
+  width: 600px;
+  height: 70px;
   float: left;
+}
+
+#qSummary {
+  width: 920px;
+  height:auto;
+  float: left;
+  overflow-y: auto;
 }

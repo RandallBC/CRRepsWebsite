@@ -95,7 +95,7 @@ a img {
 .modal_reqCont {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1111111111111;
     padding-top: 60px;
     left: 0;
     top: 0;
@@ -111,7 +111,7 @@ a img {
     margin: auto;
     padding: 20px;
     border: 2px solid #9c1b2d;
-    width: 60%;
+    width: 1030px;
     height: auto;
 }
 
@@ -120,7 +120,7 @@ a img {
     margin: auto;
     padding: 20px;
     border: 2px solid #9c1b2d;
-    width: 20%;
+    width: 320px;
     height: 450px;
 }
 

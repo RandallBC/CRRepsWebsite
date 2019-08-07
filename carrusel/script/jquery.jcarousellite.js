@@ -210,7 +210,7 @@
                     ul.css(animCss, -(newPosition * liSize) + "px");
                     calculatedTo = newPosition + options.scroll;
 
-                    console.log("After - Positioned at: " + newPosition + " and Moving to: " + calculatedTo);
+                    //console.log("After - Positioned at: " + newPosition + " and Moving to: " + calculatedTo);
                 }
             }
 
