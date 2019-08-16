@@ -9,7 +9,10 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="css/jquery-confirm.min.css">
   <script type="text/javascript" src="js/jquery-confirm.min.js"></script>
-  <?php include "preQuote.php"; ?>
+  <?php 
+	error_reporting(E_ERROR | E_WARNING | E_PARSE);	
+	include "preQuote.php"; 
+  ?>
 
   <script>
 

@@ -1,5 +1,5 @@
 <?php
-header('Content-Type: text/html; charset=UTF-8');
+error_reporting(E_ERROR | E_WARNING | E_PARSE);	
 include "medoo/medoo.php";
 include "db_con.php";
 use medoo\medoo;
