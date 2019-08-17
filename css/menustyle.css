@@ -212,14 +212,13 @@
   }
 
   .servi {
-    color: #ffffcc;
+    color: #ffffff;
     font: normal 16px Candara;
     text-align: left;
     list-style: circle;
   }
 
   .servics {
-    background: url(../images/frame.png) no-repeat center;
     width: 240px;
     height: 220px;
   }

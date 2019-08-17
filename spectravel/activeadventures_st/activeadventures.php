@@ -18,7 +18,7 @@
 					<div class="ca-item ca-item-1">
 						<div class="ca-item-main">
 							<div class="ca-icon"></div>
-							<h3>Stop factory farming</h3>
+							<h3>Sample tour 1 de Act Adv</h3>
 							<h4>
 								<span class="ca-quote">&ldquo;</span>
 								<span>This is a little example quote.</span>
@@ -27,10 +27,11 @@
 						</div>
 						<div class="ca-content-wrapper">
 							<div class="ca-content">
-								<h6>Animals are not commodities</h6>
+								<h6>Sample tour 1 para active adventures</h6>
 								<a href="#" class="ca-close">close</a>
 								<div class="ca-content-text">
-									<p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
+                  <p>texto de prueba de sample tour 1 para active adventure.</p>
+                  <p>I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
 									<p>She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
 								</div>
 

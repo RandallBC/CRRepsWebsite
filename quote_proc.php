@@ -13,7 +13,7 @@ $database = new Medoo([
   'password' => CRR_PASS
 ]);
 
-$emailQuote = $_SESSION['email'];
+$emailQuote = $_SESSION['email'] . ", webrequest@costaricareps.com";
 $dataID = $database->select('member_auth', ['id'], ['email' => $emailQuote]);
 foreach ($dataID as $data) { $userID = $data["id"]; }
 

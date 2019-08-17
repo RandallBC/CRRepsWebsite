@@ -114,7 +114,7 @@
 
 		<div id="pink">
 			<h3>Active Adventures</h3>
-			<p>info de active adventures.</p>
+			<p>Info de prueba para active adventures.</p>
 
 		</div>
 
