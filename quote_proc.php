@@ -13,7 +13,7 @@ $database = new Medoo([
   'password' => CRR_PASS
 ]);
 
-$emailQuote = $_SESSION['email'] . ", webrequest@costaricareps.com";
+$emailQuote = $_SESSION['email'];
 $dataID = $database->select('member_auth', ['id'], ['email' => $emailQuote]);
 foreach ($dataID as $data) { $userID = $data["id"]; }
 
@@ -153,21 +153,30 @@ for ($i=0; $i < count($sTrans); $i++) {
 $results = $insQuote.$insQuoteMember.$insQuoteRooms.$insQuoteAreas.$insQuoteActivities.$insQuoteTransfer;
 
 if ($results == 111111) {
-
+  
   $sumSQuote = str_replace("<br>", ' - ', $_POST['summarySend']);
 
-  $cuerpo = "Hello, this is the summary of your today's request:
+  $cuerpo = "Hello, this is the summary of your today's quote request:
 
   ".$sumSQuote . "
 
   We will contact you as soon as posible,
   Thank you so much.
 
-  CostaRicaReps - www.costaricareps.com";
+  ___________________________________________________
+  Costa Rica Reps - www.costaricareps.com";
+
+  $cuerpoCRREPS = "Hello, this is a new Quote request from " . $emailQuote . ":
+
+  ".$sumSQuote . "
+
+  ___________________________________________________
+  Costa Rica Reps - www.costaricareps.com";
 
   $from = "CostaRicaReps.Com";
-  $headers = "From:" . $from;
+  $headers = "From: " . $from;
   mail($emailQuote,"CostaRicaReps Request a Quote Summary",$cuerpo,$headers);
+  mail("webrequest@costaricareps.com","New Quote Request ",$cuerpoCRREPS, "From: " . $emailQuote);
   echo ($results);
 }
 
